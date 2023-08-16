@@ -8,7 +8,7 @@ using Varjo.XR;
 
 public class MarkerVisualizer : MonoBehaviour
 {
-    public TextMesh idText;
+    //public TextMesh idText;
     public bool isDynamic;    
     public string[] sceneObjectNames;
 
@@ -21,7 +21,7 @@ public class MarkerVisualizer : MonoBehaviour
         transform.localPosition = marker.pose.position;
         transform.localRotation = marker.pose.rotation;
         //transform.localScale = new Vector3(marker.size.x, marker.size.x, marker.size.z);
-        idText.text = marker.id.ToString();
+        //idText.text = marker.id.ToString();
 
         if(sceneObjectNames.Length == 0)
             return;
