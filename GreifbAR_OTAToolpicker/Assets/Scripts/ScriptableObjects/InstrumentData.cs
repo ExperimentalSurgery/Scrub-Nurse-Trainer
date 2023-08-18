@@ -1,4 +1,4 @@
-using NMY.Localization;
+using UnityEngine.Localization;
 using UnityEngine;
 
 
@@ -7,4 +7,5 @@ public class InstrumentData : ScriptableObject
 {
     
     public LocalizedString title;
+    public LocalizedString description;
 }

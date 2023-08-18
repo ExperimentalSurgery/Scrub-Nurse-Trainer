@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 219d4e90086947c4db1e1ebdf256b5cb, type: 3}
+  m_Name: GoogleTextToSpeech
+  m_EditorClassIdentifier: 
+  _credentials: {fileID: 4900000, guid: d73036553e69dda4ab4d5be52c5fd699, type: 3}
+  _stringTable:
+    m_TableReference:
+      m_TableCollectionName: 
+  _assetTable:
+    m_TableReference:
+      m_TableCollectionName: 
+  _outputFolder: {fileID: 102900000, guid: ce6da33114e319e488fe50d5654ea0dc, type: 3}
+  _outputFilePattern: '[LOCALE_CODE]_[KEY]'
+  _dateTimeFormat: yyyy-MM-dd HH:mm:ss
+  _createSubFolders: 1
+  _textToSpeechConfigurations:
+  - {fileID: 11400000, guid: 01aae4220094a534a80519cd5283f0a7, type: 2}
+  - {fileID: 11400000, guid: cf5661ddaf14ed04eb11205d91bd54e8, type: 2}

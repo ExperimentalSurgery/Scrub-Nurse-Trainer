@@ -12,4 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf8da956c3375343be2114502071f15, type: 3}
   m_Name: InstrumentData_Pinza_Scherenkopf
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
+  title:
+    m_TableReference:
+      m_TableCollectionName: GUID:dd7fae3c831d13448a1fe252090e72ce
+    m_TableEntryReference:
+      m_KeyId: 609535356928
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

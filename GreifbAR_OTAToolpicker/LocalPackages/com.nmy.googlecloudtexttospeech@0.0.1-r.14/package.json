@@ -1,0 +1,23 @@
+{
+  "name": "com.nmy.googlecloudtexttospeech",
+  "version": "0.0.1-r.14",
+  "displayName": "Nmy Google Cloud Text To Speech",
+  "unity": "2021.3",
+  "dependencies": {
+    "com.unity.localization": "1.3.2"
+  },
+  "keywords": [],
+  "author": {
+    "name": "NMY Mixed-Reality Communication GmbH",
+    "email": "p.seltmann@nmy.de",
+    "url": "https://www.nmy.de"
+  },
+  "samples": [
+    {
+      "displayName": "Sample Configuration",
+      "description": "A sample configuration for english and german",
+      "path": "Samples~/Sample Configuration"
+    }
+  ],
+  "description": "Implements the Google Cloud Text To Speech API and provides a simple to use scriptable object based framework which uses Unity's Localization."
+}
