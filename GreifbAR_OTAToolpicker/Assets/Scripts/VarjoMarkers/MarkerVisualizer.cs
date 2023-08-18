@@ -16,6 +16,7 @@ public class MarkerVisualizer : MonoBehaviour
 
     public void SetMarkerData(VarjoMarker marker)
     {
+        
         if(isDynamic)
             VarjoMarkers.AddVarjoMarkerFlags(marker.id, VarjoMarkerFlags.DoPrediction);
         transform.localPosition = marker.pose.position;

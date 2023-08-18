@@ -1,18 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class InformationSpot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private InstrumentData data;
+    [SerializeField] private TextMeshPro titleTextMesh;
+    private void OnEnable()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (data)
+        {
+            if(data.title) titleTextMesh.text = data.title.text;
+        }
     }
 }

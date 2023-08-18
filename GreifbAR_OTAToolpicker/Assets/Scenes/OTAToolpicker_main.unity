@@ -149,9 +149,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 193184815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8fb8dfdbfb13c24e83d992366f5bdf1, type: 3}
+  m_Script: {fileID: 11500000, guid: b94a3b1b87ff7334eb52b556f38dece8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  markerIds: []
+  absentIds: []
   xrRig: {fileID: 662250322}
   defaultPrefab: {fileID: 5713302974203636337, guid: fea357f8fd69e13408746e1cdd8cc1e3, type: 3}
   markerObjects:
@@ -159,7 +161,10 @@ MonoBehaviour:
     prefab: {fileID: 5713302974203636337, guid: fea357f8fd69e13408746e1cdd8cc1e3, type: 3}
     isDynamic: 1
   markersEnabled: 1
+  _markersEnabled: 0
   markerTimeout: 350
+  _markerTimeout: 0
+  markerTransform: {fileID: 0}
 --- !u!4 &193184817
 Transform:
   m_ObjectHideFlags: 0
