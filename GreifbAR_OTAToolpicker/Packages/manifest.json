@@ -1,4 +1,35 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "Ultraleap ",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.ultraleap"
+      ]
+    },
+    {
+      "name": "NMY Packages",
+      "url": "http://nmyvm01:4873",
+      "scopes": [
+        "com.nmy"
+      ]
+    },
+    {
+      "name": "NPM Registry org",
+      "url": "https://registry.npmjs.org",
+      "scopes": [
+        "com.unity-atoms.unity-atoms-core",
+        "com.unity-atoms.unity-atoms-base-atoms",
+        "com.unity-atoms.unity-atoms-fsm",
+        "com.unity-atoms.unity-atoms-mobile",
+        "com.unity-atoms.unity-atoms-mono-hooks",
+        "com.unity-atoms.unity-atoms-tags",
+        "com.unity-atoms.unity-atoms-scene-mgmt",
+        "com.unity-atoms.unity-atoms-ui",
+        "com.unity-atoms.unity-atoms-input-system"
+      ]
+    }
+  ],
   "dependencies": {
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.nmy.googlecloudtexttospeech": "file:../LocalPackages/com.nmy.googlecloudtexttospeech@0.0.1-r.14",
@@ -51,36 +82,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "scopedRegistries": [
-    {
-      "name": "Ultraleap ",
-      "url": "https://package.openupm.com",
-      "scopes": [
-        "com.ultraleap"
-      ]
-    },
-    {
-      "name": "NMY Packages",
-      "url": "http://nmyvm01:4873",
-      "scopes": [
-        "com.nmy"
-      ]
-    },
-    {
-      "name": "NPM Registry org",
-      "url": "https://registry.npmjs.org",
-      "scopes": [
-        "com.unity-atoms.unity-atoms-core",
-        "com.unity-atoms.unity-atoms-base-atoms",
-        "com.unity-atoms.unity-atoms-fsm",
-        "com.unity-atoms.unity-atoms-mobile",
-        "com.unity-atoms.unity-atoms-mono-hooks",
-        "com.unity-atoms.unity-atoms-tags",
-        "com.unity-atoms.unity-atoms-scene-mgmt",
-        "com.unity-atoms.unity-atoms-ui",
-        "com.unity-atoms.unity-atoms-input-system"
-      ]
-    }
-  ]
+  }
 }

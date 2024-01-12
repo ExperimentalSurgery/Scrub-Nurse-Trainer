@@ -469,10 +469,10 @@
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.unity.xr.management": "4.2.1",
-        "com.unity.xr.arfoundation": "4.2.7"
+        "com.unity.xr.management": "4.4.0",
+        "com.unity.xr.arfoundation": "5.1.0"
       },
-      "hash": "65f849e090a80d6a29d13fdc37b0864d63514e28"
+      "hash": "7f0cd9a93511d388dd1bad8e2dbb90a37984fedf"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
