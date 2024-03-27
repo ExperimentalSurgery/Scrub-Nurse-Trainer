@@ -1,0 +1,1163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97269afb30aa84742ae3f3342603618a, type: 3}
+  m_Name: DummyAssetTable_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: fddc16af62fe2bd4788bd44bd78e55f6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 16666757865472
+    m_Localized: 9fc78f0912128884eaff2f116ef96ab1
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091780
+  - m_Id: 45780638277632
+    m_Localized: cdadf1430a261bd4098604ccdfc55827
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091790
+  - m_Id: 45782190170112
+    m_Localized: ff3328b8175383d4ebd74aefca76bfc2
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091792
+  - m_Id: 45784044052480
+    m_Localized: e6d179eb36176a24e838a8703287ee7b
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091794
+  - m_Id: 45785725968384
+    m_Localized: 5e0ab7baf7665db4eb14f34f5acf1ff5
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091796
+  - m_Id: 45787508547584
+    m_Localized: 007a6eb8994904d4a8c4808e053f3d36
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091798
+  - m_Id: 45789098188800
+    m_Localized: 67f74f2875bcde548ae904946a6b0423
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091800
+  - m_Id: 45790725578752
+    m_Localized: f6183f3ac8eb19f4fbbf760c47e7428c
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091802
+  - m_Id: 45792285859840
+    m_Localized: aaae32e394011a444a9383dc8d4b6e3a
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091804
+  - m_Id: 45794072633344
+    m_Localized: 6adc453d7cbc8334181eb03974bb6b98
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091806
+  - m_Id: 45795771326464
+    m_Localized: 4cf230b2eb9d6a24db73400b949d0c27
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091808
+  - m_Id: 45797449048064
+    m_Localized: bb5a20ea687ade14cb0db031894faca1
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091810
+  - m_Id: 45799185489920
+    m_Localized: 0cf665d63077abe46832a2c0fc6bc183
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091812
+  - m_Id: 45800968069120
+    m_Localized: d1422e6f47430c14fbefd11ec688a6d6
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091814
+  - m_Id: 45802750648320
+    m_Localized: b0620d94fc4e2b14199cffb14551832a
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091816
+  - m_Id: 45804361261056
+    m_Localized: a9cfc11d1d2d7ae438e9eb0e52d63788
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091818
+  - m_Id: 45806022205440
+    m_Localized: c062a43bbb899274582c9d71f275a51c
+    m_Metadata:
+      m_Items:
+      - rid: 8874288645814091820
+  - m_Id: 338169235939328
+    m_Localized: b59e0e7b3107b5f4db42175fdebca6ad
+    m_Metadata:
+      m_Items:
+      - rid: 8874288664477958156
+  - m_Id: 338171261788160
+    m_Localized: d7f05df953fc8b24c8fdab142c40f35a
+    m_Metadata:
+      m_Items:
+      - rid: 8874288664477958158
+  - m_Id: 338172864012288
+    m_Localized: b1550ae1faf0ae74cb4d447b98de4d97
+    m_Metadata:
+      m_Items:
+      - rid: 8874288664477958160
+  - m_Id: 338174495596544
+    m_Localized: 6f05120f9966fc54b9902ad2deb5fc34
+    m_Metadata:
+      m_Items:
+      - rid: 8874288664477958162
+  - m_Id: 338175942631424
+    m_Localized: 8d4acfddca65e6446a4bd59efe598361
+    m_Metadata:
+      m_Items:
+      - rid: 8874288664477958164
+  - m_Id: 338177687461888
+    m_Localized: 53fe4ec6515bc53479d9209f4a24dce5
+    m_Metadata:
+      m_Items:
+      - rid: 8874288664477958166
+  - m_Id: 2250944535240704
+    m_Localized: ba54d3e32fc0a544dbbbeff20abff209
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401572
+  - m_Id: 2250946871468032
+    m_Localized: 40fdae529f127534c9e7c817ac64d8bb
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401574
+  - m_Id: 2250948716961792
+    m_Localized: 269b5fbfea9fdb440982a016d71e263a
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401576
+  - m_Id: 2250950562455552
+    m_Localized: 04730153695819a468ddb236830d486b
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401578
+  - m_Id: 2250952307286016
+    m_Localized: dd9030ac2fd559c47a9227ba465725d9
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401580
+  - m_Id: 2250954148585472
+    m_Localized: f180822eef844f342affde40ca5a5203
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401582
+  - m_Id: 2250955717255168
+    m_Localized: b6bbab6382251f6478f8a23836b7bf0e
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401584
+  - m_Id: 2250957420142592
+    m_Localized: 6279d5141b768d841add1d7cf8478355
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401586
+  - m_Id: 2250959353716736
+    m_Localized: 7369444c1272f6e4b94a8e5bae4d161b
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401588
+  - m_Id: 2250961048215552
+    m_Localized: cf3e52840b1837144a09d7e8a5589b9e
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401590
+  - m_Id: 2250962918875136
+    m_Localized: f471867a4ae932d42be598b05997a761
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401592
+  - m_Id: 2250964655316992
+    m_Localized: 078d7c7ccbdea4940a34871b4b431792
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401594
+  - m_Id: 2250966416924672
+    m_Localized: 9659755dba6513a4287361723f95a897
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401596
+  - m_Id: 2250968048508928
+    m_Localized: 192a3d6a26d7f9d41be3a400a24ea1c9
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401598
+  - m_Id: 2250970170826752
+    m_Localized: b0d8f19549718044f8c44cef467ff3a9
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401600
+  - m_Id: 2250971701747712
+    m_Localized: c1a9fff67fd94064da5736adc81df10c
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401602
+  - m_Id: 2250973392052224
+    m_Localized: b6d673ec84ba9d74d956c6731da83c6f
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401604
+  - m_Id: 2250975141076992
+    m_Localized: 203b946bb232e6e49a14e1ad40b22fc5
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401606
+  - m_Id: 2250977091428352
+    m_Localized: 371e71fd157c6eb4d84a690e702b41a2
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401608
+  - m_Id: 2250978769149952
+    m_Localized: afdbd4579fb9bbd45b68b77f0ee59b5f
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401610
+  - m_Id: 2250980572700672
+    m_Localized: 51471f040be663c4a9257608fc29a5d2
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401612
+  - m_Id: 2250982376251392
+    m_Localized: 92d48e49e5ad77a4c947e62fcf1287e8
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401614
+  - m_Id: 2250984049778688
+    m_Localized: f01e9379c6d5dd74ba0825f370f57898
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401616
+  - m_Id: 2250985878495232
+    m_Localized: d3898579f8b98204db20ffd5c4cda1f8
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401618
+  - m_Id: 2250987426193408
+    m_Localized: 5abaf67713abd4846b8ce27668e3dcaa
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401620
+  - m_Id: 2250989183606784
+    m_Localized: a672560c29c59b84094770b6476443d9
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401622
+  - m_Id: 2250990831968256
+    m_Localized: e19b221e4604c354692545b9538bd3c4
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401624
+  - m_Id: 2250992660684800
+    m_Localized: 808d7af38eac12748b6779d3dba92439
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401626
+  - m_Id: 2250994392932352
+    m_Localized: acbe034670e99964db7c45f5271afacf
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401628
+  - m_Id: 2250996095819776
+    m_Localized: 5f19caf7defacad47bb6fd9319d9a1f9
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401630
+  - m_Id: 2250997911953408
+    m_Localized: 401f00fbbf765774ab85804de87da68b
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401632
+  - m_Id: 2250999740669952
+    m_Localized: 6d8fde2c3176ca84da321f8f2b935a50
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401634
+  - m_Id: 2251001384837120
+    m_Localized: 00548b3088265a04e88c49e2b70f6f7d
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401636
+  - m_Id: 2251003075141632
+    m_Localized: 962a3beb924dc334aa1da4c2aeffb941
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401638
+  - m_Id: 2251004857720832
+    m_Localized: ae896f69a2dd2604aad1987fd2472034
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401640
+  - m_Id: 2251006518665216
+    m_Localized: ffddb88b414d24047871cfcc4eed309f
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401642
+  - m_Id: 2251008309633024
+    m_Localized: 09041bd07caf86a42a6332d575cafbb4
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401644
+  - m_Id: 2251010083823616
+    m_Localized: 300a2fb1350c04941beb6f992248adad
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401646
+  - m_Id: 2251011946094592
+    m_Localized: bc112937fed8d194085ba809af1b8f90
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401648
+  - m_Id: 2251013468626944
+    m_Localized: 87b0c43b3c60616419e700e74fa73a26
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401650
+  - m_Id: 2251015343480832
+    m_Localized: 08ee20ebc9c303d4e840352ef648dee7
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401652
+  - m_Id: 2251016937316352
+    m_Localized: edb8ea919695b80488db03c8a0c53908
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401654
+  - m_Id: 2251018711506944
+    m_Localized: e9238b0829232494da5fec76b97aa54d
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401656
+  - m_Id: 2251020397617152
+    m_Localized: 8c4db56e3a127e141b25dca08f13f13c
+    m_Metadata:
+      m_Items:
+      - rid: 8874288777486401658
+  - m_Id: 7591033951920128
+    m_Localized: 3c001fe58c7ff894ca2278738f10a111
+    m_Metadata:
+      m_Items:
+      - rid: 4289125916667543555
+  - m_Id: 12019654896558080
+    m_Localized: 033f556106ff9e046a3f81dd3b5b21bd
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549964
+  - m_Id: 12019656939184128
+    m_Localized: 6161f00c987ceba46ab9979cee2a86c1
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549966
+  - m_Id: 12019658709180416
+    m_Localized: 3fa77e9ad5fe7a543ad89cf0be0883c7
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549968
+  - m_Id: 12019660613394432
+    m_Localized: 104c0cb5a12fda740b0101577678c1f4
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549970
+  - m_Id: 12019662442110976
+    m_Localized: aac7d526a96f8c64fa451a73e5248b3f
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549972
+  - m_Id: 12019664241467392
+    m_Localized: f66d8b85b967e9b40a99ceee01a582a3
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549974
+  - m_Id: 12019666024046592
+    m_Localized: b3a1295b56793d24f83098b40860f521
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549976
+  - m_Id: 12019667903094784
+    m_Localized: 7430c58e24b7dcf4fb53efa257d7ac47
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549978
+  - m_Id: 12019669723422720
+    m_Localized: 3418d551fc4be5046baef0fc44e6216b
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549980
+  - m_Id: 12019671535362048
+    m_Localized: 46cd2f5276b69194fb7ca3a37b6ac5eb
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549982
+  - m_Id: 12019673326329856
+    m_Localized: 2ae92d00ba4fca8478359fd2bb43ea73
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549984
+  - m_Id: 12019675138269184
+    m_Localized: ae78eb1104be5a940b7eaef4a86b0d16
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549986
+  - m_Id: 12019676933431296
+    m_Localized: 35a81a439b7ea2148b5a08ba5441c017
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549988
+  - m_Id: 12019678791507968
+    m_Localized: 55bf0deb0475f2b4e94f279f2213ec43
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549990
+  - m_Id: 12019680527949824
+    m_Localized: f85067f8df9ef824e91b9d86b8f6a37b
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549992
+  - m_Id: 12019682285363200
+    m_Localized: 3b40d876305fa904186326b4a7277310
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549994
+  - m_Id: 12019684202160128
+    m_Localized: 3af08a4294970384d91518a6ebe41ae0
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549996
+  - m_Id: 12019686022488064
+    m_Localized: d4f3358762614a64e9750f1f4e52008d
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471549998
+  - m_Id: 12019687817650176
+    m_Localized: d10217e4ae2e341498cf56c1f56ac517
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471550000
+  - m_Id: 12019689575063552
+    m_Localized: 37cc6d5c14af88544b92384cf929b707
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471550002
+  - m_Id: 12019691508637696
+    m_Localized: 33175201045a559478de64e6b60e8913
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471550004
+  - m_Id: 12019693521903616
+    m_Localized: c7265d5812cd23b4bb72e9932e71773a
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471550006
+  - m_Id: 12019695451283456
+    m_Localized: cd415c0f02308c44ba59b9474a469e44
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471550008
+  - m_Id: 12019697238056960
+    m_Localized: 5c8e493bc7550284c9d280fcafb5ee74
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471550010
+  - m_Id: 12019699117105152
+    m_Localized: dc0c751f90c160646a8fcacaa69fc4e8
+    m_Metadata:
+      m_Items:
+      - rid: 4289126188471550012
+  - m_Id: 12749754759815168
+    m_Localized: 029df1901a5fc614cb12d2f21d6cd996
+    m_Metadata:
+      m_Items:
+      - rid: 4289126235446968323
+  - m_Id: 14464803190775808
+    m_Localized: c4c17a1d7aec86346b9e546dfe75c7fe
+    m_Metadata:
+      m_Items:
+      - rid: 69460646378602499
+  references:
+    version: 2
+    RefIds:
+    - rid: 69460646378602499
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-03-04 10:40:41
+        lastModified: 2024-03-04 10:40:41
+        spokenText: 'Reminder: Halte das Instrument in die Area.'
+    - rid: 4289125916667543555
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-14 11:26:47
+        lastModified: 2024-02-14 11:26:47
+        spokenText: Drehe das Instrument so, dass die Spitze von dir weg zeigt.
+    - rid: 4289126188471549964
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:33
+        lastModified: 2024-02-26 16:44:33
+        spokenText: 'Willkommen in Level 3.1:
+
+          Anreichen - Lernmodus'
+    - rid: 4289126188471549966
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:33
+        lastModified: 2024-02-26 16:44:33
+        spokenText: Gut, jetzt beginnt der Chirurg, Instrumente anzufordern
+    - rid: 4289126188471549968
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:33
+        lastModified: 2024-02-26 16:44:33
+        spokenText: Nimm dir ein beliebiges Instrument, um zu lernen, wie man es
+          korrekt anreicht
+    - rid: 4289126188471549970
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:34
+        lastModified: 2024-02-26 16:44:34
+        spokenText: 'Reminder: Hebe einen beliebigen Gegenstand auf'
+    - rid: 4289126188471549972
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:34
+        lastModified: 2024-03-04 10:40:41
+        spokenText: Halte das Instrument jetzt direkt in die Kamera, um es zu scannen.
+    - rid: 4289126188471549974
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:35
+        lastModified: 2024-02-26 16:44:35
+        spokenText: 'Reminder: Halte das Instrument in die Area'
+    - rid: 4289126188471549976
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:35
+        lastModified: 2024-02-26 16:44:35
+        spokenText: Reiche das Instrument jetzt so an, wie es die Beispielhand vormacht.
+          Halte deine Hand dann kurz in der richtigen Endpose
+    - rid: 4289126188471549978
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:36
+        lastModified: 2024-02-26 16:44:36
+        spokenText: 'Reminder: Halte das Instrument eine kurze Zeit lang in die Hand
+          des Chirurgen, wie es die Demo-Hand vormacht'
+    - rid: 4289126188471549980
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:36
+        lastModified: 2024-02-26 16:44:36
+        spokenText: Halte diese Pose kurz
+    - rid: 4289126188471549982
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:37
+        lastModified: 2024-02-26 16:44:37
+        spokenText: "Gut, das hat geklappt. Lege das Instrument jetzt zur\xFCck."
+    - rid: 4289126188471549984
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:37
+        lastModified: 2024-03-07 17:08:56
+        spokenText: "Gut, du kannst jetzt gerne noch weitere Instrumente ausprobieren,
+          indem du sie hochhebst. Wenn du genug gesehen hast, kannst du mit dem Zur\xFCck-Button
+          ins Hauptmen\xFC zur\xFCckkehren."
+    - rid: 4289126188471549986
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:37
+        lastModified: 2024-03-07 17:08:56
+        spokenText: 'Willkommen in Level 3.2:
+
+          Anreichen - Quizmodus'
+    - rid: 4289126188471549988
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:38
+        lastModified: 2024-02-26 16:44:38
+        spokenText: 'Hinweis: Quizmodus erfordert Vorkenntnisse. Du solltest den
+          Lernmodus vorher einmal gespielt haben. Fortfahren?'
+    - rid: 4289126188471549990
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:38
+        lastModified: 2024-02-26 16:44:38
+        spokenText: Gut, jetzt beginnt der Chirurg, bestimmte Instrumente anzufordern
+    - rid: 4289126188471549992
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:39
+        lastModified: 2024-03-04 10:40:42
+        spokenText: Nimm dir das angezeigte Instrument und halte es in die Kamera,
+          um es zu scannen.
+    - rid: 4289126188471549994
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:39
+        lastModified: 2024-03-04 10:42:17
+        spokenText: 'Reminder: Halte das angezeigte Instrument in die Area.'
+    - rid: 4289126188471549996
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:40
+        lastModified: 2024-02-26 16:44:40
+        spokenText: Reiche das Instrument jetzt korrekt an. Halte deine Hand dann
+          kurz in der richtigen Endpose
+    - rid: 4289126188471549998
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:40
+        lastModified: 2024-02-26 16:44:40
+        spokenText: 'Reminder: Halte das Instrument eine kurze Zeit lang in die Hand
+          des Chirurgen'
+    - rid: 4289126188471550000
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:40
+        lastModified: 2024-02-26 16:44:40
+        spokenText: Halte das Instrument kurz an dieser Stelle
+    - rid: 4289126188471550002
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:41
+        lastModified: 2024-02-26 16:44:41
+        spokenText: "Das war richtig, gut gemacht. Lege das Instrument jetzt zur\xFCck"
+    - rid: 4289126188471550004
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:41
+        lastModified: 2024-02-26 16:44:41
+        spokenText: "Das hat leider nicht gestimmt. Lege das Instrument jetzt zur\xFCck"
+    - rid: 4289126188471550006
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:42
+        lastModified: 2024-02-26 16:44:42
+        spokenText: "Weiter zur n\xE4chsten Aufgabe"
+    - rid: 4289126188471550008
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:42
+        lastModified: 2024-02-26 16:44:42
+        spokenText: Toll, du hast alle Aufgaben erledigt. Hier ist dein Ergebnis!
+    - rid: 4289126188471550010
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:43
+        lastModified: 2024-02-26 16:44:43
+        spokenText: Super, du hast bestanden!
+    - rid: 4289126188471550012
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-26 16:44:43
+        lastModified: 2024-02-26 16:44:43
+        spokenText: Oh, das war wohl nichts. Probier es doch nochmal.
+    - rid: 4289126235446968323
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-02-28 17:05:42
+        lastModified: 2024-02-28 17:05:42
+        spokenText: "Nein, das ist nicht das richtige Instrument. Lege es zur\xFCck
+          und nimm dir das angezeigte Instrument."
+    - rid: 8874288645814091780
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 13:48:58
+        lastModified: 2024-01-24 15:44:38
+        spokenText: 'Willkommen bei Level 1: Identifizieren, im Lernmodus'
+    - rid: 8874288645814091790
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:38
+        lastModified: 2024-01-24 15:44:38
+        spokenText: "Task: Hebe Gegenst\xE4nde auf, um sie zu identifizieren."
+    - rid: 8874288645814091792
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:39
+        lastModified: 2024-01-24 15:44:39
+        spokenText: Halte das Instrument direkt in die Kamera, um es zu scannen
+    - rid: 8874288645814091794
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:39
+        lastModified: 2024-01-24 15:44:39
+        spokenText: 'Reminder: Hebe einen beliebigen Gegenstand auf und halte ihn
+          direkt in dein Sichtfeld'
+    - rid: 8874288645814091796
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:40
+        lastModified: 2024-01-24 15:44:40
+        spokenText: Sehr gut, jetzt kannst du alle Infos zu diesem Instrument sehen.
+    - rid: 8874288645814091798
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:40
+        lastModified: 2024-01-24 15:44:40
+        spokenText: "Wenn du alles gelesen und verstanden hast, lege das Instrument
+          einfach auf den Tisch zur\xFCck."
+    - rid: 8874288645814091800
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:40
+        lastModified: 2024-01-24 15:44:40
+        spokenText: "Gut, du kannst dir jetzt gerne noch weitere Instrumente ansehen,
+          indem du sie hochhebst. Wenn du genug gesehen hast, kannst du mit dem Zur\xFCck-Button
+          ins Hauptmen\xFC zur\xFCckkehren."
+    - rid: 8874288645814091802
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:41
+        lastModified: 2024-01-25 17:14:35
+        spokenText: 'Willkommen bei Level 1: Identifizieren, im Quizmodus'
+    - rid: 8874288645814091804
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:41
+        lastModified: 2024-01-24 15:44:41
+        spokenText: 'Hinweis: Quizmodus erfordert Vorkenntnisse. Du solltest den
+          Lernmodus vorher einmal gespielt haben. Fortfahren?'
+    - rid: 8874288645814091806
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:42
+        lastModified: 2024-01-24 15:44:42
+        spokenText: "Erkl\xE4rung: Suche je Frage ein passendes Instrument heraus
+          und halte es vor die Kamera. Nach 10 Fragen bekommst du Feedback. Los gehts!"
+    - rid: 8874288645814091808
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:42
+        lastModified: 2024-01-24 15:44:42
+        spokenText: 'Reminder: Halte das Instrument in die Area'
+    - rid: 8874288645814091810
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:42
+        lastModified: 2024-01-24 15:44:42
+        spokenText: Richtig! Gut gemacht :)
+    - rid: 8874288645814091812
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:43
+        lastModified: 2024-01-24 15:44:43
+        spokenText: 'Das war leider nicht richtig. Hier: Das ist die Eigenschaft
+          des Instrumentes'
+    - rid: 8874288645814091814
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:43
+        lastModified: 2024-01-24 15:44:43
+        spokenText: Lege das Instrument wieder auf den Tisch, um fortzufahren.
+    - rid: 8874288645814091816
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:44
+        lastModified: 2024-01-24 15:44:44
+        spokenText: Toll, du hast alle Fragen beantwortet. Hier ist dein Ergebnis!
+    - rid: 8874288645814091818
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:44
+        lastModified: 2024-01-24 15:44:44
+        spokenText: Super, du hast bestanden!
+    - rid: 8874288645814091820
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-24 15:44:44
+        lastModified: 2024-01-24 15:44:44
+        spokenText: Oh, das war wohl nichts. Probier es doch nochmal.
+    - rid: 8874288664477958156
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-25 11:06:29
+        lastModified: 2024-01-25 11:06:29
+        spokenText: "Willkommen in der Anwendung. Benutze deinen Finger, um einen
+          der Kn\xF6pfe zu dr\xFCcken"
+    - rid: 8874288664477958158
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-25 11:06:30
+        lastModified: 2024-01-25 11:06:30
+        spokenText: "Benutze deinen Finger, um einen der Kn\xF6pfe zu dr\xFCcken"
+    - rid: 8874288664477958160
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-25 11:06:30
+        lastModified: 2024-01-25 11:06:30
+        spokenText: "Willkommen zur\xFCck. W\xE4hle ein Level aus, das du \xFCben
+          m\xF6chtest"
+    - rid: 8874288664477958162
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-25 11:06:31
+        lastModified: 2024-01-25 12:19:03
+        spokenText: "Hier kannst du zwischen den Leveln w\xE4hlen, um gezielt Identifikation,
+          Vorbereiten und Anreichen zu \xFCben. Beginne am besten mit Level 1: Identifikation
+          im Lernmodus"
+    - rid: 8874288664477958164
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-25 11:06:31
+        lastModified: 2024-01-25 11:06:31
+        spokenText: "Benutze deinen Finger, um einen der Kn\xF6pfe zu dr\xFCcken"
+    - rid: 8874288664477958166
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-25 11:06:31
+        lastModified: 2024-01-25 11:06:31
+        spokenText: Toll, du hast einen neuen Modus freigeschaltet!
+    - rid: 8874288777486401572
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:11
+        lastModified: 2024-01-30 17:47:11
+        spokenText: 'Willkommen in Level 2.1:  Vorbereiten im Lernmodus'
+    - rid: 8874288777486401574
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:11
+        lastModified: 2024-02-14 11:26:47
+        spokenText: "Beim Legen ist es wichtig darauf zu achten, dass keine Instrumente
+          \xFCber die Tischgrenze hinausragen, da ansonsten Instrumente leicht vom
+          Tisch hinunterfallen k\xF6nnen, und bei scharfen Instrumenten ein hohes
+          Verletzungsrisiko entsteht. Stelle die Sch\xFCssel auf die markierte Stelle,
+          und achte darauf dass du sie innerhalb der markierten Tischgrenze platzierst."
+    - rid: 8874288777486401576
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:12
+        lastModified: 2024-01-30 17:47:12
+        spokenText: Stelle den Gegenstand an die richtige Stelle
+    - rid: 8874288777486401578
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:12
+        lastModified: 2024-01-30 17:47:12
+        spokenText: "Achte darauf, dass der Gegenstand die Begrenzung zum Rand nicht
+          \xFCberschneidet."
+    - rid: 8874288777486401580
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:12
+        lastModified: 2024-01-30 17:47:12
+        spokenText: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+          darauf, den Abstand zum Rand einzuhalten.
+    - rid: 8874288777486401582
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:13
+        lastModified: 2024-01-30 17:47:13
+        spokenText: "Fangen wir an die Instrumente zu legen. Wir legen die Instrumente
+          in der Reihenfolge, in der sie auch in dem Eingriff benutzt werden. Somit
+          beh\xE4ltst du den \xDCberblick, auch in stressigen Phasen. Von dir aus
+          gesehen fangen wir beim Legen auf dem Tisch unten links an, arbeiten uns
+          dann nach rechts vor und sobald die Reihe voll ist, legst du die Instrumente
+          eine Reihe weiter von dir entfernt. Einer der ersten Schritte w\xE4hrend
+          einer Operation ist oft die \xD6ffnung der Eingriffstelle mithilfe des
+          Skalpells, daher nimm nun das Skalpell und lege es in die linke, untere
+          Ecke. Aber Achtung! Die Spitze des Skalpells ist sehr scharf! Achte darauf
+          dass die Spitze auf dem Tisch von dir weg zeigt"
+    - rid: 8874288777486401584
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:13
+        lastModified: 2024-01-30 17:47:13
+        spokenText: Drehe das Skalpell so, dass die Spitze von dir weg zeigt.
+    - rid: 8874288777486401586
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:14
+        lastModified: 2024-01-30 17:47:14
+        spokenText: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+          darauf, die Legerichtung korrekt einzuhalten.
+    - rid: 8874288777486401588
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:14
+        lastModified: 2024-01-30 17:47:14
+        spokenText: "Einige Instrumente, wie Pinzetten und Scheren werden sehr h\xE4ufig
+          ben\xF6tigt, diese werden m\xF6glichst nahe an dich dran gelegt damit du
+          sie schnell erreichen kannst. Lege die Mittelbreite Pinzette und die Atraumatische
+          Pinzette direkt rechts neben das Skalpell. Achte bei spitzen Pinzetten
+          ebenfalls darauf, dass die Spitzen nicht zu dir hin zeigen."
+    - rid: 8874288777486401590
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:14
+        lastModified: 2024-01-30 17:47:14
+        spokenText: Drehe die Pinzette so, dass die Spitze von dir weg zeigt.
+    - rid: 8874288777486401592
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:15
+        lastModified: 2024-01-30 17:47:15
+        spokenText: "Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+          darauf, h\xE4ufig verwendete Instrumente k\xF6rpernah zu legen und spitze
+          oder scharfe Enden von dir wegzudrehen."
+    - rid: 8874288777486401594
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:15
+        lastModified: 2024-01-30 17:47:15
+        spokenText: "H\xE4ufig benutze Scheren legst du ebenfalls nahe an dich heran.
+          Achte bei den Scheren darauf dass sie immer geschlossen sind, um Verletzungen
+          zu vermeiden. Leicht gebogene Scheren wie z.B. die Chirurgische Schere
+          sollten mit der Spitze nach oben zeigen, damit du sie sp\xE4ter leichter
+          greifen kannst. Lege nun die Metzenbach Schere und die Chirurgische Schere
+          rechts neben die Pinzetten."
+    - rid: 8874288777486401596
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:16
+        lastModified: 2024-01-30 17:47:16
+        spokenText: Achte darauf, dass die Scheren geschlossen sind
+    - rid: 8874288777486401598
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:16
+        lastModified: 2024-01-30 17:47:16
+        spokenText: Drehe die chirurgische Schere so, dass ihre Spitze nach oben
+          zeigt.
+    - rid: 8874288777486401600
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:17
+        lastModified: 2024-01-30 17:47:17
+        spokenText: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+          auf die Sicherheitsregeln beim Ablegen.
+    - rid: 8874288777486401602
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:17
+        lastModified: 2024-01-30 17:47:17
+        spokenText: "Super, damit h\xE4tten wir die erste Reihe! Wir fahren nun fort
+          mit der Kornzange. Achte darauf, dass bei Zangen und Klemmen mit Einrastfunktion
+          die Klemmen immer geschlossen sind, aber nur auf ihrem ersten Raster! Nimm
+          die Kornzange zur Hand, raste sie auf der ersten Stelle ein und lege sie
+          in den markierten Bereich!"
+    - rid: 8874288777486401604
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:17
+        lastModified: 2024-01-30 17:47:17
+        spokenText: Achte darauf, dass Kornzange geschlossen ist
+    - rid: 8874288777486401606
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:18
+        lastModified: 2024-01-30 17:47:18
+        spokenText: Es ist wichtig, dass die Kornzange im ersten Raster ist
+    - rid: 8874288777486401608
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:18
+        lastModified: 2024-01-30 17:47:18
+        spokenText: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+          darauf, die Einrastfunktion richtig zu verwenden.
+    - rid: 8874288777486401610
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:19
+        lastModified: 2024-01-30 17:47:19
+        spokenText: Nun kommen wir wieder zu einem Instrument, bei dem du sehr vorsichtig
+          sein musst. Bei einem Nadelhalter, mit eingespannter Nadel, darf die Nadel
+          nicht nach unten zeigen, da sie sonst die Tischabdeckung perforieren kann,
+          und die Nadel somit unsteril wird. Da die Nadel nach oben zeigt, musst
+          du hier besonders darauf achten, dass du dich und andere mit der Nadel
+          nicht verletzt. Es gilt daher auch hier, die Spitze des Instrumentes zeigt
+          immer von dir weg! Nimm nun den Mason Nadelhalter, Spanne eine Nadel ein
+          und lege ihn auf den Tisch!
+    - rid: 8874288777486401612
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:19
+        lastModified: 2024-01-30 17:47:19
+        spokenText: Drehe den Nadelhalter so, dass die Spitze von dir weg zeigt.
+    - rid: 8874288777486401614
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:20
+        lastModified: 2024-01-30 17:47:20
+        spokenText: Drehe den Nadelhalter so, dass die Nadelspitze nach oben zeigt.
+    - rid: 8874288777486401616
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:20
+        lastModified: 2024-01-30 17:47:20
+        spokenText: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+          darauf, dass Nadeln immer nach oben zeigen.
+    - rid: 8874288777486401618
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:20
+        lastModified: 2024-01-30 17:47:20
+        spokenText: "Lass uns nun die restlichen Klemmen auslegen! Wenn wir viele
+          Instrumente legen, musst du darauf achten dass diese zwar getrennt voneinander,
+          aber auch platzsparend gelegt werden. Jetzt haben wir nur ungef\xE4hr 15
+          Instrumente vor uns, in einer echten OP k\xF6nnen es aber auch \xFCber
+          100 auf der gleichen Tischgr\xF6\xDFe sein. Wenn du die Klemmen legst,
+          achte darauf sie mit den Spitzen immer abwechselnd von dir hin und von
+          dir Weg Zeigen zu lassen. So nutzt du den Platz optimal aus. Lege nun die
+          Overholt-Pr\xE4perations-Klemme, die DeBakey Ligaturklemme und die Peritoneumklemme
+          neben den Nadelhalter."
+    - rid: 8874288777486401620
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:21
+        lastModified: 2024-01-30 17:47:21
+        spokenText: Lege die Instrumente abwechselnd zu dir hin und von dir weg zeigend.
+          So sparst du am meisten Platz
+    - rid: 8874288777486401622
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:21
+        lastModified: 2024-01-30 17:47:21
+        spokenText: "Lege die Instrumente n\xE4her aneinander"
+    - rid: 8874288777486401624
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:22
+        lastModified: 2024-01-30 17:47:22
+        spokenText: "Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+          darauf, m\xF6glichst platzsparend zu legen."
+    - rid: 8874288777486401626
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:22
+        lastModified: 2024-01-30 17:47:22
+        spokenText: "Wir benutzen momentan ein sehr kleines Beispielset an Instrumenten,
+          in dem es von jedem Instrument fast immer nur eines vorhanden ist. In der
+          echten OP-Situation wird es allerdings fast immer mehrere, manchmal auch
+          zehnmal das gleiche Instrument geben. Um Platz zu sparen und die \xDCbersicht
+          zu bewahren, ist es sehr wichtig gleich Instrumente immer auf einer Position
+          paarig zu legen. Du darfst die Instrumente auch gerne so nah beieinander
+          legen, dass sie sich \xFCberlagern. Probieren wir das einmal mit den Wundhaken!
+          Lege diese auf den Tisch, so dass sie sehr nahe beieinander liegen."
+    - rid: 8874288777486401628
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:22
+        lastModified: 2024-01-30 17:47:22
+        spokenText: Lege die Instrumente abwechselnd zu dir hin und von dir weg zeigend.
+          So sparst du am meisten Platz
+    - rid: 8874288777486401630
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:23
+        lastModified: 2024-01-30 17:47:23
+        spokenText: Sehr gut, genau richtig!
+    - rid: 8874288777486401632
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:23
+        lastModified: 2024-01-30 17:47:23
+        spokenText: "Sehr gut gemacht wir sind nun schon bei dem Ende des Lernmodus
+          angelangt! Wir hoffen dass dir alle Regeln im Kopf geblieben sind. Wenn
+          du deinen F\xE4higkeiten schon vertraust und bereit f\xFCr eine Challenge
+          bist, dann starte gerne den Quizmodus! Falls du lieber noch etwas \xFCben
+          willst, kannst du diese Lektion auch nochmal von neuem Starten! Als kleinen
+          Vorgeschmack auf den Quizmodus, nimm den Langenbeckhaken und lege ihn an
+          die richtige Stelle, diesmal gibts erstmal keine Hilfe!"
+    - rid: 8874288777486401634
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:24
+        lastModified: 2024-01-30 17:47:24
+        spokenText: "Sehr gut, genau richtig! Du bist bereit f\xFCr den Quizmodus"
+    - rid: 8874288777486401636
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:24
+        lastModified: 2024-02-15 11:28:58
+        spokenText: 'Willkommen in Level 2.2:  Vorbereiten im Quizmodus'
+    - rid: 8874288777486401638
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:24
+        lastModified: 2024-01-30 17:47:24
+        spokenText: 'Hinweis: Quizmodus erfordert Vorkenntnisse. Du solltest den
+          Lernmodus vorher einmal gespielt haben. Fortfahren?'
+    - rid: 8874288777486401640
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:25
+        lastModified: 2024-01-30 17:47:25
+        spokenText: "Vor dir siehst du die Instrumente im Kasten. Dein Ziel ist es,
+          alle Instrumente regelkonform auszulegen. Beginne, indem du dir eines nimmst
+          und zur Identifikation vor die Kamera h\xE4ltst."
+    - rid: 8874288777486401642
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:25
+        lastModified: 2024-01-30 17:47:25
+        spokenText: 'Reminder: Hebe einen beliebigen Gegenstand auf'
+    - rid: 8874288777486401644
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:26
+        lastModified: 2024-01-30 17:47:26
+        spokenText: Halte das Instrument jetzt direkt in die Kamera, um es zu scannen
+    - rid: 8874288777486401646
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:26
+        lastModified: 2024-01-30 17:47:26
+        spokenText: 'Reminder: Halte das Instrument in die Area'
+    - rid: 8874288777486401648
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:27
+        lastModified: 2024-01-30 17:47:27
+        spokenText: "Lege den Gegenstand so ab, wie du es f\xFCr richtig h\xE4ltst"
+    - rid: 8874288777486401650
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:27
+        lastModified: 2024-01-30 17:47:27
+        spokenText: "Reminder: Lege den Gegenstand so ab, wie du es f\xFCr richtig
+          h\xE4ltst"
+    - rid: 8874288777486401652
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:27
+        lastModified: 2024-01-30 17:47:27
+        spokenText: "Gut, jetzt nimm dir das n\xE4chste Instrument"
+    - rid: 8874288777486401654
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:28
+        lastModified: 2024-01-30 17:47:28
+        spokenText: Toll, das waren alle Instrumente. Hier ist dein Ergebnis
+    - rid: 8874288777486401656
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:28
+        lastModified: 2024-01-30 17:47:28
+        spokenText: Super, du hast bestanden!
+    - rid: 8874288777486401658
+      type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
+      data:
+        created: 2024-01-30 17:47:29
+        lastModified: 2024-01-30 17:47:29
+        spokenText: Oh, das war wohl nichts. Probier es doch nochmal.

@@ -73,6 +73,7 @@ public class MarkerManager : MonoBehaviour
                     {
                         CreateMarkerVisualizer(marker);
                         VarjoMarkers.SetVarjoMarkerTimeout(marker.id, markerTimeout);
+                        VarjoMarkers.AddVarjoMarkerFlags(marker.id, VarjoMarkerFlags.DoPrediction);
                     }
                 }
 

@@ -1,0 +1,14 @@
+{
+    "name": "Unity.Nmy.Core",
+    "references": [
+        "Unity.Nmy.DelegateCoroutines"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

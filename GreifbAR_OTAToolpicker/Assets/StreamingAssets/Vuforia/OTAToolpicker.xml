@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="VarjoMarker-205-grey" size="0.065000 0.065000" />
+    <ImageTarget name="VarjoMarker-204-grey" size="0.065000 0.065000" />
+    <ImageTarget name="VarjoMarker-203-grey" size="0.065000 0.065000" />
+    <ImageTarget name="VarjoMarker-202-grey" size="0.065000 0.065000" />
+  </Tracking>
+</QCARConfig>

@@ -1,0 +1,16 @@
+{
+    "name": "Unity.Nmy.Core.Tests.Runtime",
+    "references": [
+        "Unity.Nmy.Core"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

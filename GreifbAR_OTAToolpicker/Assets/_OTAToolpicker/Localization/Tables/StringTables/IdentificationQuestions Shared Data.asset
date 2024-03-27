@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: IdentificationQuestions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: IdentificationQuestions
+  m_TableCollectionNameGuidString: 95b64ca351ccf354dab1b2531eaae5db
+  m_Entries:
+  - m_Id: 19928709124235264
+    m_Key: ota_lv1_q_ui_question_state_grate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19928392630444032
+    m_Key: ota_lv1_q_ui_question_area_visceral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219549704192
+    m_Key: ota_lv1_q_ui_question_danger_atraumatic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19923987290038272
+    m_Key: ota_lv1_q_ui_question_danger_traumatic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30169157771264
+    m_Key: ota_lv1_q_ui_question_edelstahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19927847664525312
+    m_Key: ota_lv1_q_ui_question_explicit_Metzenbaum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19927492843184128
+    m_Key: ota_lv1_q_ui_question_explicit_OverholtGeissend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35847813373952
+    m_Key: ota_lv1_q_ui_question_explicitWundhakenRoux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19926882412568576
+    m_Key: ota_lv1_q_ui_question_function_Gewebetrennend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19926452072783872
+    m_Key: ota_lv1_q_ui_question_function_Gewebeweghaltend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34505237635072
+    m_Key: ota_lv1_q_ui_question_functionGewebetrennend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47552790437888
+    m_Key: ota_lv1_q_ui_question_length145mm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35120072269824
+    m_Key: ota_lv1_q_ui_question_risk_Spitze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32092506202112
+    m_Key: "ota_lv1_q_ui_question_toraxchirugie\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19925425554628608
+    m_Key: ota_lv1_q_ui_question_typ_klemme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33864402509824
+    m_Key: ota_lv1_q_ui_question_typ_schere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19925908876861440
+    m_Key: ota_lv1_q_ui_question_typ_zange
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8874288687146074114
+  references:
+    version: 2
+    RefIds:
+    - rid: 8874288687146074114
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1706266344187

@@ -1,0 +1,14 @@
+{
+    "name": "Unity.Nmy.DelegateCoroutines.Samples",
+    "references": [
+        "Unity.Nmy.DelegateCoroutines"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

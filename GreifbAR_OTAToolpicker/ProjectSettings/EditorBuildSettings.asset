@@ -4,10 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_OTAToolpicker/Scenes/OTAToolpicker_main.unity
+    guid: 4a9a8f045ea010846a549c45cf528677
   m_configObjects:
     Varjo.XR.Settings: {fileID: 11400000, guid: 356b65e37afd4c744a85339640504463, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: e1ae074cb76c0c24c852f69ca36f73d3, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 0158206f16f6b67409db33078539e936, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 442b734da8c18d34d99221827ca14f1d, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: ae80833408496cb40af688cab29a540f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 59fc24bc040669d4f850527bc9958a8a, type: 2}

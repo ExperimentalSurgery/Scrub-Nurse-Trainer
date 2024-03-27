@@ -34,7 +34,213 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 609535356928
-    m_Localized: Scherenkopf
+    m_Localized: 'Einfaches
+
+      Scharnier'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55470646476316672
+    m_Localized: "Gebogene atraumatische<br>Maulfl\xE4chen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55471569420328960
+    m_Localized: Brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55472922653794304
+    m_Localized: Raster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55484254748844032
+    m_Localized: Wundhaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55484888227160064
+    m_Localized: Haltering
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55484972583002112
+    m_Localized: Handgriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55780429452451840
+    m_Localized: 'Kleiner stumpfer
+
+      Haken'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55780584666865664
+    m_Localized: "Gro\xDFer stumpfer\nHaken"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55780677784608768
+    m_Localized: Schaft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59459471972147200
+    m_Localized: Schale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59462009119219712
+    m_Localized: "Atraumatische\nMaulfl\xE4chen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59462210370314240
+    m_Localized: "Geriefte\nGriffl\xE4chen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59462372312391680
+    m_Localized: Spiegel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59462432467099648
+    m_Localized: Federteil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59726453959204864
+    m_Localized: "Gebogene \natraumatische \nMaulfl\xE4chen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59726827151597568
+    m_Localized: Gelenk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59726939089182720
+    m_Localized: 'Konische
+
+      Branchen'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59727127216300032
+    m_Localized: Raster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59727237274836992
+    m_Localized: Brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59735893009670144
+    m_Localized: Blatt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59735985062060032
+    m_Localized: Griff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59739086913445888
+    m_Localized: Haltebacken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59739237778366464
+    m_Localized: Konische Branchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59739330799640576
+    m_Localized: Raster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59739384318959616
+    m_Localized: Brillengriffe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59743557076819968
+    m_Localized: 'Atraumatische
+
+      Backen'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59744846498144256
+    m_Localized: 'Einfaches
+
+      Scharnier'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59746164075831296
+    m_Localized: Konische Branchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59746782265909248
+    m_Localized: Schlichte Rasten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59746836632477696
+    m_Localized: Brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59763152642809856
+    m_Localized: "Stumpfe Bl\xE4tter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59763314924625920
+    m_Localized: Einfaches Scharnier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59763395446874112
+    m_Localized: Gerade Branchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59763519342419968
+    m_Localized: Brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59769220232028160
+    m_Localized: 'Chirurgisches
+
+      Maulteil'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59769390524964864
+    m_Localized: "Geriefte Grifffl\xE4chen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59769471965765632
+    m_Localized: Spiegel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59769523081748480
+    m_Localized: Federteil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444183027720192
+    m_Localized: 'Breite anatomische
+
+      Backen'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444363034664960
+    m_Localized: Scharnier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444415056617472
+    m_Localized: 'Konische
+
+      Branchen'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444503736786944
+    m_Localized: Raster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444552168415232
+    m_Localized: Brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70694328475754496
+    m_Localized: Spitzes Blatt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70695188337434624
+    m_Localized: Stumpfes Blatt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70697039837437952
+    m_Localized: 'Gerade
+
+      Branchen'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70697001753157632
+    m_Localized: Brillengriff
     m_Metadata:
       m_Items: []
   references:

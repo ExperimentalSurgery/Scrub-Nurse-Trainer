@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: OTAToolpicker_Level1_Audio_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 369983e0e52a2a5418f4900b6d24db66, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 54952632320
+    m_Localized: 'Willkommen bei Level 1: Identifizieren, im Lernmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998610071552
+    m_Localized: "Task: Hebe Gegenst\xE4nde auf, um sie zu identifizieren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237376
+    m_Localized: Halte das Instrument direkt in die Kamera, um es zu scannen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237377
+    m_Localized: 'Reminder: Hebe einen beliebigen Gegenstand auf und halte ihn direkt
+      in dein Sichtfeld'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237378
+    m_Localized: Sehr gut, jetzt kannst du alle Infos zu diesem Instrument sehen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237379
+    m_Localized: "Wenn du alles gelesen und verstanden hast, lege das Instrument
+      einfach auf den Tisch zur\xFCck."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237380
+    m_Localized: "Gut, du kannst dir jetzt gerne noch weitere Instrumente ansehen,
+      indem du sie hochhebst. Wenn du genug gesehen hast, kannst du mit dem Zur\xFCck-Button
+      ins Hauptmen\xFC zur\xFCckkehren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237381
+    m_Localized: 'Willkommen bei Level 1: Identifizieren, im Quizmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237382
+    m_Localized: 'Hinweis: Quizmodus erfordert Vorkenntnisse. Du solltest den Lernmodus
+      vorher einmal gespielt haben. Fortfahren?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237383
+    m_Localized: "Erkl\xE4rung: Suche je Frage ein passendes Instrument heraus und
+      halte es vor die Kamera. Nach 10 Fragen bekommst du Feedback. Los gehts!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237384
+    m_Localized: 'Reminder: Halte das Instrument in die Area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237385
+    m_Localized: Richtig! Gut gemacht :)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237386
+    m_Localized: 'Das war leider nicht richtig. Hier: Das ist die Eigenschaft des
+      Instrumentes'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998639431680
+    m_Localized: Lege das Instrument wieder auf den Tisch, um fortzufahren.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998639431681
+    m_Localized: Toll, du hast alle Fragen beantwortet. Hier ist dein Ergebnis!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998639431682
+    m_Localized: Super, du hast bestanden!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998639431683
+    m_Localized: Oh, das war wohl nichts. Probier es doch nochmal.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

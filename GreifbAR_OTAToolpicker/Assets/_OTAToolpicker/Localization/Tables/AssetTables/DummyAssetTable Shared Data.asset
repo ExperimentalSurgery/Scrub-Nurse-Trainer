@@ -1,0 +1,795 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: DummyAssetTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: DummyAssetTable
+  m_TableCollectionNameGuidString: fddc16af62fe2bd4788bd44bd78e55f6
+  m_Entries:
+  - m_Id: 16666757865472
+    m_Key: ota_lv1_l_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45780638277632
+    m_Key: ota_lv1_l_assi_pick_up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45782190170112
+    m_Key: ota_lv1_l_assi_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45784044052480
+    m_Key: ota_lv1_l_assi_pick_up_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45785725968384
+    m_Key: ota_lv1_l_assi_details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45787508547584
+    m_Key: ota_lv1_l_assi_drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45789098188800
+    m_Key: ota_lv1_l_assi_repeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45790725578752
+    m_Key: ota_lv1_q_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45792285859840
+    m_Key: ota_lv1_q_assi_warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45794072633344
+    m_Key: ota_lv1_q_assi_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45795771326464
+    m_Key: ota_lv1_q_assi_scan_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45797449048064
+    m_Key: ota_lv1_q_assi_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45799185489920
+    m_Key: ota_lv1_q_assi_wrong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45800968069120
+    m_Key: ota_lv1_q_assi_drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45802750648320
+    m_Key: ota_lv1_q_assi_results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45804361261056
+    m_Key: ota_lv1_q_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45806022205440
+    m_Key: ota_lv1_q_assi_failure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338169235939328
+    m_Key: ota_menu_assi_welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338171261788160
+    m_Key: ota_menu_assi_intro_help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338172864012288
+    m_Key: ota_menu_assi_level_selection_continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338174495596544
+    m_Key: ota_menu_assi_level_selection_new
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338175942631424
+    m_Key: ota_menu_assi_level_selection_help
+    m_Metadata:
+      m_Items: []
+  - m_Id: 338177687461888
+    m_Key: ota_menu_assi_unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250944535240704
+    m_Key: ota_lv2_l_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250946871468032
+    m_Key: ota_lv2_l_assi_rule1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250948716961792
+    m_Key: ota_lv2_l_assi_placement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250950562455552
+    m_Key: ota_lv2_l_assi_border
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250952307286016
+    m_Key: ota_lv2_l_assi_rule1_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250954148585472
+    m_Key: ota_lv2_l_assi_rule2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250955717255168
+    m_Key: ota_lv2_l_assi_tip_scalpel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250957420142592
+    m_Key: ota_lv2_l_assi_rule2_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250959353716736
+    m_Key: ota_lv2_l_assi_rule3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250961048215552
+    m_Key: ota_lv2_l_assi_tip_tweezers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250962918875136
+    m_Key: ota_lv2_l_assi_rule3_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250964655316992
+    m_Key: ota_lv2_l_assi_rule4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250966416924672
+    m_Key: ota_lv2_l_assi_scissors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250968048508928
+    m_Key: ota_lv2_l_assi_tip_scissors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250970170826752
+    m_Key: ota_lv2_l_assi_rule4_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250971701747712
+    m_Key: ota_lv2_l_assi_rule5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250973392052224
+    m_Key: ota_lv2_l_assi_tongs_closed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250975141076992
+    m_Key: ota_lv2_l_assi_tongs_locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250977091428352
+    m_Key: ota_lv2_l_assi_rule5_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250978769149952
+    m_Key: ota_lv2_l_assi_rule6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250980572700672
+    m_Key: ota_lv2_l_assi_tip_needle_direction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250982376251392
+    m_Key: ota_lv2_l_assi_tip_needle_up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250984049778688
+    m_Key: ota_lv2_l_assi_rule6_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250985878495232
+    m_Key: ota_lv2_l_assi_rule7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250987426193408
+    m_Key: ota_lv2_l_assi_alternating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250989183606784
+    m_Key: ota_lv2_l_assi_area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250990831968256
+    m_Key: ota_lv2_l_assi_rule7_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250992660684800
+    m_Key: ota_lv2_l_assi_rule8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250994392932352
+    m_Key: ota_lv2_l_assi_space_saving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250996095819776
+    m_Key: ota_lv2_l_assi_rule8_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250997911953408
+    m_Key: ota_lv2_l_assi_conclusion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2250999740669952
+    m_Key: ota_lv2_l_assi_conclusion_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251001384837120
+    m_Key: ota_lv2_q_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251003075141632
+    m_Key: ota_lv2_q_assi_warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251004857720832
+    m_Key: ota_lv2_q_assi_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251006518665216
+    m_Key: ota_lv2_q_assi_pick_up_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251008309633024
+    m_Key: ota_lv2_q_assi_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251010083823616
+    m_Key: ota_lv2_q_assi_scan_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251011946094592
+    m_Key: ota_lv2_q_assi_task
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251013468626944
+    m_Key: ota_lv2_q_assi_task_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251015343480832
+    m_Key: ota_lv2_q_assi_next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251016937316352
+    m_Key: ota_lv2_q_assi_results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251018711506944
+    m_Key: ota_lv2_q_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2251020397617152
+    m_Key: ota_lv2_q_assi_failure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7591033951920128
+    m_Key: ota_lv2_l_assi_direction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019654896558080
+    m_Key: ota_lv3_l_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019656939184128
+    m_Key: ota_lv3_l_assi_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019658709180416
+    m_Key: ota_lv3_l_assi_pick_up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019660613394432
+    m_Key: ota_lv3_l_assi_pick_up_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019662442110976
+    m_Key: ota_lv3_l_assi_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019664241467392
+    m_Key: ota_lv3_l_assi_sccan_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019666024046592
+    m_Key: ota_lv3_l_assi_task
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019667903094784
+    m_Key: ota_lv3_l_assi_pose_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019669723422720
+    m_Key: ota_lv3_l_assi_pose_hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019671535362048
+    m_Key: ota_lv3_l_assi_drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019673326329856
+    m_Key: ota_lv3_l_assi_repeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019675138269184
+    m_Key: ota_lv3_q_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019676933431296
+    m_Key: ota_lv3_q_assi_warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019678791507968
+    m_Key: ota_lv3_q_assi_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019680527949824
+    m_Key: ota_lv3_q_assi_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019682285363200
+    m_Key: ota_lv3_q_assi_scan_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019684202160128
+    m_Key: ota_lv3_q_assi_task
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019686022488064
+    m_Key: ota_lv3_q_assi_task_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019687817650176
+    m_Key: ota_lv3_q_assi_pose_hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019689575063552
+    m_Key: ota_lv3_q_assi_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019691508637696
+    m_Key: ota_lv3_q_assi_wrong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019693521903616
+    m_Key: ota_lv3_q_assi_next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019695451283456
+    m_Key: ota_lv3_q_assi_results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019697238056960
+    m_Key: ota_lv3_q_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12019699117105152
+    m_Key: ota_lv3_q_assi_failure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12749754759815168
+    m_Key: ota_lv3_q_assi_wrong_instrument
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14464803190775808
+    m_Key: ota_lv3_l_assi_scan_reminder
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items:
+    - rid: 8874288645814091779
+  m_KeyGenerator:
+    rid: 8874288641811152905
+  references:
+    version: 2
+    RefIds:
+    - rid: 8874288641811152905
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1706096563816
+    - rid: 8874288645814091779
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 16666757865472
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45780638277632
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45782190170112
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45784044052480
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45785725968384
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45787508547584
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45789098188800
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45790725578752
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45792285859840
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45794072633344
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45795771326464
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45797449048064
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45799185489920
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45800968069120
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45802750648320
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45804361261056
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 45806022205440
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 338169235939328
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 338171261788160
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 338172864012288
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 338174495596544
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 338175942631424
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 338177687461888
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250944535240704
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250946871468032
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250948716961792
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250950562455552
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250952307286016
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250954148585472
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250955717255168
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250957420142592
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250959353716736
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250961048215552
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250962918875136
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250964655316992
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250966416924672
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250968048508928
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250970170826752
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250971701747712
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250973392052224
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250975141076992
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250977091428352
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250978769149952
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250980572700672
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250982376251392
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250984049778688
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250985878495232
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250987426193408
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250989183606784
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250990831968256
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250992660684800
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250994392932352
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250996095819776
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250997911953408
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2250999740669952
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251001384837120
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251003075141632
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251004857720832
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251006518665216
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251008309633024
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251010083823616
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251011946094592
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251013468626944
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251015343480832
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251016937316352
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251018711506944
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 2251020397617152
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 7591033951920128
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019654896558080
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019656939184128
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019658709180416
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019660613394432
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019662442110976
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019664241467392
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019666024046592
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019667903094784
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019669723422720
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019671535362048
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019673326329856
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019675138269184
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019676933431296
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019678791507968
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019680527949824
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019682285363200
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019684202160128
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019686022488064
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019687817650176
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019689575063552
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019691508637696
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019693521903616
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019695451283456
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019697238056960
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12019699117105152
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 12749754759815168
+          m_TableCodes:
+          - en
+          - de
+        - m_KeyId: 14464803190775808
+          m_TableCodes:
+          - en
+          - de
+        m_TypeString: NMY.GoogleCloudTextToSpeech.LocalizedTextToSpeechItem, com.nmy.googlecloudtexttospeech,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: OTAToolpicker_Level1_Audio Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: OTAToolpicker_Level1_Audio
+  m_TableCollectionNameGuidString: 369983e0e52a2a5418f4900b6d24db66
+  m_Entries:
+  - m_Id: 54952632320
+    m_Key: ota_lv1_l_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998610071552
+    m_Key: ota_lv1_l_assi_pick_up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237376
+    m_Key: ota_lv1_l_assi_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237377
+    m_Key: ota_lv1_l_assi_pick_up_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237378
+    m_Key: ota_lv1_l_assi_details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237379
+    m_Key: ota_lv1_l_assi_drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237380
+    m_Key: ota_lv1_l_assi_repeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237381
+    m_Key: ota_lv1_q_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237382
+    m_Key: ota_lv1_q_assi_warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237383
+    m_Key: ota_lv1_q_assi_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237384
+    m_Key: ota_lv1_q_assi_scan_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237385
+    m_Key: ota_lv1_q_assi_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998635237386
+    m_Key: ota_lv1_q_assi_wrong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998639431680
+    m_Key: ota_lv1_q_assi_drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998639431681
+    m_Key: ota_lv1_q_assi_results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998639431682
+    m_Key: ota_lv1_q_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51998639431683
+    m_Key: ota_lv1_q_assi_failure
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8874288641811152898
+  references:
+    version: 2
+    RefIds:
+    - rid: 8874288641811152898
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1706094801199

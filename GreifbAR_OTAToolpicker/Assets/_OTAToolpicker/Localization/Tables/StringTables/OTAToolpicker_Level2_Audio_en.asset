@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: OTAToolpicker_Level2_Audio_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 4b2694cf1a050a74dab366a376fdfa72, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 234431094784
+    m_Localized: 'Willkommen in Level 2.1:  Vorbereiten im Lernmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843520
+    m_Localized: "Beim Legen ist es wichtig darauf zu achten, dass keine Instrumente
+      \xFCber die Tischgrenze hinausragen, da ansonsten Instrumente leicht vom Tisch
+      hinunterfallen k\xF6nnen, und bei scharfen Instrumenten ein hohes Verletzungsrisiko
+      entsteht. Stelle die Sch\xFCssel auf die markierte Stelle, und achte darauf
+      dass du sie innerhalb der markierten Tischgrenze platzierst."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843521
+    m_Localized: Stelle den Gegenstand an die richtige Stelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843522
+    m_Localized: "Achte darauf, dass der Gegenstand die Begrenzung zum Rand nicht
+      \xFCberschneidet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843523
+    m_Localized: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+      darauf, den Abstand zum Rand einzuhalten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843524
+    m_Localized: "Fangen wir an die Instrumente zu legen. Wir legen die Instrumente
+      in der Reihenfolge, in der sie auch in dem Eingriff benutzt werden. Somit beh\xE4ltst
+      du den \xDCberblick, auch in stressigen Phasen. Von dir aus gesehen fangen
+      wir beim Legen auf dem Tisch unten links an, arbeiten uns dann nach rechts
+      vor und sobald die Reihe voll ist, legst du die Instrumente eine Reihe weiter
+      von dir entfernt. Einer der ersten Schritte w\xE4hrend einer Operation ist
+      oft die \xD6ffnung der Eingriffstelle mithilfe des Skalpells, daher nimm nun
+      das Skalpell und lege es in die linke, untere Ecke. Aber Achtung! Die Spitze
+      des Skalpells ist sehr scharf! Achte darauf dass die Spitze auf dem Tisch von
+      dir weg zeigt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843525
+    m_Localized: Drehe das Skalpell so, dass die Spitze von dir weg zeigt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843526
+    m_Localized: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+      darauf, die Legerichtung korrekt einzuhalten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843527
+    m_Localized: "Einige Instrumente, wie Pinzetten und Scheren werden sehr h\xE4ufig
+      ben\xF6tigt, diese werden m\xF6glichst nahe an dich dran gelegt damit du sie
+      schnell erreichen kannst. Lege die Mittelbreite Pinzette und die Atraumatische
+      Pinzette direkt rechts neben das Skalpell. Achte bei spitzen Pinzetten ebenfalls
+      darauf, dass die Spitzen nicht zu dir hin zeigen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843528
+    m_Localized: Drehe die Pinzette so, dass die Spitze von dir weg zeigt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843529
+    m_Localized: "Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+      darauf, h\xE4ufig verwendete Instrumente k\xF6rpernah zu legen und spitze oder
+      scharfe Enden von dir wegzudrehen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843530
+    m_Localized: "H\xE4ufig benutze Scheren legst du ebenfalls nahe an dich heran.
+      Achte bei den Scheren darauf dass sie immer geschlossen sind, um Verletzungen
+      zu vermeiden. Leicht gebogene Scheren wie z.B. die Chirurgische Schere sollten
+      mit der Spitze nach oben zeigen, damit du sie sp\xE4ter leichter greifen kannst.
+      Lege nun die Metzenbach Schere und die Chirurgische Schere rechts neben die
+      Pinzetten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843531
+    m_Localized: Achte darauf, dass die Scheren geschlossen sind
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843532
+    m_Localized: Drehe die chirurgische Schere so, dass ihre Spitze nach oben zeigt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843533
+    m_Localized: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+      auf die Sicherheitsregeln beim Ablegen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843534
+    m_Localized: "Super, damit h\xE4tten wir die erste Reihe! Wir fahren nun fort
+      mit der Kornzange. Achte darauf, dass bei Zangen und Klemmen mit Einrastfunktion
+      die Klemmen immer geschlossen sind, aber nur auf ihrem ersten Raster! Nimm
+      die Kornzange zur Hand, raste sie auf der ersten Stelle ein und lege sie in
+      den markierten Bereich!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843535
+    m_Localized: Achte darauf, dass Kornzange geschlossen ist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843536
+    m_Localized: Es ist wichtig, dass die Kornzange im ersten Raster ist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843537
+    m_Localized: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+      darauf, die Einrastfunktion richtig zu verwenden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843538
+    m_Localized: Nun kommen wir wieder zu einem Instrument, bei dem du sehr vorsichtig
+      sein musst. Bei einem Nadelhalter, mit eingespannter Nadel, darf die Nadel
+      nicht nach unten zeigen, da sie sonst die Tischabdeckung perforieren kann,
+      und die Nadel somit unsteril wird. Da die Nadel nach oben zeigt, musst du hier
+      besonders darauf achten, dass du dich und andere mit der Nadel nicht verletzt.
+      Es gilt daher auch hier, die Spitze des Instrumentes zeigt immer von dir weg!
+      Nimm nun den Mason Nadelhalter, Spanne eine Nadel ein und lege ihn auf den
+      Tisch!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843539
+    m_Localized: Drehe den Nadelhalter so, dass die Spitze von dir weg zeigt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843540
+    m_Localized: Drehe den Nadelhalter so, dass die Nadelspitze nach oben zeigt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843541
+    m_Localized: Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+      darauf, dass Nadeln immer nach oben zeigen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843542
+    m_Localized: "Lass uns nun die restlichen Klemmen auslegen! Wenn wir viele Instrumente
+      legen, musst du darauf achten dass diese zwar getrennt voneinander, aber auch
+      platzsparend gelegt werden. Jetzt haben wir nur ungef\xE4hr 15 Instrumente
+      vor uns, in einer echten OP k\xF6nnen es aber auch \xFCber 100 auf der gleichen
+      Tischgr\xF6\xDFe sein. Wenn du die Klemmen legst, achte darauf sie mit den
+      Spitzen immer abwechselnd von dir hin und von dir Weg Zeigen zu lassen. So
+      nutzt du den Platz optimal aus. Lege nun die Overholt-Pr\xE4perations-Klemme,
+      die DeBakey Ligaturklemme und die Peritoneumklemme neben den Nadelhalter."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843543
+    m_Localized: Lege die Instrumente abwechselnd zu dir hin und von dir weg zeigend.
+      So sparst du am meisten Platz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843544
+    m_Localized: "Lege die Instrumente n\xE4her aneinander"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843545
+    m_Localized: "Sehr gut, genau richtig! Achte auch bei allen weiteren Schritten
+      darauf, m\xF6glichst platzsparend zu legen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843546
+    m_Localized: "Wir benutzen momentan ein sehr kleines Beispielset an Instrumenten,
+      in dem es von jedem Instrument fast immer nur eines vorhanden ist. In der echten
+      OP-Situation wird es allerdings fast immer mehrere, manchmal auch zehnmal das
+      gleiche Instrument geben. Um Platz zu sparen und die \xDCbersicht zu bewahren,
+      ist es sehr wichtig gleich Instrumente immer auf einer Position paarig zu legen.
+      Du darfst die Instrumente auch gerne so nah beieinander legen, dass sie sich
+      \xFCberlagern. Probieren wir das einmal mit den Wundhaken! Lege diese auf den
+      Tisch, so dass sie sehr nahe beieinander liegen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843547
+    m_Localized: Lege die Instrumente abwechselnd zu dir hin und von dir weg zeigend.
+      So sparst du am meisten Platz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843548
+    m_Localized: Sehr gut, genau richtig!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843549
+    m_Localized: "Sehr gut gemacht wir sind nun schon bei dem Ende des Lernmodus
+      angelangt! Wir hoffen dass dir alle Regeln im Kopf geblieben sind. Wenn du
+      deinen F\xE4higkeiten schon vertraust und bereit f\xFCr eine Challenge bist,
+      dann starte gerne den Quizmodus! Falls du lieber noch etwas \xFCben willst,
+      kannst du diese Lektion auch nochmal von neuem Starten! Als kleinen Vorgeschmack
+      auf den Quizmodus, nimm den Langenbeckhaken und lege ihn an die richtige Stelle,
+      diesmal gibts erstmal keine Hilfe!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843550
+    m_Localized: "Sehr gut, genau richtig! Du bist bereit f\xFCr den Quizmodus"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843551
+    m_Localized: 'Willkommen in Level 2.2:  Vorbereiten im Quizmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843552
+    m_Localized: 'Hinweis: Quizmodus erfordert Vorkenntnisse. Du solltest den Lernmodus
+      vorher einmal gespielt haben. Fortfahren?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843553
+    m_Localized: "Vor dir siehst du die Instrumente im Kasten. Dein Ziel ist es,
+      alle Instrumente regelkonform auszulegen. Beginne, indem du dir eines nimmst
+      und zur Identifikation vor die Kamera h\xE4ltst."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843554
+    m_Localized: 'Reminder: Hebe einen beliebigen Gegenstand auf'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843555
+    m_Localized: Halte das Instrument jetzt direkt in die Kamera, um es zu scannen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843556
+    m_Localized: 'Reminder: Halte das Instrument in die Area'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843557
+    m_Localized: "Lege den Gegenstand so ab, wie du es f\xFCr richtig h\xE4ltst"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843558
+    m_Localized: "Reminder: Lege den Gegenstand so ab, wie du es f\xFCr richtig h\xE4ltst"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843559
+    m_Localized: "Gut, jetzt nimm dir das n\xE4chste Instrument"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843560
+    m_Localized: Toll, das waren alle Instrumente. Hier ist dein Ergebnis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843561
+    m_Localized: Super, du hast bestanden!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843562
+    m_Localized: Oh, das war wohl nichts. Probier es doch nochmal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5340411093491712
+    m_Localized: Drehe das Instrument so, dass die Spitze von dir weg zeigt.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: OTAToolpicker_UI_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: b9b92fea27b43984098783bde1f49375, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 69460646378602515
+  m_TableData:
+  - m_Id: 4162870747136
+    m_Localized: Noch nicht gesetzt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718656
+    m_Localized: Level 1 - Identifizieren im Lernmodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718657
+    m_Localized: "W\xE4hle ein Instrument und halte es zur Identifikation vor die
+      Kamera."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718659
+    m_Localized: Level 1 - Identifizieren im Quizmodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718660
+    m_Localized: Suche je Frage ein passendes Instrument heraus und halte es vor
+      die Kamera. Nach 10 Fragen bekommst du Feedback.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718661
+    m_Localized: Weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20829734608896
+    m_Localized: "Hauptmen\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23442635005952
+    m_Localized: "Der Quizmodus erfordert Vorkenntnisse. Du solltest den Lernmodus
+      vorher einmal erfolgreich abgeschlossen haben. M\xF6chtest du fortfahren?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23236791148544
+    m_Localized: Achtung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1810253472505856
+    m_Localized: Wiederholen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1829713319206912
+    m_Localized: 'Willkommen in Level 2.1:  Vorbereiten im Lernmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1830064030130176
+    m_Localized: Erlerne das Vorbereiten des Tisches und wie Instrumente abgelegt
+      werden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837008992247808
+    m_Localized: Regel 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837180451201024
+    m_Localized: Instrumente werden innerhalb des Tischbereiches, mit einem Sicherheitsabstand
+      von ca. 3cm zur Tischgrenze gelegt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5064888677212160
+    m_Localized: Regel 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5064961360306176
+    m_Localized: "Die Instrumente werden von links nach rechts gelegt, von nah zu
+      fern, basierend auf dem Ablauf der OP. D.h. Instrumente die zuerst benutzt
+      werden, werden am n\xE4chsten an einem dran gelegt & scharfe Instrumente zeigen
+      mit der Spitze von einem selbst weg"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5090967756382208
+    m_Localized: Regel 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5091027713957888
+    m_Localized: "H\xE4ufig gebrauchte Instrumente werden k\xF6rpernah gelegt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5108368875102208
+    m_Localized: Regel 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5108425389154304
+    m_Localized: Scheren werden immer geschlossen gelegt & leicht gebogene Scheren
+      zeigen mit der Spitze nach oben.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5363875502268416
+    m_Localized: Regel 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5363962144006144
+    m_Localized: Klemmen mit Rasterfunktion sind immer geschlossen, auf dem ersten
+      Raster.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364221687537664
+    m_Localized: Regel 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364268835708928
+    m_Localized: Nadeln zeigen immer nach oben.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364370912485376
+    m_Localized: Regel 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364429737598976
+    m_Localized: Instrumente werden platzsparend gelegt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364539015995392
+    m_Localized: Regel 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364661745524736
+    m_Localized: Paarige Instrumente nutzen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364739986071552
+    m_Localized: Regel 9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364791559233536
+    m_Localized: Lege das Instrument richtig ab.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7533050819682304
+    m_Localized: 'Willkommen in Level 2.2: Vorbereiten - Quizmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7533461534318592
+    m_Localized: "Teste dein Wissen \xFCber das Vorbereiten des Tisches und die Ablage
+      von Instrumenten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7553259383201792
+    m_Localized: "Platzierung best\xE4tigen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7553391059181568
+    m_Localized: "Dr\xFCcke \"Weiter\" wenn du das Instrument platziert hast."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11913258158956544
+    m_Localized: 'Willkommen in Level 3.1: Anreichen im Lernmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11918190803066880
+    m_Localized: In diesem Level lernst Du, wie du die einzelnen Instrumente korrekt
+      an den/die Chirurg*in weitergibst.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11925268460380160
+    m_Localized: Platzhalter Handposenerkennung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11925393849098240
+    m_Localized: "W\xE4hle aus, ob die Handpose richtig oder falsch war."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11925677677649920
+    m_Localized: Richtig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11925739795292160
+    m_Localized: Falsch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11974574752047104
+    m_Localized: 'Willkommen in Level 3.2: Anreichen im Quizmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11974852536606720
+    m_Localized: "Teste in diesem Level dein Wissen dar\xFCber, wie du die einzelnen
+      Instrumente korrekt an den/die Chirurg*in weitergibst."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11984850725543936
+    m_Localized: Halte ein beliebiges Instrument in dein Sichtfeld.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12323412922769408
+    m_Localized: Warte auf Instrument
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14059591133208576
+    m_Localized: Nimm das Instrument <b>{instrumentTitle}</b> und halte es in die
+      Kamera um es zu scannen.
+    m_Metadata:
+      m_Items:
+      - rid: 69460646378602515
+  - m_Id: 14099949305110528
+    m_Localized: Lege das Instrument <b>{instrumentTitle}</b> ab und klicke auf "Weiter".
+    m_Metadata:
+      m_Items:
+      - rid: 69460646378602515
+  - m_Id: 14100775612358656
+    m_Localized: Instrument ablegen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14104704228171776
+    m_Localized: Du hast {nrOfCorrectHandovers}/{nrOfHandoversRequired} Intrumente
+      richtig angereicht!
+    m_Metadata:
+      m_Items:
+      - rid: 69460646378602515
+  - m_Id: 14105295981551616
+    m_Localized: Ergebnis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14131237516910592
+    m_Localized: Alle Instrumente angereicht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14131483269570560
+    m_Localized: "Kehre ins Hauptmen\xFC zur\xFCck oder wiederhole den Level."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14133573224144896
+    m_Localized: Fehler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14134322398142464
+    m_Localized: Du hast {nrOfCorrectAnswers}/{nrOfQuestionsToAsk} Fragen richtig
+      beantwortet!
+    m_Metadata:
+      m_Items:
+      - rid: 69460646378602515
+  - m_Id: 14863447500955648
+    m_Localized: "Halte diese Pose f\xFCr <b>{duration} Sekunden</b>."
+    m_Metadata:
+      m_Items:
+      - rid: 69460646378602515
+  - m_Id: 15158131968352256
+    m_Localized: Hand ist nicht sichtbar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15158263363313664
+    m_Localized: Hand ist sichtbar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15158320930136064
+    m_Localized: "Posenerkennung l\xE4uft"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15195892314185728
+    m_Localized: Warten auf Handpose.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18029598263386112
+    m_Localized: Instrumententisch kalibrieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18029718560219136
+    m_Localized: "Schaue auf den Tischmarker und dr\xFCcke weiter wenn der Marker
+      kalibriert ist."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 69460646378602515
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00a02ea71ff3310000a0ae45d417320000a02e5d271c320000a0ae611737320000a06e0c3ace3400

@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: IdentificationQuestions_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 95b64ca351ccf354dab1b2531eaae5db, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 219549704192
+    m_Localized: "W\xE4hle ein atraumatisches Instrument aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30169157771264
+    m_Localized: "W\xE4hle ein Instrument aus Edelstahl."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 32092506202112
+    m_Localized: "W\xE4hle ein Instrument f\xFCr den Einsatz in der Thoraxchirugie
+      aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33864402509824
+    m_Localized: "W\xE4hle ein Instrument vom Type Schere aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34505237635072
+    m_Localized: "W\xE4hle ein gewebetrennendes Instrument aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35120072269824
+    m_Localized: "W\xE4hle ein Instrument mit risikobehafteter Spitze aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35847813373952
+    m_Localized: "W\xE4hle den Wundhaken Roux aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47552790437888
+    m_Localized: "W\xE4hle ein 145mm langes Instrument aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19923987290038272
+    m_Localized: "W\xE4hle ein traumatisches Instrument aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19925425554628608
+    m_Localized: "W\xE4hle eine Klemme aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19925908876861440
+    m_Localized: "W\xE4hle eine Zange aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19926452072783872
+    m_Localized: "W\xE4hle ein Gewebeweghaltendes Instrument aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19926882412568576
+    m_Localized: "W\xE4hle ein gewebetrennendes Instrument aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19927492843184128
+    m_Localized: "W\xE4hle die Overholt-Geissend Klemme aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19927847664525312
+    m_Localized: "W\xE4hle die Metzenbaum-Schere aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19928392630444032
+    m_Localized: "W\xE4hle ein Instrument aus welches nur in der Viszeralchirurgie
+      verwendet wird."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19928709124235264
+    m_Localized: "W\xE4hle ein Instrument mit Raster aus."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

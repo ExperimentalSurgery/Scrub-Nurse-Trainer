@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e41792e5b7a47f44ad81557632876ef, type: 3}
+  m_Name: Question-Function-Gewebetrennend
+  m_EditorClassIdentifier: 
+  question:
+    m_TableReference:
+      m_TableCollectionName: GUID:95b64ca351ccf354dab1b2531eaae5db
+    m_TableEntryReference:
+      m_KeyId: 19926882412568576
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  checkForExplicitInstrument: 0
+  explicitInstrument: {fileID: 0}
+  scopes: 0
+  instrumentType: 0
+  functions: 16
+  risks: 0
+  checkLength: 0
+  lengthMM: 0
+  checkForTraumatic: 0
+  isTraumatic: 0
+  materials: 0
+  references:
+    version: 2
+    RefIds: []

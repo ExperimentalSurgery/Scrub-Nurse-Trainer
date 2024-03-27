@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: OTAToolpicker_Level3_Audio Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: OTAToolpicker_Level3_Audio
+  m_TableCollectionNameGuidString: 2d661982c5103f94e94c6ef0cc200650
+  m_Entries:
+  - m_Id: 679295754240
+    m_Key: ota_lv3_l_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502976
+    m_Key: ota_lv3_l_assi_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502977
+    m_Key: ota_lv3_l_assi_pick_up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502978
+    m_Key: ota_lv3_l_assi_pick_up_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502979
+    m_Key: ota_lv3_l_assi_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502980
+    m_Key: ota_lv3_l_assi_scan_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502981
+    m_Key: ota_lv3_l_assi_task
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502982
+    m_Key: ota_lv3_l_assi_pose_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502983
+    m_Key: ota_lv3_l_assi_pose_hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502984
+    m_Key: ota_lv3_l_assi_drop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502985
+    m_Key: ota_lv3_l_assi_repeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502986
+    m_Key: ota_lv3_q_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502987
+    m_Key: ota_lv3_q_assi_warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502988
+    m_Key: ota_lv3_q_assi_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502989
+    m_Key: ota_lv3_q_assi_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502990
+    m_Key: ota_lv3_q_assi_scan_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502991
+    m_Key: ota_lv3_q_assi_task
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502992
+    m_Key: ota_lv3_q_assi_task_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502993
+    m_Key: ota_lv3_q_assi_pose_hold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502994
+    m_Key: ota_lv3_q_assi_correct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502995
+    m_Key: ota_lv3_q_assi_wrong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502996
+    m_Key: ota_lv3_q_assi_next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502997
+    m_Key: ota_lv3_q_assi_results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502998
+    m_Key: ota_lv3_q_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502999
+    m_Key: ota_lv3_q_assi_failure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 731080410701824
+    m_Key: ota_lv3_q_assi_wrong_instrument
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4289126188471549954
+  references:
+    version: 2
+    RefIds:
+    - rid: 4289126188471549954
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1708961988990

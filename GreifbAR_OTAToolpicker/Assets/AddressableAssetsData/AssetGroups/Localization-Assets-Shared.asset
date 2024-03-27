@@ -29,6 +29,54 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d154e0a04e9707d47aa153344d4d179b
+    m_Address: Assets/_OTAToolpicker/Localization/Tables/StringTables/InstrumentNames
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 369983e0e52a2a5418f4900b6d24db66
+    m_Address: Assets/_OTAToolpicker/Localization/Tables/StringTables/OTAToolpickerAudio
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fddc16af62fe2bd4788bd44bd78e55f6
+    m_Address: Assets/_OTAToolpicker/Localization/Tables/AssetTables/DummyAssetTable
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cfbe7e2d1cf2f0c4ca0de0a1e250da63
+    m_Address: Assets/_OTAToolpicker/Localization/Tables/StringTables/OTAToolpicker_MainMenuAudio
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9b92fea27b43984098783bde1f49375
+    m_Address: Assets/_OTAToolpicker/Localization/Tables/StringTables/OTAToolpicker_UI
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95b64ca351ccf354dab1b2531eaae5db
+    m_Address: Assets/_OTAToolpicker/Localization/Tables/StringTables/IdentificationQuestions
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b2694cf1a050a74dab366a376fdfa72
+    m_Address: Assets/_OTAToolpicker/Localization/Tables/StringTables/OTAToolpicker_Level2_Audio
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d661982c5103f94e94c6ef0cc200650
+    m_Address: Assets/_OTAToolpicker/Localization/Tables/StringTables/OTAToolpicker_Level3_Audio
+      Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 9dc7220151a57424e9b18b7ffce96b46, type: 2}
   m_SchemaSet:

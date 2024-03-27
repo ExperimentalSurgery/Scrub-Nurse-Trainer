@@ -27,8 +27,208 @@ MonoBehaviour:
     m_Key: Pinza_Griff_Title
     m_Metadata:
       m_Items: []
+  - m_Id: 70697039837437952
+    m_Key: infospot-chirurgische_schere-gerade_branchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70697001753157632
+    m_Key: infospot-chirurgische_schere-brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70696969301827584
+    m_Key: New Entry 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70696549951119360
+    m_Key: New Entry 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70696487065919488
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55780677784608768
+    m_Key: infospot-wundhaken_roux-schaft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55780429452451840
+    m_Key: infospot-wundhaken_roux-kleiner_haken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55780584666865664
+    m_Key: "infospot-wundhaken_roux-gro\xDFer_haken"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59735985062060032
+    m_Key: infospot-skalpellgriff-griff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59735893009670144
+    m_Key: infospot-skalpellgriff-blatt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59763314924625920
+    m_Key: "infospot-schere_pr\xE4p_metzenbaum-scharnier"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59763519342419968
+    m_Key: "infospot-schere_pr\xE4p_metzenbaum-brillengriff"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59763395446874112
+    m_Key: "infospot-schere_pr\xE4p_metzenbaum-branchen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59763152642809856
+    m_Key: "infospot-schere_pr\xE4p_metzenbaum-bl\xE4tter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59744846498144256
+    m_Key: "infospot-pr\xE4p_klemme_overholt-scharnier"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59746782265909248
+    m_Key: "infospot-pr\xE4p_klemme_overholt-rasten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59746836632477696
+    m_Key: "infospot-pr\xE4p_klemme_overholt-brillengriff"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59746164075831296
+    m_Key: "infospot-pr\xE4p_klemme_overholt-branchen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59743557076819968
+    m_Key: "infospot-pr\xE4p_klemme_overholt-atraumatische_backen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59727127216300032
+    m_Key: infospot-peritoneumklemme-raster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59726453959204864
+    m_Key: "infospot-peritoneumklemme-maulfl\xE4chen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59726939089182720
+    m_Key: infospot-peritoneumklemme-konische_branchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59726827151597568
+    m_Key: infospot-peritoneumklemme-gelenk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59727237274836992
+    m_Key: infospot-peritoneumklemme-brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59739330799640576
+    m_Key: infospot-nadelhalter_debakey-raster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59739237778366464
+    m_Key: infospot-nadelhalter_debakey-konische_branchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59739086913445888
+    m_Key: infospot-nadelhalter_debakey-haltebacken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59739384318959616
+    m_Key: infospot-nadelhalter_debakey-brillengriffe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59459471972147200
+    m_Key: infospot-metallschale-schale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55472922653794304
+    m_Key: infospot-legaturklemme_debakey-raster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55470646476316672
+    m_Key: infospot-legaturklemme_debakey-maulflaechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55471569420328960
+    m_Key: infospot-legaturklemme_debakey-brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444363034664960
+    m_Key: infospot-kornzange-scharnier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444503736786944
+    m_Key: infospot-kornzange-raster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444415056617472
+    m_Key: infospot-kornzange-konische_branchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444552168415232
+    m_Key: infospot-kornzange-brillengriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 63444183027720192
+    m_Key: infospot-kornzange-backen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55484254748844032
+    m_Key: infospot-haken_langenbeck-wundhaken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55484972583002112
+    m_Key: infospot-haken_langenbeck-handgriff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55484888227160064
+    m_Key: infospot-haken_langenbeck-haltering
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70695188337434624
+    m_Key: infospot-chirurgische_schere-stumpfes_blatt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70694328475754496
+    m_Key: infospot-chirurgische_schere-spitzes_blatt
+    m_Metadata:
+      m_Items: []
   - m_Id: 609535356928
-    m_Key: Pinza_Scherenkopf_Title
+    m_Key: infospot-chirurgische_schere-einfaches-scharnier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59769471965765632
+    m_Key: infospot-chirurgische_pinzette-spiegel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59769220232028160
+    m_Key: infospot-chirurgische_pinzette-maulteil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59769390524964864
+    m_Key: "infospot-chirurgische_pinzette-griffl\xE4chen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59769523081748480
+    m_Key: infospot-chirurgische_pinzette-federteil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59462372312391680
+    m_Key: infospot-atraumatische_pinzette-spiegel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59462009119219712
+    m_Key: infospot-atraumatische_pinzette-maulflaechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59462210370314240
+    m_Key: infospot-atraumatische_pinzette-grifflaechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59462432467099648
+    m_Key: infospot-atraumatische_pinzette-federteil
     m_Metadata:
       m_Items: []
   m_Metadata:

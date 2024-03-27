@@ -26,11 +26,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962698327231001379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.01}
-  m_LocalScale: {x: 0.19999999, y: 0.25, z: 0.25}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3007476601376503162}
+  m_Father: {fileID: 7722984626842024318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -258,12 +258,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2282591473211073540}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.72, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 9058883220862564393}
+  m_Children: []
   m_Father: {fileID: 7722984626842024318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3109535313007787072
@@ -306,7 +305,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 4c52c01cee6aff44db585a2cdc613cdb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -365,8 +364,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e82a4a28e7393440b72fe2815e8d204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 0}
+  title:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  sourceTransformCTLA: {fileID: 0}
+  lineStartCTLA: {fileID: 2511242685408989285}
+  lineEndCTLA: {fileID: 1043307617388053539}
   titleTextMesh: {fileID: 2524181988845159772}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &2984476793464142087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -393,7 +406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 738622530450468619, guid: f34d7ebec3b70e84ebaa2e67b8ae0090, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.473
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 738622530450468619, guid: f34d7ebec3b70e84ebaa2e67b8ae0090, type: 3}
       propertyPath: m_LocalPosition.z
@@ -430,6 +443,10 @@ PrefabInstance:
     - target: {fileID: 5943688957657076631, guid: f34d7ebec3b70e84ebaa2e67b8ae0090, type: 3}
       propertyPath: m_Name
       value: Line_Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550906625100059036, guid: f34d7ebec3b70e84ebaa2e67b8ae0090, type: 3}
+      propertyPath: invert
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -494,6 +511,10 @@ PrefabInstance:
       propertyPath: startTransform
       value: 
       objectReference: {fileID: 2534084666144200204}
+    - target: {fileID: 6453863118712609412, guid: d8b0d36e213fee04aa6be5af193c3e8c, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8207954022431700268, guid: d8b0d36e213fee04aa6be5af193c3e8c, type: 3}
       propertyPath: m_Name
       value: LineRenderer
@@ -616,13 +637,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Line_End_Offset
       objectReference: {fileID: 0}
-    - target: {fileID: 8550906625100059036, guid: f34d7ebec3b70e84ebaa2e67b8ae0090, type: 3}
-      propertyPath: invert
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 738622530450468619, guid: f34d7ebec3b70e84ebaa2e67b8ae0090, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9058883220862564393}
     - targetCorrespondingSourceObject: {fileID: 738622530450468619, guid: f34d7ebec3b70e84ebaa2e67b8ae0090, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3007476601376503162}

@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: OTAToolpicker_Level3_Audio_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 2d661982c5103f94e94c6ef0cc200650, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 679295754240
+    m_Localized: 'Willkommen in Level 3.1:
+
+      Anreichen - Lernmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502976
+    m_Localized: Gut, jetzt beginnt der Chirurg, Instrumente anzufordern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502977
+    m_Localized: Nimm dir ein beliebiges Instrument, um zu lernen, wie man es korrekt
+      anreicht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502978
+    m_Localized: 'Reminder: Hebe einen beliebigen Gegenstand auf'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502979
+    m_Localized: Halte das Instrument jetzt direkt in die Kamera, um es zu scannen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502980
+    m_Localized: 'Reminder: Halte das Instrument in die Area.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502981
+    m_Localized: Reiche das Instrument jetzt so an, wie es die Beispielhand vormacht.
+      Halte deine Hand dann kurz in der richtigen Endpose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502982
+    m_Localized: 'Reminder: Halte das Instrument eine kurze Zeit lang in die Hand
+      des Chirurgen, wie es die Demo-Hand vormacht'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502983
+    m_Localized: Halte diese Pose kurz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502984
+    m_Localized: "Gut, das hat geklappt. Lege das Instrument jetzt zur\xFCck."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502985
+    m_Localized: "Gut, du kannst jetzt gerne noch weitere Instrumente ausprobieren,
+      indem du sie hochhebst. Wenn du genug gesehen hast, kannst du mit dem Zur\xFCck-Button
+      ins Hauptmen\xFC zur\xFCckkehren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502986
+    m_Localized: 'Willkommen in Level 3.2:
+
+      Anreichen - Quizmodus'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502987
+    m_Localized: 'Hinweis: Quizmodus erfordert Vorkenntnisse. Du solltest den Lernmodus
+      vorher einmal gespielt haben. Fortfahren?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502988
+    m_Localized: Gut, jetzt beginnt der Chirurg, bestimmte Instrumente anzufordern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502989
+    m_Localized: Nimm dir das angezeigte Instrument und halte es in die Kamera, um
+      es zu scannen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502990
+    m_Localized: 'Reminder: Halte das angezeigte Instrument in die Area.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502991
+    m_Localized: Reiche das Instrument jetzt korrekt an. Halte deine Hand dann kurz
+      in der richtigen Endpose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502992
+    m_Localized: 'Reminder: Halte das Instrument eine kurze Zeit lang in die Hand
+      des Chirurgen'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502993
+    m_Localized: Halte das Instrument kurz an dieser Stelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502994
+    m_Localized: "Das war richtig, gut gemacht. Lege das Instrument jetzt zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502995
+    m_Localized: "Das hat leider nicht gestimmt. Lege das Instrument jetzt zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502996
+    m_Localized: "Weiter zur n\xE4chsten Aufgabe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502997
+    m_Localized: Toll, du hast alle Aufgaben erledigt. Hier ist dein Ergebnis!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502998
+    m_Localized: Super, du hast bestanden!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 679333502999
+    m_Localized: Oh, das war wohl nichts. Probier es doch nochmal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 731080410701824
+    m_Localized: "Nein, das ist nicht das richtige Instrument. Lege es zur\xFCck
+      und nimm dir das angezeigte Instrument."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

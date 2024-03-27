@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: OTAToolpicker_Level3_Audio
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 2d661982c5103f94e94c6ef0cc200650, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: a09a9512484cd9c40a8e20e3d7637908, type: 2}
+  - {fileID: 11400000, guid: a41a459c34cfadc488f1bfd247ba62d7, type: 2}
+  m_Extensions:
+  - rid: 4289126188471549955
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 4289126188471549955
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_ColumnsList:
+        - rid: 4289126188471549956
+        - rid: 4289126188471549957
+        - rid: 4289126188471549958
+        m_ConnectedFile: 
+    - rid: 4289126188471549956
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_IncludeId: 0
+        m_IncludeSharedComments: 0
+        m_KeyFieldName: Key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    - rid: 4289126188471549957
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: en
+        m_FieldName: German (de)
+        m_CommentFieldName: English(en) Comments
+        m_IncludeComments: 1
+    - rid: 4289126188471549958
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: de
+        m_FieldName: German (de)
+        m_CommentFieldName: German(de) Comments
+        m_IncludeComments: 1

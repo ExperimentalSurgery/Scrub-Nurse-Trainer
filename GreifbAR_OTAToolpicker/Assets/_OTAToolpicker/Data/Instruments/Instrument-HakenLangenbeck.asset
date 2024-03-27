@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51dec96f4a69cd04f999f94be22be284, type: 3}
+  m_Name: Instrument-HakenLangenbeck
+  m_EditorClassIdentifier: 
+  title:
+    m_TableReference:
+      m_TableCollectionName: GUID:d154e0a04e9707d47aa153344d4d179b
+    m_TableEntryReference:
+      m_KeyId: 1056205508907008
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  scopes: 3
+  instrumentType: 4
+  functions: 256
+  risks: 0
+  lengthMM: 220
+  material: 1
+  isTraumatic: 0
+  states: 0
+  references:
+    version: 2
+    RefIds: []

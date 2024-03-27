@@ -1,0 +1,15 @@
+{
+    "name": "Unity.Nmy.TouchInteraction3D.Samples",
+    "references": [
+        "Unity.Nmy.Core",
+        "Unity.Nmy.TouchInteraction3D"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

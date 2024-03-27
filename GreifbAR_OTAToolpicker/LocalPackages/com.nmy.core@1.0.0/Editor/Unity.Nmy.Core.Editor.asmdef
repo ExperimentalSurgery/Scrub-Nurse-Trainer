@@ -1,0 +1,16 @@
+{
+    "name": "Unity.Nmy.Core.Editor",
+    "references": [
+        "Unity.Nmy.Core"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

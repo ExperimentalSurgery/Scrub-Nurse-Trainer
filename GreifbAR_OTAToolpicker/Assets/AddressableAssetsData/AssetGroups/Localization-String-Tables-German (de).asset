@@ -29,6 +29,48 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-de
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec68622c13c2db44bb9331f65fad767d
+    m_Address: InstrumentNames_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f832835cb6254034080cc00ec44ec7a6
+    m_Address: OTAToolpicker_Level1_Audio_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79c6751a45e23cd4698cf049b2712c46
+    m_Address: OTAToolpicker_MainMenuAudio_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82c4d9c3a96efff4584e7f6c65bc1927
+    m_Address: OTAToolpicker_UI_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9c77bf034a44ba40881063a0ac66349
+    m_Address: IdentificationQuestions_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fca70689a1885ae45a400d95621af053
+    m_Address: OTAToolpicker_Level2_Audio_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a41a459c34cfadc488f1bfd247ba62d7
+    m_Address: OTAToolpicker_Level3_Audio_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 9dc7220151a57424e9b18b7ffce96b46, type: 2}
   m_SchemaSet:

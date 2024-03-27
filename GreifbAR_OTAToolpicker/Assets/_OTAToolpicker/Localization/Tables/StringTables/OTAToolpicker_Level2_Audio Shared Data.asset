@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: OTAToolpicker_Level2_Audio Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: OTAToolpicker_Level2_Audio
+  m_TableCollectionNameGuidString: 4b2694cf1a050a74dab366a376fdfa72
+  m_Entries:
+  - m_Id: 234431094784
+    m_Key: ota_lv2_l_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843520
+    m_Key: ota_lv2_l_assi_rule1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843521
+    m_Key: ota_lv2_l_assi_placement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843522
+    m_Key: ota_lv2_l_assi_border
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843523
+    m_Key: ota_lv2_l_assi_rule1_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843524
+    m_Key: ota_lv2_l_assi_rule2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843525
+    m_Key: ota_lv2_l_assi_tip_scalpel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843526
+    m_Key: ota_lv2_l_assi_rule2_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843527
+    m_Key: ota_lv2_l_assi_rule3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843528
+    m_Key: ota_lv2_l_assi_tip_tweezers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843529
+    m_Key: ota_lv2_l_assi_rule3_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843530
+    m_Key: ota_lv2_l_assi_rule4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843531
+    m_Key: ota_lv2_l_assi_scissors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843532
+    m_Key: ota_lv2_l_assi_tip_scissors
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843533
+    m_Key: ota_lv2_l_assi_rule4_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843534
+    m_Key: ota_lv2_l_assi_rule5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843535
+    m_Key: ota_lv2_l_assi_tongs_closed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843536
+    m_Key: ota_lv2_l_assi_tongs_locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843537
+    m_Key: ota_lv2_l_assi_rule5_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843538
+    m_Key: ota_lv2_l_assi_rule6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843539
+    m_Key: ota_lv2_l_assi_tip_needle_direction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843540
+    m_Key: ota_lv2_l_assi_tip_needle_up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843541
+    m_Key: ota_lv2_l_assi_rule6_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843542
+    m_Key: ota_lv2_l_assi_rule7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843543
+    m_Key: ota_lv2_l_assi_alternating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843544
+    m_Key: ota_lv2_l_assi_area
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843545
+    m_Key: ota_lv2_l_assi_rule7_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843546
+    m_Key: ota_lv2_l_assi_rule8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843547
+    m_Key: ota_lv2_l_assi_space_saving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843548
+    m_Key: ota_lv2_l_assi_rule8_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843549
+    m_Key: ota_lv2_l_assi_conclusion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843550
+    m_Key: ota_lv2_l_assi_conclusion_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843551
+    m_Key: ota_lv2_q_assi_intro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843552
+    m_Key: ota_lv2_q_assi_warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843553
+    m_Key: ota_lv2_q_assi_explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843554
+    m_Key: ota_lv2_q_assi_pick_up_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843555
+    m_Key: ota_lv2_q_assi_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843556
+    m_Key: ota_lv2_q_assi_scan_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843557
+    m_Key: ota_lv2_q_assi_task
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843558
+    m_Key: ota_lv2_q_assi_task_reminder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843559
+    m_Key: ota_lv2_q_assi_next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843560
+    m_Key: ota_lv2_q_assi_results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843561
+    m_Key: ota_lv2_q_assi_success
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234468843562
+    m_Key: ota_lv2_q_assi_failure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5340411093491712
+    m_Key: ota_lv2_l_assi_direction
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8874288777486401562
+  references:
+    version: 2
+    RefIds:
+    - rid: 8874288777486401562
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1706633000297

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: OTAToolpicker_Level2_Audio
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 4b2694cf1a050a74dab366a376fdfa72, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: f17bf79499ad2a24786010c6be7300a9, type: 2}
+  - {fileID: 11400000, guid: fca70689a1885ae45a400d95621af053, type: 2}
+  m_Extensions:
+  - rid: 8874288777486401563
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 8874288777486401563
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_ColumnsList:
+        - rid: 8874288777486401564
+        - rid: 8874288777486401565
+        - rid: 8874288777486401566
+        m_ConnectedFile: C:/Users/peschler/Downloads/GreifbAR_OTA-Tool-Picker Localization
+          - LVL 2_ Vorbereiten.csv
+    - rid: 8874288777486401564
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_IncludeId: 0
+        m_IncludeSharedComments: 0
+        m_KeyFieldName: Key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    - rid: 8874288777486401565
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: en
+        m_FieldName: German (de)
+        m_CommentFieldName: English(en) Comments
+        m_IncludeComments: 0
+    - rid: 8874288777486401566
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: de
+        m_FieldName: German (de)
+        m_CommentFieldName: German(de) Comments
+        m_IncludeComments: 0

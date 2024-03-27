@@ -1,0 +1,32 @@
+{
+  "name": "com.nmy.virtualrealitytrainingsteps",
+  "version": "6.2.5",
+  "displayName": "NMY Virtual Reality Training Steps",
+  "description": "A step framework for single- and multi-player.",
+  "unity": "2021.3",
+  "keywords": [
+    "NMY",
+    "Steps",
+    "Training",
+    "Virtual Reality"
+  ],
+  "documentationUrl": "http://nmyvm01/com.nmy.virtualrealitytrainingsteps/manual/README.html",
+  "author": {
+    "name": "NMY Mixed-Reality Communication GmbH",
+    "email": "p.seltmann@nmy.de",
+    "url": "https://www.nmy.de"
+  },
+  "samples": [
+    {
+      "displayName": "Network Manager Setup",
+      "description": "A sample setup for the network manager",
+      "path": "Samples~/NetworkManager Setup"
+    }
+  ],
+  "dependencies": {
+    "com.unity.netcode.gameobjects": "1.7.1",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.nmy.external.unitask": "2.5.0",
+    "com.unity.inputsystem": "1.7.0"
+  }
+}

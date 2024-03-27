@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38d5e8f078243e9a23136c4c2e38365, type: 3}
+  m_Name: de_ota_lv2_l_assi_rule2
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: a0ff7331e581d0b449cc2a81871d3cd6, type: 3}
+  _timestampAsset: {fileID: 4900000, guid: 244e4505232be6b4c9b945774b280751, type: 3}
+  _timestamps: []

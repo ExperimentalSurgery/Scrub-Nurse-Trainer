@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: OTAToolpicker_UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: OTAToolpicker_UI
+  m_TableCollectionNameGuidString: b9b92fea27b43984098783bde1f49375
+  m_Entries:
+  - m_Id: 4162870747136
+    m_Key: tbd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718661
+    m_Key: ota_ui_weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1810253472505856
+    m_Key: ota_ui_repeat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20829734608896
+    m_Key: ota_ui_mainmenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23442635005952
+    m_Key: ota_lv1_q_ui_warningDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11913258158956544
+    m_Key: ota_lv3_l_ui_introDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7533050819682304
+    m_Key: ota_lv2_q_ui_introDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7533461534318592
+    m_Key: ota_lv2_q_ui_introDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7553259383201792
+    m_Key: ota_lv2_q_ui_confirmationDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7553391059181568
+    m_Key: ota_lv2_q_ui_confirmationDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364739986071552
+    m_Key: ota_lv2_l_ui_rule9_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364791559233536
+    m_Key: ota_lv2_l_ui_rule9_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364539015995392
+    m_Key: ota_lv2_l_ui_rule8_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364661745524736
+    m_Key: ota_lv2_l_ui_rule8_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364370912485376
+    m_Key: ota_lv2_l_ui_rule7_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364429737598976
+    m_Key: ota_lv2_l_ui_rule7_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364221687537664
+    m_Key: ota_lv2_l_ui_rule6_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5364268835708928
+    m_Key: ota_lv2_l_ui_rule6_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5363875502268416
+    m_Key: ota_lv2_l_ui_rule5_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5363962144006144
+    m_Key: ota_lv2_l_ui_rule5_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5108368875102208
+    m_Key: ota_lv2_l_ui_rule4_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5108425389154304
+    m_Key: ota_lv2_l_ui_rule4_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5090967756382208
+    m_Key: ota_lv2_l_ui_rule3_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5091027713957888
+    m_Key: ota_lv2_l_ui_rule3_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5064888677212160
+    m_Key: ota_lv2_l_ui_rule2_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5064961360306176
+    m_Key: ota_lv2_l_ui_rule2_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837008992247808
+    m_Key: ota_lv2_l_ui_rule1_title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837180451201024
+    m_Key: ota_lv2_l_ui_rule1_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1829713319206912
+    m_Key: ota_lv2_l_ui_introDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1830064030130176
+    m_Key: ota_lv2_l_ui_introDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23236791148544
+    m_Key: ota_lv1_q_ui_warningDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718659
+    m_Key: ota_lv1_q_ui_introDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718660
+    m_Key: ota_lv1_q_ui_introDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718656
+    m_Key: ota_lv1_l_ui_introDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162891718657
+    m_Key: ota_lv1_l_ui_introDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11918190803066880
+    m_Key: ota_lv3_l_ui_introDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11925268460380160
+    m_Key: ota_lv3_l_placeholderDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11925393849098240
+    m_Key: ota_lv3_l_placeholderDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11925677677649920
+    m_Key: ota_ui_richtig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11925739795292160
+    m_Key: ota_ui_falsch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11974574752047104
+    m_Key: ota_lv3_q_ui_introDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11974852536606720
+    m_Key: ota_lv3_q_ui_introDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11984850725543936
+    m_Key: ota_lv3_l_ui_waitingDialogMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12323412922769408
+    m_Key: ota_lv3_ui_waitingDialogTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14059591133208576
+    m_Key: ota_lv3_q_ui_scan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14099949305110528
+    m_Key: ota_lv3_ui_dropInstrumentMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14100775612358656
+    m_Key: ota_lv3_ui_dropInstrumentTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14104704228171776
+    m_Key: ota_lv3_q_ui_resultMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14105295981551616
+    m_Key: ota_lv3_ui_result
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14131237516910592
+    m_Key: ota_lv3_l_ui_resultTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14131483269570560
+    m_Key: ota_lv3_l_ui_resultMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14133573224144896
+    m_Key: ota_ui_error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14134322398142464
+    m_Key: ota_lv1_q_ui_resultMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14863447500955648
+    m_Key: ota_lv3_ui_hold_pose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15158131968352256
+    m_Key: ota_lv3_ui_progress_handNotVisible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15158263363313664
+    m_Key: ota_lv3_ui_progress_handVisible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15158320930136064
+    m_Key: ota_lv3_ui_progress_poseDetected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15195892314185728
+    m_Key: ota_lv3_ui_waiting_for_pose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18029598263386112
+    m_Key: ota_ui_tableCalibrationTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18029718560219136
+    m_Key: ota_ui_tableCalibrationMessage
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8874288664477958180
+  references:
+    version: 2
+    RefIds:
+    - rid: 8874288664477958180
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1706196279523

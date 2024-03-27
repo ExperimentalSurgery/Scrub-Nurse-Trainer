@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785b40171dace2c4f9a9ff2153796171, type: 3}
+  m_Name: InstrumentTypeIcons
+  m_EditorClassIdentifier: 
+  icons:
+  - instrumentType: 2
+    sprite: {fileID: 21300000, guid: 1a3c32e4c0069f646892acfbd6dbadc7, type: 3}
+  - instrumentType: 1
+    sprite: {fileID: 21300000, guid: 5d8e2fc637f450b439632af3c7199e55, type: 3}
+  - instrumentType: 3
+    sprite: {fileID: 21300000, guid: e815d0f705ceeee4cb7cdd424b7cc11d, type: 3}
+  - instrumentType: 4
+    sprite: {fileID: 21300000, guid: 0d40660497cb66b418bd984fef0a2198, type: 3}
+  - instrumentType: 5
+    sprite: {fileID: 21300000, guid: 09901b76ea29b2948bc12a7929b4b462, type: 3}
+  - instrumentType: 6
+    sprite: {fileID: 21300000, guid: 1fe93815589ced444bf6b7c1edf60e9a, type: 3}
+  - instrumentType: 7
+    sprite: {fileID: 21300000, guid: e72f48f1facd07644b67dee6984ed695, type: 3}
+  - instrumentType: 8
+    sprite: {fileID: 21300000, guid: 90e5e72f141f7494e978da9ab977d51b, type: 3}
+  defaultIcon: {fileID: 21300000, guid: 9dd9a0539e1084044bdca1744ec723eb, type: 3}

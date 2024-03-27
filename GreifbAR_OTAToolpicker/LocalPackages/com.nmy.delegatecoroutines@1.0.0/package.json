@@ -1,0 +1,23 @@
+{
+  "name": "com.nmy.delegatecoroutines",
+  "version": "1.0.0",
+  "displayName": "NMY Delegate Coroutines",
+  "description": "The DelegateCoroutines package is an advanced version of Unity3D coroutines which can be stopped individually and which uses C# delegates (anonymous methods) instead of IEnumerator based methods.",
+  "unity": "2019.2",
+  "keywords": [
+    "Coroutine",
+    "Delegate"
+  ],
+  "author": {
+    "name": "NMY Mixed-Reality Communication GmbH",
+    "email": "p.eschler@nmy.de",
+    "url": "https://www.nmy.de"
+  },
+  "samples": [
+    {
+      "displayName": "Delegate Coroutines Example",
+      "description": "A sample scene showing how to use delegate coroutines.",
+      "path": "Samples~/DelegateCoroutines"
+    }
+  ]
+}

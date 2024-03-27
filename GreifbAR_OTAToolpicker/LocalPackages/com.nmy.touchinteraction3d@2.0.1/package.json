@@ -1,0 +1,35 @@
+{
+  "name": "com.nmy.touchinteraction3d",
+  "version": "2.0.1",
+  "displayName": "NMY Touch Interaction 3D",
+  "description": "Scripts for 3D touch interaction.",
+  "unity": "2019.2",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.nmy.core": "1.0.0"
+  },
+  "keywords": [
+    "NMY",
+    "Touch",
+    "Interaction",
+    "3D"
+  ],
+  "documentationUrl": "http://nmyvm01/com.nmy.touchinteraction3d/manual/README.html",
+  "author": {
+    "name": "NMY Mixed-Reality Communication GmbH",
+    "email": "w.kresse@nmy.de",
+    "url": "https://www.nmy.de"
+  },
+  "samples": [
+    {
+      "displayName": "TouchInteraction3D Example",
+      "description": "A sample scene showing how to use ObjectRotater and *CamTouch components.",
+      "path": "Samples~/TouchInteraction3D"
+    },
+    {
+      "displayName": "RuseCamTouch Example",
+      "description": "A sample scene showing how to use RuseCamTouch.",
+      "path": "Samples~/RuseCamTouch"
+    }
+  ]
+}

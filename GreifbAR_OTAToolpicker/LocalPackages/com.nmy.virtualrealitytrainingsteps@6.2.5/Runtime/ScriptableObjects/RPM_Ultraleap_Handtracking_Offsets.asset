@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a7ebf8ae164fa698e683739477e26b, type: 3}
+  m_Name: RPM_Ultraleap_Handtracking_Offsets
+  m_EditorClassIdentifier: 
+  _headPositionOffset: {x: 0, y: -0.09, z: -0.09}
+  _headRotationOffset: {x: 0, y: 0, z: 0}
+  _neckPositionOffset: {x: 0, y: -0.09054574, z: 0}
+  _neckRotationOffset: {x: 0, y: 0, z: 0}
+  _leftHandPositionOffset: {x: 0, y: -0.07, z: 0}
+  _leftHandRotationOffset: {x: 0, y: 0, z: 0}
+  _rightHandPositionOffset: {x: 0, y: -0.07, z: 0}
+  _rightHandRotationOffset: {x: 0, y: 0, z: 0}
