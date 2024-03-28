@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Serialization;
-using EPOOutline;
 using UnityEngine.Rendering;
 
 namespace NMY.OTAToolpicker
