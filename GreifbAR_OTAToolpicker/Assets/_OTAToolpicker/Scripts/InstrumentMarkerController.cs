@@ -85,6 +85,56 @@ namespace NMY.OTAToolpicker
             }
         }
 
+        private void Update()
+        {
+            ShowNearestMarker();
+        }
+
+        private void ShowNearestMarker()
+        {
+            InstrumentData nearestInstrument = GetNearestInstrumentData();
+
+            if(nearestInstrument != null)
+            {
+                if (isShowingInstrumentDetails && instrumentDetailsUI && !GetInstrumentMarker(nearestInstrument).PlaceableInstrument.IsWithinTable)
+                {
+                    instrumentDetailsUI.Data = nearestInstrument;
+                    instrumentDetailsUI.gameObject.SetActive(true);
+                }
+                
+                else
+                   instrumentDetailsUI.gameObject.SetActive(false);
+
+            }
+
+            else
+                instrumentDetailsUI.gameObject.SetActive(false);
+        }
+
+        public InstrumentData GetNearestInstrumentData()
+        {
+            InstrumentData nearestInstrument = null;
+            float nearestDistance = float.MaxValue;
+
+            foreach (InstrumentData trackedInstrument in currentlyTrackedInstruments)
+            {
+                Vector3 pos = GetInstrumentMarker(trackedInstrument).transform.position;
+                float distance = Vector3.Distance(Camera.main.transform.position, pos);
+                if (distance < nearestDistance)
+                {
+                    nearestDistance = distance;
+                    nearestInstrument = trackedInstrument;
+                }
+            }
+
+            return nearestInstrument;
+        }
+
+        public InstrumentMarker GetNearestInstrumentMarker()
+        {
+            return GetInstrumentMarker(GetNearestInstrumentData());
+        }
+
         public void EnableAllInstrumentMarkers()
         {
             hasFoundInstrumentOnce = false;
@@ -158,12 +208,6 @@ namespace NMY.OTAToolpicker
             Debug.Log($"Instrument found: {instrumentData.name}");
 
             InstrumentFound?.Invoke(instrumentMarker);
-
-            if (isShowingInstrumentDetails && instrumentDetailsUI)
-            {
-                instrumentDetailsUI.Data = instrumentData;
-                instrumentDetailsUI.gameObject.SetActive(true);
-            }
 
             hasFoundInstrumentOnce = true;
             nrOfVisibleInstruments++;

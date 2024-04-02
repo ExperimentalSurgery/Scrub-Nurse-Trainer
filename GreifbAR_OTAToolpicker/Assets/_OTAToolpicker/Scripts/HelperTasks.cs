@@ -293,6 +293,32 @@ namespace NMY.OTAToolpicker.UI
             return lastInstrumentIdentified;
         }
 
+        static async public UniTask<InstrumentMarker> WaitForAnyCloseInstrumentIdentification(
+            InstrumentMarkerController markerController,
+            AudioSource audioSource,
+            AudioClip reminderAudioClip,
+            float reminderIntervalS,
+            CancellationToken ct = default(CancellationToken),
+            int pauseMS = 40
+        )
+        {
+            InstrumentMarker currentlyTrackedInstrument = null;
+
+            try
+            {
+                while (currentlyTrackedInstrument == null)
+                {
+                    if (pauseMS > 0)
+                        await UniTask.Delay(pauseMS, cancellationToken: ct);
+
+                    currentlyTrackedInstrument = markerController.GetNearestInstrumentMarker();
+                }
+            }
+            catch (OperationCanceledException) { }
+
+            return currentlyTrackedInstrument;
+        }
+
         /// <summary>
         /// Waits for a specific instrument to be found by the marker controller.
         /// </summary>

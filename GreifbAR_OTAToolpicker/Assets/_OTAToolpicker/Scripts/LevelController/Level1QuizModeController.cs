@@ -129,7 +129,7 @@ namespace NMY.OTAToolpicker
                 CancellationTokenSource questionCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
                 questionDialogUI.Show(title: $"Frage {i+1}", message: question.Question.GetLocalizedString(), questionCts.Token).Forget();
 
-                InstrumentMarker instrumentFound = await HelperTasks.WaitForAnyInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
+                InstrumentMarker instrumentFound = await HelperTasks.WaitForAnyCloseInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
                 if (ct.IsCancellationRequested) return;
 
                 string resultString = "";
