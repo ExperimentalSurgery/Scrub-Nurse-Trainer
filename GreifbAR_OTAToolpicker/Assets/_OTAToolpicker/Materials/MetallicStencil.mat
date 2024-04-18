@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MetallicStencil
-  m_Shader: {fileID: 4800000, guid: 696425bbbf83a974881948c7e67239f2, type: 3}
+  m_Shader: {fileID: 15300, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
