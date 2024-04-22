@@ -1,52 +1,10 @@
 {
   "dependencies": {
-    "com.nmy.core": {
-      "version": "file:../LocalPackages/com.nmy.core@1.0.0",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.nmy.delegatecoroutines": "1.0.0"
-      }
-    },
-    "com.nmy.delegatecoroutines": {
-      "version": "file:../LocalPackages/com.nmy.delegatecoroutines@1.0.0",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.nmy.external.unitask": {
       "version": "file:../LocalPackages/com.nmy.external.unitask@2.5.0",
       "depth": 0,
       "source": "local",
       "dependencies": {}
-    },
-    "com.nmy.googlecloudtexttospeech": {
-      "version": "file:../LocalPackages/com.nmy.googlecloudtexttospeech@0.0.1-r.14",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.localization": "1.3.2"
-      }
-    },
-    "com.nmy.touchinteraction3d": {
-      "version": "file:../LocalPackages/com.nmy.touchinteraction3d@2.0.1",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.nmy.core": "1.0.0"
-      }
-    },
-    "com.nmy.virtualrealitytrainingsteps": {
-      "version": "file:../LocalPackages/com.nmy.virtualrealitytrainingsteps@6.2.5",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.netcode.gameobjects": "1.7.1",
-        "com.unity.textmeshpro": "3.0.6",
-        "com.nmy.external.unitask": "2.5.0",
-        "com.unity.inputsystem": "1.7.0"
-      }
     },
     "com.ptc.vuforia.engine": {
       "version": "file:com.ptc.vuforia.engine-10.20.3.tgz",
@@ -121,7 +79,7 @@
     },
     "com.unity.addressables": {
       "version": "1.21.19",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.scriptablebuildpipeline": "1.21.21",
@@ -260,8 +218,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.localization": {
-      "version": "1.4.4",
-      "depth": 1,
+      "version": "1.4.5",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.addressables": "1.21.8",
@@ -363,7 +321,7 @@
     },
     "com.unity.scriptablebuildpipeline": {
       "version": "1.21.21",
-      "depth": 3,
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
