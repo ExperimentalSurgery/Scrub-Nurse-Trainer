@@ -1,7 +1,12 @@
 OTA Tool Picker - Demonstrator
 
 HOTKEYS:
-[] - 
+[D] - Toggle [marker found] and [marker lost] sound effect playback
+[R] - Reset the table calibration
+[T] - (hold down) Continuously scan the table marker. Fix the Table pose on button release.
+[O] - Toggle the table occlusion box (for the virtual surgeon)
+[S] - Toggle the virtual surgeon - move the model up and down with the arrow keys
+[Z] - Reload scene
 
 HOW TO:
 Calibrate Instrument Marker Pose
