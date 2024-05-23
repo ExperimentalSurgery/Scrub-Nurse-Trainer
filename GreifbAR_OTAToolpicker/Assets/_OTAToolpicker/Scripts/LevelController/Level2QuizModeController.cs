@@ -28,6 +28,8 @@ namespace NMY.OTAToolpicker
         [SerializeField] private List<InstrumentData> instrumentsRequired = new();
         [SerializeField] private int nrOfErrorsAllowed = 1;
 
+        [SerializeField] private PlaceableInstrumentElement elementsDisplayed = PlaceableInstrumentElement.Collider;
+
         // [Header("Tracking")]
         // [SerializeField] private TableMarker tableMarker;
         // [Tooltip("If <b>true</b>, the user has to click the button in the table marker calibration dialog to accept the calibration (Vuforia). If <b>false</b>, the calibration will be accepted when the table marker is found (Varjo).")]
@@ -127,14 +129,15 @@ namespace NMY.OTAToolpicker
 
             MarkerController.gameObject.SetActive(true);
             MarkerController.IsShowingInstrumentDetails = isShowingInstrumentDetails;
-            MarkerController.SetInstrumentElementsDisplayed(PlaceableInstrumentElement.Collider);
+            MarkerController.SetInstrumentElementsDisplayed(elementsDisplayed);
             MarkerController.EnableAllInstrumentMarkers();
 
             while (!AreAllRequiredInstrumentsIdentified() && !ct.IsCancellationRequested)
             {
                 MarkerController.IsPlayingAudioOnInstrumentLost = true;
 
-                InstrumentMarker instrumentMarker = await HelperTasks.WaitForAnyInstrumentIdentification(
+                // InstrumentMarker instrumentMarker = await HelperTasks.WaitForAnyInstrumentIdentification(
+                InstrumentMarker instrumentMarker = await HelperTasks.WaitForAnyCloseInstrumentIdentification(
                     markerController: MarkerController,
                     audioSource: audioSource,
                     reminderAudioClip: reminderAudioClip,

@@ -24,14 +24,9 @@
     }
   ],
   "dependencies": {
-    "com.nmy.core": "file:../LocalPackages/com.nmy.core@1.0.0",
-    "com.nmy.delegatecoroutines": "file:../LocalPackages/com.nmy.delegatecoroutines@1.0.0",
     "com.nmy.external.unitask": "file:../LocalPackages/com.nmy.external.unitask@2.5.0",
-    "com.nmy.googlecloudtexttospeech": "file:../LocalPackages/com.nmy.googlecloudtexttospeech@0.0.1-r.14",
-    "com.nmy.touchinteraction3d": "file:../LocalPackages/com.nmy.touchinteraction3d@2.0.1",
-    "com.nmy.virtualrealitytrainingsteps": "file:../LocalPackages/com.nmy.virtualrealitytrainingsteps@6.2.5",
     "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.20.3.tgz",
-    "com.ultraleap.tracking": "6.13.0",
+    "com.ultraleap.tracking": "6.15.0",
     "com.unity-atoms.unity-atoms-base-atoms": "4.5.0",
     "com.unity-atoms.unity-atoms-core": "4.4.8",
     "com.unity-atoms.unity-atoms-mono-hooks": "4.5.0",
@@ -47,6 +42,7 @@
     "com.unity.ide.rider": "3.0.26",
     "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.ide.vscode": "1.2.5",
+    "com.unity.localization": "1.4.5",
     "com.unity.multiplayer.samples.coop": "https://github.com/Unity-Technologies/com.unity.multiplayer.samples.coop.git?path=/Packages/com.unity.multiplayer.samples.coop#v2.1.0",
     "com.unity.multiplayer.tools": "2.0.0-pre.5",
     "com.unity.nuget.newtonsoft-json": "3.2.1",

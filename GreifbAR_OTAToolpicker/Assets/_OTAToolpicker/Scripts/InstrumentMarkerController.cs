@@ -12,10 +12,15 @@ namespace NMY.OTAToolpicker
     {
         [SerializeField] private bool isTrackingEnabledInitially = true;
 
+        [SerializeField] public Transform tableRerefence;
+        [SerializeField] public float minHeightAboveTable=0.1f;
+
         [SerializeField] private List<InstrumentMarker> instrumentMarkers = new();
         public IEnumerable<InstrumentMarker> InstrumentMarkers => instrumentMarkers;
 
         [SerializeField] private InstrumentDetailsUI instrumentDetailsUI;
+        public InstrumentDetailsUI InstrumentDetailsUI => instrumentDetailsUI;
+
         [Tooltip("If <b>true</b>, the instrument details UI will be shown when an instrument is found.")]
         [SerializeField] private bool isShowingInstrumentDetails = true;
         public bool IsShowingInstrumentDetails {
@@ -84,6 +89,74 @@ namespace NMY.OTAToolpicker
                 instrumentDetailsUI.gameObject.SetActive(false);
             }
         }
+        private void Update()
+        {
+            ShowNearestMarker();
+        }
+
+        private void ShowNearestMarker()
+        {
+            // InstrumentData nearestInstrument = GetNearestInstrumentData();
+            // InstrumentMarker nearestMarker = GetInstrumentMarker(nearestInstrument);
+            InstrumentMarker nearestMarker = GetNearestInstrumentMarker();
+
+            // clear isNearest in all markers
+            foreach(InstrumentMarker marker in instrumentMarkers)
+            {
+                marker.isNearest = false;
+            }
+            // now only mark the nearest one
+            if (nearestMarker != null){
+                nearestMarker.isNearest = true;
+            }
+
+            // if(nearestInstrument != null)
+            // {
+            //     if (isShowingInstrumentDetails && instrumentDetailsUI && !GetInstrumentMarker(nearestInstrument).PlaceableInstrument.IsWithinTable)
+            //     {
+            //         instrumentDetailsUI.Data = nearestInstrument;
+            //         instrumentDetailsUI.gameObject.SetActive(true);
+            //     }
+            //     else
+            //        instrumentDetailsUI.gameObject.SetActive(false);
+
+            // }
+            // else
+            //     instrumentDetailsUI.gameObject.SetActive(false);
+        }
+
+
+        public InstrumentMarker GetNearestInstrumentMarker()
+        {
+            InstrumentData nearestInstrument = null;
+            InstrumentMarker nearestMarker = null;
+            float nearestDistance = float.MaxValue;
+
+            foreach(InstrumentMarker marker in instrumentMarkers)
+            // foreach (InstrumentData trackedInstrument in currentlyTrackedInstruments)
+            {
+                if (!marker.IsTrackingEnabled || !marker.VarjoMarker.HasMovedSinceBeginning() || !marker.VarjoMarker.IsTracked)
+                    continue;
+
+
+                Vector3 pos = marker.transform.position;
+
+                float distance = Vector3.Distance(Camera.main.transform.position, pos);
+                if (distance < nearestDistance)
+                {
+                    nearestDistance = distance;
+                    // nearestInstrument = trackedInstrument;
+                    nearestMarker = marker;
+                }
+            }
+
+            return nearestMarker;
+        }
+
+        // public InstrumentMarker GetNearestInstrumentMarker()
+        // {
+        //     return GetInstrumentMarker(GetNearestInstrumentData());
+        // }
 
         public void EnableAllInstrumentMarkers()
         {
@@ -155,15 +228,15 @@ namespace NMY.OTAToolpicker
         public void OnInstrumentFound(InstrumentMarker instrumentMarker)
         {
             var instrumentData = instrumentMarker.Instrument;
-            Debug.Log($"Instrument found: {instrumentData.name}");
+//            Debug.Log($"Instrument found: {instrumentData.name}");
 
             InstrumentFound?.Invoke(instrumentMarker);
 
-            if (isShowingInstrumentDetails && instrumentDetailsUI)
-            {
-                instrumentDetailsUI.Data = instrumentData;
-                instrumentDetailsUI.gameObject.SetActive(true);
-            }
+            // if (isShowingInstrumentDetails && instrumentDetailsUI)
+            // {
+            //     instrumentDetailsUI.Data = instrumentData;
+            //     instrumentDetailsUI.gameObject.SetActive(true);
+            // }
 
             hasFoundInstrumentOnce = true;
             nrOfVisibleInstruments++;
@@ -181,7 +254,7 @@ namespace NMY.OTAToolpicker
         public void OnInstrumentLost(InstrumentMarker instrumentMarker)
         {
             var instrumentData = instrumentMarker.Instrument;
-            Debug.Log($"Instrument lost: {instrumentData.name}");
+            // Debug.Log($"Instrument lost: {instrumentData.name}");
 
             InstrumentLost?.Invoke(instrumentMarker);
 
@@ -204,7 +277,7 @@ namespace NMY.OTAToolpicker
         public void OnInstrumentDropped(InstrumentMarker instrumentMarker)
         {
             var instrumentData = instrumentMarker.Instrument;
-            Debug.Log($"Instrument dropped: {instrumentData.name}");
+            // Debug.Log($"Instrument dropped: {instrumentData.name}");
 
             InstrumentDropped?.Invoke(instrumentMarker);
 

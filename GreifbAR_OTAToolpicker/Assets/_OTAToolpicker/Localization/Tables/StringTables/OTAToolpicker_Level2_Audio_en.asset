@@ -54,7 +54,7 @@ MonoBehaviour:
       oft die \xD6ffnung der Eingriffstelle mithilfe des Skalpells, daher nimm nun
       das Skalpell und lege es in die linke, untere Ecke. Aber Achtung! Die Spitze
       des Skalpells ist sehr scharf! Achte darauf dass die Spitze auf dem Tisch von
-      dir weg zeigt"
+      dir weg zeigt."
     m_Metadata:
       m_Items: []
   - m_Id: 234468843525
@@ -181,10 +181,11 @@ MonoBehaviour:
       in dem es von jedem Instrument fast immer nur eines vorhanden ist. In der echten
       OP-Situation wird es allerdings fast immer mehrere, manchmal auch zehnmal das
       gleiche Instrument geben. Um Platz zu sparen und die \xDCbersicht zu bewahren,
-      ist es sehr wichtig gleich Instrumente immer auf einer Position paarig zu legen.
-      Du darfst die Instrumente auch gerne so nah beieinander legen, dass sie sich
-      \xFCberlagern. Probieren wir das einmal mit den Wundhaken! Lege diese auf den
-      Tisch, so dass sie sehr nahe beieinander liegen."
+      ist es sehr wichtig gleiche Instrumente immer auf einer Position paarig zu
+      legen. Du darfst die Instrumente auch gerne so nah beieinander legen, dass
+      sie sich \xFCberlagern.  Probieren wir das einmal mit dem Wundhaken! Lege diesen
+      auf den Tisch, so dass er sehr nahe rechts neben dem anderen virtuellen Wundhaken
+      liegt."
     m_Metadata:
       m_Items: []
   - m_Id: 234468843547

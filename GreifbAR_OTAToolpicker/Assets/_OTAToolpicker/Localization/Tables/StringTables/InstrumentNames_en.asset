@@ -17,7 +17,59 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: d154e0a04e9707d47aa153344d4d179b, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 60895961088
+    m_Localized: Kornzange
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228953333760
+    m_Localized: "Pr\xE4perations-Schere Metzenbaum"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 519031398400
+    m_Localized: Skalpellgriff Nr.3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 631824621568
+    m_Localized: Wundhaken Roux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1053200726298624
+    m_Localized: "Pr\xE4parationsklemme Overholt Geissend"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1053631158358016
+    m_Localized: Metallschale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1054269518843904
+    m_Localized: Peritoneumklemme Baby-Mikulicz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1054875641909248
+    m_Localized: Nadelhalter Masson
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1055231960616960
+    m_Localized: Atraumatische Pinzette
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1055561834237952
+    m_Localized: Chirurgische Schere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1055865350852608
+    m_Localized: Chirurgische Pinzette
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1056205508907008
+    m_Localized: Haken Langenbeck
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1056582849466368
+    m_Localized: Ligaturklemme De Bakey
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -20,7 +20,8 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 399284019200
     m_Localized: "Willkommen in der Anwendung. Benutze deinen Finger, um einen der
-      Kn\xF6pfe zu dr\xFCcken"
+      Kn\xF6pfe zu dr\xFCcken. Du kannst mit allen Elementen interagieren, die blau
+      sind.\r\n\r\n\r\n\r\n\r\n\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 399300796416

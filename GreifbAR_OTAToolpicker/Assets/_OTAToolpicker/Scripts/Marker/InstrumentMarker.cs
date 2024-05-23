@@ -37,6 +37,7 @@ namespace NMY.OTAToolpicker
 
         #region Varjo Components
         [SerializeField] private OTAVarjoMarker varjoMarker;
+        public OTAVarjoMarker VarjoMarker => varjoMarker;
         #endregion
 
         public UnityEvent<InstrumentMarker> OnInstrumentFound => onInstrumentFound;
@@ -46,6 +47,11 @@ namespace NMY.OTAToolpicker
         private readonly UnityEvent<InstrumentMarker> onInstrumentFound = new();
         private readonly UnityEvent<InstrumentMarker> onInstrumentLost = new();
         private readonly UnityEvent<InstrumentMarker> onInstrumentDropped = new();
+
+        /// <summary>
+        /// Determines if this marker is currently the nearest. Updated by InstrumentMarkerController.Update()
+        /// </summary>
+        public bool isNearest = false;
 
 
         void Awake()

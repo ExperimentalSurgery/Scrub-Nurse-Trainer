@@ -2464,6 +2464,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7120600630946317856, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
+      propertyPath: instrumentDetailsUI
+      value: 
+      objectReference: {fileID: 1695149042}
+    - target: {fileID: 7120600630946317856, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
       propertyPath: isShowingInstrumentDetails
       value: 0
       objectReference: {fileID: 0}
@@ -2913,21 +2917,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1446703946018478966, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2045985352}
-    - targetCorrespondingSourceObject: {fileID: 2951918800524835241, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6198511126827111818, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 9217112730323843841, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4132770063150270693, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7836411943620643692, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2312712676936985509, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1639601471}
@@ -3427,11 +3416,14 @@ MonoBehaviour:
   MarkerLost:
     m_PersistentCalls:
       m_Calls: []
-  markerId: 220
+  markerAnkerPosOffset: {x: 0, y: 0, z: 0}
+  makerAnkerRotOffset: {x: 0, y: 0, z: 0}
+  markers: []
   shouldTrack: 1
   isDynamic: 1
   isTracked: 0
   timeout: 1000
+  primaryMode: 0
 --- !u!114 &1317023766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3970,6 +3962,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 555993459377578831, guid: d4c2f0e02437e5e4087e635f9db4afaa, type: 3}
   m_PrefabInstance: {fileID: 5703880870515807567}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1695149042 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8681451962248659706, guid: d4c2f0e02437e5e4087e635f9db4afaa, type: 3}
+  m_PrefabInstance: {fileID: 5703880870515807567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6cc7cddf4ef6744a2ce89a2e900287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1763807770
 GameObject:
   m_ObjectHideFlags: 0

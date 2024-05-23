@@ -837,6 +837,7 @@ MonoBehaviour:
   isDynamic: 1
   isTracked: 0
   timeout: 1000
+  initialDelay: 2
 --- !u!114 &349234359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,6 +974,7 @@ MonoBehaviour:
   app: {fileID: 409568874}
   resetSessionEntriesOnStart: 1
   isShowingInstrumentDetails: 0
+  elementsDisplayed: 0
   questionPool:
   - {fileID: 11400000, guid: 051bea1c162a9e046af3a0e63ebd9d19, type: 2}
   - {fileID: 11400000, guid: 0c20a9611c037ea4d9272f0785e44d45, type: 2}
@@ -2814,6 +2816,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7120600630946317856, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
+      propertyPath: tableRerefence
+      value: 
+      objectReference: {fileID: 349234350}
+    - target: {fileID: 7120600630946317856, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
       propertyPath: instrumentDetailsUI
       value: 
       objectReference: {fileID: 1533580143}
@@ -3340,21 +3346,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1446703946018478966, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1794408298}
-    - targetCorrespondingSourceObject: {fileID: 2951918800524835241, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6198511126827111818, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 9217112730323843841, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4132770063150270693, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7836411943620643692, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2312712676936985509, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1382928480}
@@ -3475,21 +3466,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2445224793263843156, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 269980691}
-    - targetCorrespondingSourceObject: {fileID: 6278922171029078500, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5145976895096056478, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1078069114072297180, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6569010523073942663, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 702589104255068633, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 5334b48020c0c7143bda6e953b52a3bd, type: 3}
 --- !u!114 &562652110 stripped
 MonoBehaviour:
@@ -3985,6 +3961,7 @@ MonoBehaviour:
   isDynamic: 1
   isTracked: 0
   timeout: 1000
+  initialDelay: 2
 --- !u!114 &1088690632 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4622181343895142451, guid: 63be50e375960094185d8877f811c83c, type: 3}
@@ -4066,6 +4043,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c2a375d93d885ae4a81bf5f4d5e2fba0, type: 2}
   - {fileID: 11400000, guid: 235693eacd02386489d065d65cc5a017, type: 2}
   nrOfErrorsAllowed: 2
+  elementsDisplayed: 4
   isShowingInstrumentDetails: 0
   welcomeDialogUI: {fileID: 1531652742}
   warningDialogUI: {fileID: 798448406}
@@ -6667,6 +6645,7 @@ MonoBehaviour:
   app: {fileID: 409568874}
   resetSessionEntriesOnStart: 1
   isShowingInstrumentDetails: 1
+  elementsDisplayed: 9
   infoDialogUI: {fileID: 670270026}
   waitDialogUI: {fileID: 2132390511}
   mainMenuButton: {fileID: 1614856371}
@@ -7667,6 +7646,7 @@ MonoBehaviour:
   app: {fileID: 409568874}
   resetSessionEntriesOnStart: 1
   isShowingInstrumentDetails: 0
+  elementsDisplayed: 7
   infoDialogUI: {fileID: 1270291153}
   welcomeDialogUI: {fileID: 2041395508}
   ruleDialogUI: {fileID: 1655326401}

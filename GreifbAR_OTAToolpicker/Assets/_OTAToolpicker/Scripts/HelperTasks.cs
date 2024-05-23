@@ -4,8 +4,11 @@ using Leap.Unity;
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
+
 using UnityEngine;
 using UnityEngine.Events;
+
 
 namespace NMY.OTAToolpicker.UI
 {
@@ -293,6 +296,137 @@ namespace NMY.OTAToolpicker.UI
             return lastInstrumentIdentified;
         }
 
+        static async public UniTask<InstrumentMarker> WaitForAnyCloseInstrumentIdentification(
+            InstrumentMarkerController markerController,
+            AudioSource audioSource,
+            AudioClip reminderAudioClip,
+            float reminderIntervalS,
+            CancellationToken ct)
+        {
+            InstrumentMarker lastInstrumentIdentified = null;
+            
+            // lastInstrumentIdentified = markerController.GetNearestInstrumentMarker();
+            // bool isAboveTable = lastInstrumentIdentified.transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
+
+            CancellationTokenSource reminderCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
+            HelperTasks.PlayAudioClipIntervalUntil(() => markerController.GetNearestInstrumentMarker() != null && (markerController.GetNearestInstrumentMarker().transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable),
+                initialDelayS: 0f,
+                audioSource: audioSource,
+                audioClip: reminderAudioClip,
+                intervalS: reminderIntervalS,
+                ct: reminderCts.Token
+            ).Forget();
+
+            // UnityAction<InstrumentMarker> foundFunc = (instrumentMarker) => {                
+            //     lastInstrumentIdentified=instrumentMarker;                
+            // };
+            // markerController.InstrumentFound.AddListener(foundFunc);
+
+            try {
+                Debug.Log("Wait for instrument identification.");
+                await UniTask.WaitUntil(() => markerController.GetNearestInstrumentMarker() && (markerController.GetNearestInstrumentMarker().transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable), cancellationToken:ct);
+                lastInstrumentIdentified = markerController.GetNearestInstrumentMarker();
+            }
+            catch (OperationCanceledException) {
+                Debug.Log("WaitForInstrumentIdentification: Operation cancelled.");
+            }
+
+            reminderCts.Cancel();
+            reminderCts.Dispose();
+            // markerController.InstrumentFound.RemoveListener(foundFunc);
+
+            return lastInstrumentIdentified;
+        }
+
+        static async public UniTask<InstrumentMarker> Level1LearnWaitForMarkerAboveThreshold(
+            InstrumentMarkerController markerController,
+             Action<InstrumentMarker> onFound,            
+            CancellationToken ct=default)
+        {
+            InstrumentMarker lastInstrumentIdentified = null;
+            int pauseMS = 30;
+
+            while(ct.IsCancellationRequested == false)
+            {                
+                float tableThresholdHeight = markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
+                await UniTask.WaitUntil(() => 
+                    markerController.GetNearestInstrumentMarker() && (markerController.GetNearestInstrumentMarker().transform.position.y > tableThresholdHeight), 
+                    cancellationToken:ct
+                );
+                lastInstrumentIdentified = markerController.GetNearestInstrumentMarker();
+                StaticlastInstrumentIdentified = lastInstrumentIdentified;   
+                // Debug.Log("Level1LearnWaitForMarkerAboveThreshold: " + lastInstrumentIdentified.gameObject.name);
+                onFound(lastInstrumentIdentified);
+
+                await UniTask.Delay(pauseMS, cancellationToken: ct);
+            }
+
+           
+
+            return lastInstrumentIdentified;
+        }
+
+        public static InstrumentMarker StaticlastInstrumentIdentified;
+
+        static async public UniTask<InstrumentMarker> Level1LearnWaitForMarkerBelowThreshold(
+            InstrumentMarkerController markerController,
+            Func<InstrumentMarker> lastInstrumentFoundFunc,
+            Action<InstrumentMarker> onDropped, 
+            CancellationToken ct=default)
+        {
+            
+            int pauseMS= 30;
+            
+
+            while(ct.IsCancellationRequested == false)
+            {
+                
+
+                if(StaticlastInstrumentIdentified) Debug.Log("static last instrumenIdentified="+StaticlastInstrumentIdentified.gameObject.name);
+                float tableThresholdHeight = markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
+                await UniTask.WaitUntil(() => 
+                    (markerController.GetNearestInstrumentMarker() !=null && markerController.GetNearestInstrumentMarker()==StaticlastInstrumentIdentified && (markerController.GetNearestInstrumentMarker().transform.position.y < tableThresholdHeight)) ||
+                    (StaticlastInstrumentIdentified!=null && !StaticlastInstrumentIdentified.VarjoMarker.IsTracked), cancellationToken:ct);
+
+                
+                onDropped(StaticlastInstrumentIdentified);
+                StaticlastInstrumentIdentified = null;
+                await UniTask.Delay(pauseMS, cancellationToken: ct);
+            }
+
+            return StaticlastInstrumentIdentified;
+        }
+
+        // static async public UniTask<InstrumentMarker> WaitForAnyCloseInstrumentIdentification(
+        //     InstrumentMarkerController markerController,
+        //     AudioSource audioSource,
+        //     AudioClip reminderAudioClip,
+        //     float reminderIntervalS,
+        //     CancellationToken ct = default(CancellationToken),
+        //     int pauseMS = 40
+        // )
+        // {
+        //     InstrumentMarker currentlyTrackedMarker = null;
+
+        //     try
+        //     {
+        //         bool isAboveTable = false;
+        //         while (currentlyTrackedMarker == null && !isAboveTable)
+        //         {
+        //             if (pauseMS > 0)
+        //                 await UniTask.Delay(pauseMS, cancellationToken: ct);
+
+        //             currentlyTrackedMarker = markerController.GetNearestInstrumentMarker();
+                    
+        //             if (currentlyTrackedMarker)
+        //                 isAboveTable = currentlyTrackedMarker.transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
+        //         }
+        //     }
+        //     catch (OperationCanceledException) { }
+
+        //     return currentlyTrackedMarker;
+        // }
+
         /// <summary>
         /// Waits for a specific instrument to be found by the marker controller.
         /// </summary>
@@ -384,6 +518,38 @@ namespace NMY.OTAToolpicker.UI
 
             try {
                 await UniTask.WaitUntil(() => hasDroppedInstrument && droppedInstrument==instrumentMarker, cancellationToken: ct);
+            }
+            catch (System.OperationCanceledException) {
+                // if we dont catch the possible exception from WaitUntil, the event listener will not be removed
+            }
+
+            Debug.Log($"Instrument '{instrumentMarker.Instrument.Title.GetLocalizedString()}' was dropped.");
+            dialogUI.SetPrimaryButtonInteractable(true);
+            markerController.InstrumentDropped.RemoveListener(droppedFunc);
+        }
+
+        static public async UniTask WaitForInstrumentDroppedOrBelowTableThreshold(InstrumentMarkerController markerController, InstrumentMarker instrumentMarker, DialogUI dialogUI, CancellationToken ct)
+        {
+            Debug.Log($"Waiting for instrument '{instrumentMarker.Instrument.Title.GetLocalizedString()}' being dropped.");
+            bool hasDroppedInstrument = false;
+            InstrumentMarker droppedInstrument = null;
+
+            dialogUI.SetPrimaryButtonInteractable(false);
+
+            UnityAction<InstrumentMarker> droppedFunc = (instrumentMarker) => {
+                hasDroppedInstrument = true;
+                droppedInstrument = instrumentMarker;
+            };
+            markerController.InstrumentDropped.AddListener(droppedFunc);
+
+            // markerController.GetNearestInstrumentMarker() != null && (markerController.GetNearestInstrumentMarker().transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable)
+
+            try {
+                await UniTask.WaitUntil(() => 
+                    (hasDroppedInstrument && droppedInstrument==instrumentMarker) ||
+                     markerController.GetNearestInstrumentMarker() != null && (markerController.GetNearestInstrumentMarker().transform.position.y < markerController.tableRerefence.position.y + markerController.minHeightAboveTable)
+                    , cancellationToken: ct
+                );
             }
             catch (System.OperationCanceledException) {
                 // if we dont catch the possible exception from WaitUntil, the event listener will not be removed

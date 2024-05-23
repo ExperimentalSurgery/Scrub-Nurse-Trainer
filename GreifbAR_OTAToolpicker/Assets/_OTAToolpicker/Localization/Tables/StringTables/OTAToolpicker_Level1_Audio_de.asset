@@ -37,6 +37,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 51998635237378
     m_Localized: Sehr gut, jetzt kannst du alle Infos zu diesem Instrument sehen.
+      Wenn du ein gelbes Warndreieck siehst, bedeutet das, dass der Teil des Instrumentes
+      traumatisch ist.
     m_Metadata:
       m_Items: []
   - m_Id: 51998635237379

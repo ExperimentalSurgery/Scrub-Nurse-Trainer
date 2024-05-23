@@ -34,10 +34,15 @@ namespace DFKI.NMY
                 
                 try {
                     var loader = XRGeneralSettings.Instance.Manager.activeLoader as Varjo.XR.VarjoLoader;
-                    var cameraSubsystem = loader.cameraSubsystem as VarjoCameraSubsystem;
-                    IsVarjoSystem = true;
-                    UpdateGameObjectStates();
-                    VarjoSystemChanged.Invoke(true);
+                    VarjoCameraSubsystem cameraSubsystem = loader.cameraSubsystem as VarjoCameraSubsystem;
+                    if (cameraSubsystem != null)
+                    {
+                        IsVarjoSystem = true;
+                        UpdateGameObjectStates();
+                        VarjoSystemChanged.Invoke(true);
+                    }
+
+                    
                 }
                 catch (NullReferenceException e) {
                     Debug.LogWarning("No Varjo detected. Disable Varjo related Components "+e.Message);
@@ -51,6 +56,7 @@ namespace DFKI.NMY
 
         public void DisableVarjo()
         {
+            Debug.Log("Disable Varjo Components");
             foreach (GameObject v in enableWhenVarjoSystem) {
                 v.SetActive(false);
             }
@@ -62,6 +68,7 @@ namespace DFKI.NMY
 
         public void EnableVarjo()
         {
+            Debug.Log("Enable Varjo Components");
             foreach (GameObject v in enableWhenVarjoSystem) {
                 v.SetActive(true);
             }
@@ -91,11 +98,14 @@ namespace DFKI.NMY
 
         public void UpdateGameObjectStates()
         {
-            foreach (GameObject v in enableWhenVarjoSystem) {
-                v.SetActive(IsVarjoSystem);
+            Debug.Log("IsVarjoSystem="+IsVarjoSystem);
+            if (IsVarjoSystem)
+            {
+                EnableVarjo();
             }
-            foreach (GameObject v in enableWhenOtherSystem) {
-                v.SetActive(!IsVarjoSystem);
+            else
+            {
+                DisableVarjo();
             }
 
         }

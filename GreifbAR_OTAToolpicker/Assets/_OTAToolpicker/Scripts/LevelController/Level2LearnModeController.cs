@@ -23,6 +23,9 @@ namespace NMY.OTAToolpicker
         [Tooltip("If true, the instrument details UI will be shown when an instrument is found.")]
         [SerializeField] private bool isShowingInstrumentDetails = true;
 
+        [SerializeField] private PlaceableInstrumentElement elementsDisplayed = PlaceableInstrumentElement.OutlineRenderer | PlaceableInstrumentElement.Collider;
+
+
         private bool isLevelStopRequested = false;
         public bool IsLevelStopRequested
         {
@@ -102,7 +105,8 @@ namespace NMY.OTAToolpicker
             CancellationToken ct = levelPlayingCts.Token;
 
             MarkerController.IsShowingInstrumentDetails = isShowingInstrumentDetails;
-            MarkerController.SetInstrumentElementsDisplayed(PlaceableInstrumentElement.OutlineRenderer | PlaceableInstrumentElement.Collider);
+            MarkerController.SetInstrumentElementsDisplayed(elementsDisplayed);
+            MarkerController.DisableAllInstrumentMarkers();
 
             HideMainMenuButton();
 
@@ -171,6 +175,7 @@ namespace NMY.OTAToolpicker
             await WaitForInstrumentPlacement(
                 instrument: rule.instruments[0],
                 rule: rule,
+                alwaysShowPlacementVolume: true,
                 ct: ct
             );
 
@@ -190,6 +195,7 @@ namespace NMY.OTAToolpicker
             await WaitForInstrumentPlacement(
                 instrument: rule.instruments[0],
                 rule: rule,
+                alwaysShowPlacementVolume: true,
                 ct: ct,
                 onSuccess: () => arrowsCts.Cancel(),
                 onIntersectingTableBorder: () => arrowsCts.Cancel(),
@@ -209,6 +215,7 @@ namespace NMY.OTAToolpicker
             await WaitForInstrumentPlacement(
                 instrument: rule.instruments[0],
                 rule: rule,
+                alwaysShowPlacementVolume: true,
                 ct: ct,
                 shouldPlaySuccessMsg: false,
                 onSuccess: () => instrumentTable.HideLevel3Rule3Area(),
@@ -223,6 +230,7 @@ namespace NMY.OTAToolpicker
             await WaitForInstrumentPlacement(
                 instrument: rule.instruments[1],
                 rule: rule,
+                alwaysShowPlacementVolume: true,
                 ct: ct,
                 shouldPlaySuccessMsg: true
             );
@@ -237,6 +245,7 @@ namespace NMY.OTAToolpicker
             await WaitForInstrumentPlacement(
                 instrument: rule.instruments[0],
                 rule: rule,
+                alwaysShowPlacementVolume: true,
                 shouldPlaySuccessMsg: false,
                 ct: ct
             );
@@ -247,6 +256,7 @@ namespace NMY.OTAToolpicker
                 await WaitForInstrumentPlacement(
                     instrument: rule.instruments[1],
                     rule: rule,
+                    alwaysShowPlacementVolume: true,
                     shouldPlaySuccessMsg: true,
                     ct: ct
                 );
@@ -262,6 +272,7 @@ namespace NMY.OTAToolpicker
             await WaitForInstrumentPlacement(
                 instrument: rule.instruments[0],
                 rule: rule,
+                alwaysShowPlacementVolume: true,
                 ct: ct
             );
         }
@@ -277,6 +288,7 @@ namespace NMY.OTAToolpicker
                 instrument: rule.instruments[0],
                 rule: rule,
                 shouldPlaySuccessMsg: false,
+                alwaysShowPlacementVolume: true,
                 ct: ct
             );
 
@@ -285,6 +297,7 @@ namespace NMY.OTAToolpicker
                 instrument: rule.instruments[1],
                 rule: rule,
                 shouldPlaySuccessMsg: false,
+                alwaysShowPlacementVolume: true,
                 ct: ct
             );
 
@@ -295,6 +308,7 @@ namespace NMY.OTAToolpicker
                 instrument: rule.instruments[2],
                 rule: rule,
                 shouldPlaySuccessMsg: true,
+                alwaysShowPlacementVolume: true,
                 ct: ct
             );
         }
@@ -309,6 +323,7 @@ namespace NMY.OTAToolpicker
                 instrument: rule.instruments[0],
                 rule: rule,
                 shouldPlaySuccessMsg: true,
+                alwaysShowPlacementVolume: true,
                 ct: ct
             );
         }
@@ -326,6 +341,7 @@ namespace NMY.OTAToolpicker
                 instrument: rule.instruments[0],
                 rule: rule,
                 shouldPlaySuccessMsg: true,
+                alwaysShowPlacementVolume: true,
                 ct: ct
             );
 
@@ -343,9 +359,10 @@ namespace NMY.OTAToolpicker
         /// <param name="onIntersectingTableBorder">Optional action to be executed when instrument is intersecting the table border.</param>
         /// <param name="onWrongPosition">Optional action to be executed when the instrument is placed at the wrong position.</param>
         /// <param name="onDirectionInvalid">Optional action to be executed when the instrument is placed in the wrong direction.</param>
+        /// <param name="alwaysShowPlacementVolume">If <c>true</c> the placement volume will always be shown, if <c>false</c> it will only be shown when the marker is currently tracked.</param>
         /// <returns>Returns when the instrument has been correctly placed (position + direction).</returns>
         async private UniTask WaitForInstrumentPlacement(InstrumentData instrument, RuleData rule, bool shouldPlaySuccessMsg=true,
-                Action onSuccess=null, Action onIntersectingTableBorder=null, Action onWrongPosition=null, Action onDirectionInvalid=null, CancellationToken ct=default)
+                Action onSuccess=null, Action onIntersectingTableBorder=null, Action onWrongPosition=null, Action onDirectionInvalid=null, bool alwaysShowPlacementVolume=false, CancellationToken ct=default)
         {
             // when entering this function with the CancellationToken ct already cancelled, we return immediately.
             if (ct.IsCancellationRequested) return;
@@ -359,6 +376,9 @@ namespace NMY.OTAToolpicker
             MarkerController.IsPlayingAudioOnInstrumentLost = true;
             MarkerController.EnableInstrumentMarker(instrument);
 
+            if (alwaysShowPlacementVolume)
+                instrumentTable.EnablePlacementVolume(placeableInstrument);
+
             // monitor tracking of the instrument marker. The monitoring function
             // will enable the primary button of the rule dialog when the instrument is visible
             // and disable it when the instrument is not visible.
@@ -370,12 +390,14 @@ namespace NMY.OTAToolpicker
                 onTracked: () => {
                     ruleDialogUI.SetPrimaryButtonInteractable(true);
                     ruleDialogUI.SetPrimaryButtonText($"Weiter mit <b>{placeableInstrument.InstrumentData.Title.GetLocalizedString()}</b>");
-                    instrumentTable.EnablePlacementVolume(placeableInstrument);
+                    if (!alwaysShowPlacementVolume)
+                        instrumentTable.EnablePlacementVolume(placeableInstrument);
                 },
                 onNotTracked: () => {
                     ruleDialogUI.SetPrimaryButtonInteractable(false);
                     ruleDialogUI.SetPrimaryButtonText($"Warte auf <b>{placeableInstrument.InstrumentData.Title.GetLocalizedString()}</b>...");
-                    instrumentTable.DisablePlacementVolume(placeableInstrument);
+                    if (!alwaysShowPlacementVolume)
+                        instrumentTable.DisablePlacementVolume(placeableInstrument);
                 },
                 ct: ruleInstrumentMonitorCts.Token
             ).Forget();

@@ -116,7 +116,7 @@ namespace NMY.OTAToolpicker
 
         public void DisableTrackingVarjo()
         {            
-            Debug.Log("Marker disabled: " + name);
+            // Debug.Log("Marker disabled: " + name);
             if (varjoMarker == null)
             {
                 Debug.LogError($"Varjo Marker on {name} is not assigned");

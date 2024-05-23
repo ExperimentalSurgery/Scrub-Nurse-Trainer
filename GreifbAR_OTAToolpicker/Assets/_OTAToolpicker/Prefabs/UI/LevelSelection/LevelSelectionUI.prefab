@@ -841,8 +841,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7620888738069827042, guid: 3e7cfbf977396be40af9dd125d77fb52, type: 3}
       propertyPath: m_text
-      value: In diesem Level lernst Du, nach welchen Regeln die Instrumente auf dem
-        Ablagetisch auslegst.
+      value: In diesem Level lernst Du, nach welchen Regeln Du die Instrumente auf
+        dem Ablagetisch auslegst.
       objectReference: {fileID: 0}
     - target: {fileID: 8399483969593164550, guid: 3e7cfbf977396be40af9dd125d77fb52, type: 3}
       propertyPath: m_AnchorMax.y

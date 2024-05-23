@@ -11,7 +11,7 @@ namespace NMY.OTAToolpicker
         public UnityEvent<TableMarker> MarkerFound;
         public UnityEvent<TableMarker> MarkerLost;
 
-        public int markerId = 200;
+        public int markerId = 300;
         public bool shouldTrack;
         public bool isDynamic = false;
         public bool isTracked;
@@ -21,6 +21,8 @@ namespace NMY.OTAToolpicker
         private TableMarker tableMarker;
 
         private bool lastIsTracked = false;
+
+        public float initialDelay = 2;
 
         private void Start()
         {
@@ -38,15 +40,21 @@ namespace NMY.OTAToolpicker
             {
                 if (isTracked != lastIsTracked)
                 {
-                    if (isTracked)
-                    {
+
+                    if(isTracked && initialDelay >0){
+
+                        initialDelay-=Time.deltaTime;
+                        return;
+                    }
+
+                    if (isTracked){
                         MarkerFound.Invoke(tableMarker);
                     }
                     else
                     {
                         MarkerLost.Invoke(tableMarker);
                     }
-                    lastIsTracked= isTracked;
+                    lastIsTracked = isTracked;
                 }
             }
         }

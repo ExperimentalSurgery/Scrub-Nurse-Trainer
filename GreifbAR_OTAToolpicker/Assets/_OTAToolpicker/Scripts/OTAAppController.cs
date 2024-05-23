@@ -39,8 +39,15 @@ namespace NMY.OTAToolpicker
             set => isTableCalibrated = value;
         }
 
+        [Header("SoundFX")]
+        [SerializeField] private KeyCode markerDetectionSfx = KeyCode.D;
+
+        [Header("Calibration")]
         [SerializeField] private KeyCode recalibrateKey = KeyCode.R;
         [SerializeField] private KeyCode recenterTableKey = KeyCode.T;
+        [SerializeField] private KeyCode occludeTable = KeyCode.O;
+
+        public GameObject tableOcclusionBox;
 
         [Header("Surgeon")]
         [SerializeField] private bool isSurgeonVisible = false;
@@ -103,6 +110,11 @@ namespace NMY.OTAToolpicker
         [Header("Level 3")]
         [SerializeField] private Level3LearnModeController level3LearnModeController;
         [SerializeField] private Level3QuizModeController level3QuizModeController;
+
+        [SerializeField] private InstrumentMarkerController instrumentMarkerController;
+
+        [SerializeField] private LevelMode lastSelectedLevelMode;
+        public LevelMode LastSelectedLevelMode => lastSelectedLevelMode;
 
         void Awake()
         {
@@ -171,6 +183,9 @@ namespace NMY.OTAToolpicker
             {
                 LevelMode levelMode = await levelModeSelectionUI.SelectLevelMode(session, ct);
                 Debug.Log($"Level mode selected: {levelMode}");
+
+                lastSelectedLevelMode = levelMode;
+
                 if (levelMode == LevelMode.Level1LearnMode)
                     await level1LearnModeController.StartLevelAsync();
                 else if(levelMode == LevelMode.Level1QuizMode)
@@ -269,6 +284,22 @@ namespace NMY.OTAToolpicker
                 tableMarker.VarjoMarker.enabled = false;
                 tableMarker.VarjoMarker.shouldTrack = false;
                 tableMarker.transform.rotation = Quaternion.Euler(0, tableMarker.transform.rotation.eulerAngles.y, 0);
+            }
+
+            if (Input.GetKeyDown(occludeTable))
+            {
+                tableOcclusionBox.SetActive(!tableOcclusionBox.activeSelf);
+            }
+
+            if (Input.GetKeyDown(markerDetectionSfx))
+            {
+                if(instrumentMarkerController!=null){
+                    instrumentMarkerController.IsPlayingAudioOnInstrumentFound = !instrumentMarkerController.IsPlayingAudioOnInstrumentFound;
+                    instrumentMarkerController.IsPlayingAudioOnInstrumentLost = !instrumentMarkerController.IsPlayingAudioOnInstrumentLost;
+                }
+                else{
+                    Debug.LogError("no found instrumentMarkerController in scene");
+                }
             }
         }
 

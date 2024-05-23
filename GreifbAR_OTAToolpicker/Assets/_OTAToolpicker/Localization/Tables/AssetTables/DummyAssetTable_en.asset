@@ -39,7 +39,7 @@ MonoBehaviour:
       m_Items:
       - rid: 8874288645814091793
   - m_Id: 45785725968384
-    m_Localized: d3938360bc9d7884d898a2f6d5f049c2
+    m_Localized: 141b8afec86d69a4c837597a7cce3653
     m_Metadata:
       m_Items:
       - rid: 8874288645814091795
@@ -707,8 +707,10 @@ MonoBehaviour:
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:
         created: 2024-01-24 15:44:39
-        lastModified: 2024-01-24 15:44:39
+        lastModified: 2024-05-06 17:03:51
         spokenText: Sehr gut, jetzt kannst du alle Infos zu diesem Instrument sehen.
+          Wenn du ein gelbes Warndreieck siehst, bedeutet das, dass der Teil des
+          Instrumentes traumatisch ist.
     - rid: 8874288645814091797
       type: {class: LocalizedTextToSpeechMetadata, ns: NMY.GoogleCloudTextToSpeech, asm: com.nmy.googlecloudtexttospeech}
       data:

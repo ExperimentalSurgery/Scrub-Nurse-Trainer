@@ -21,6 +21,8 @@ namespace NMY.OTAToolpicker
         [Tooltip("If true, the instrument details UI will be shown when an instrument is found.")]
         [SerializeField] private bool isShowingInstrumentDetails = true;
 
+        [SerializeField] private PlaceableInstrumentElement elementsDisplayed = PlaceableInstrumentElement.None;
+
         private bool isLevelStopRequested = false;
         public bool IsLevelStopRequested
         {
@@ -92,7 +94,7 @@ namespace NMY.OTAToolpicker
             // the correct/wrong audio clip in this controller
             MarkerController.IsPlayingAudioOnInstrumentFound = false;
             MarkerController.IsShowingInstrumentDetails = isShowingInstrumentDetails;
-            MarkerController.SetInstrumentElementsDisplayed(PlaceableInstrumentElement.None);
+            MarkerController.SetInstrumentElementsDisplayed(elementsDisplayed);
 
             // play audio intro and show info dialog. wait for any of them to finish first.
             await HelperTasks.ShowDialogWithAudio(infoDialogUI, audioSource, introAudioClip, ct: ct);
@@ -129,7 +131,8 @@ namespace NMY.OTAToolpicker
                 CancellationTokenSource questionCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
                 questionDialogUI.Show(title: $"Frage {i+1}", message: question.Question.GetLocalizedString(), questionCts.Token).Forget();
 
-                InstrumentMarker instrumentFound = await HelperTasks.WaitForAnyInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
+                // InstrumentMarker instrumentFound = await HelperTasks.WaitForAnyInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
+                InstrumentMarker instrumentFound = await HelperTasks.WaitForAnyCloseInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
                 if (ct.IsCancellationRequested) return;
 
                 string resultString = "";
@@ -151,7 +154,7 @@ namespace NMY.OTAToolpicker
                 }
                 questionCts.Cancel();
 
-                UniTask droppedInstrumentTask = HelperTasks.WaitForInstrumentDropped(MarkerController, instrumentFound, readyDialogUI, ct);
+                UniTask droppedInstrumentTask = HelperTasks.WaitForInstrumentDroppedOrBelowTableThreshold(MarkerController, instrumentFound, readyDialogUI, ct);
                 string instrumentTitle = instrumentFound.Instrument.Title.GetLocalizedString();
                 UniTask showReadyDialogTask = readyDialogUI.Show(resultString, $"Lege <b>{instrumentTitle}</b> ab und klicke auf \"Weiter\"", ct);
                 await UniTask.WhenAll(droppedInstrumentTask, showReadyDialogTask);

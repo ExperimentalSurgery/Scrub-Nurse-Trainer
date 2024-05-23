@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace NMY.OTAToolpicker
 
         [Tooltip("If true, the instrument details UI will be shown when an instrument is found.")]
         [SerializeField] private bool isShowingInstrumentDetails = true;
+
+        [SerializeField] private PlaceableInstrumentElement elementsDisplayed = PlaceableInstrumentElement.Infospots | PlaceableInstrumentElement.InstrumentRenderer;
 
         [Header("UI")]
         [FormerlySerializedAs("level1LearnModeInfoDialogUI")]
@@ -40,6 +43,15 @@ namespace NMY.OTAToolpicker
         private bool IsFirstTimeDroppingInstrument { get; set; } = true;
         private bool HasFoundInstrumentOnce { get; set; } = false;
 
+        private OTAMarkerManager markerManager;
+
+        private InstrumentMarker lastInstrumentFound;
+
+        private void Start()
+        {
+            markerManager = FindObjectOfType<OTAMarkerManager>();
+        }
+
         public async UniTask StartLevelAsync()
         {
             if (levelPlayingCts != null) {
@@ -54,13 +66,13 @@ namespace NMY.OTAToolpicker
 
             // In Level1 learn mode the marker controller should
             // play an audio SFX when an instrument was found or lost.
-            MarkerController.IsPlayingAudioOnInstrumentFound = true;
-            MarkerController.IsPlayingAudioOnInstrumentLost = true;
+            MarkerController.IsPlayingAudioOnInstrumentFound = false;
+            MarkerController.IsPlayingAudioOnInstrumentLost = false;
             MarkerController.IsShowingInstrumentDetails = isShowingInstrumentDetails;
-            MarkerController.SetInstrumentElementsDisplayed(PlaceableInstrumentElement.Infospots);
+            MarkerController.SetInstrumentElementsDisplayed(elementsDisplayed);
 
             // play audio intro and show info dialog. wait for either to finish
-            await HelperTasks.ShowDialogWithAudio(infoDialogUI, audioSource, introAudioClip, ct: ct);
+            await HelperTasks.ShowDialogWithAudio(infoDialogUI, audioSource, introAudioClip, shouldWaitForClick: true, ct: ct);
 
             audioSource.clip = pickupAudioClip;
             audioSource.PlayDelayed(1f);
@@ -77,7 +89,12 @@ namespace NMY.OTAToolpicker
             // Start monitoring all instruments for tracking.
             // If an instrument is found, call OnInstrumentFound. If an instrument is dropped, call OnInstrumentDropped.
             // When cancellation is requested, stops monitoring the instruments and clears up any connected events.
-            HelperTasks.MonitorInstrumentTracking(MarkerController, OnInstrumentFound, OnInstrumentDropped, 30, ct).Forget();
+            // HelperTasks.MonitorInstrumentTracking(MarkerController, OnInstrumentFound, OnInstrumentDropped, 30, ct).Forget();
+            HelperTasks.Level1LearnWaitForMarkerAboveThreshold(MarkerController, OnInstrumentFound, ct).Forget();
+
+            Func<InstrumentMarker> lastInstrumentFunc = () => lastInstrumentFound;
+
+            HelperTasks.Level1LearnWaitForMarkerBelowThreshold(MarkerController, lastInstrumentFunc, OnInstrumentDropped, ct).Forget();
 
             // If no instrument has been inspected for a while, play reminder audio clip.
             // When an instrument was inspected once, stop playing the reminder audio clip.
@@ -135,21 +152,48 @@ namespace NMY.OTAToolpicker
                 HelperTasks.PlayOneShot(audioSource, pickupSuccessAudioClip);
             }
 
+            
+
+            if (lastInstrumentFound!=null) return;
+
+            lastInstrumentFound = instrumentMarker;
+
+
+            Debug.Log($"Level1 OnInstrumentFound: instrumentMarker={instrumentMarker.gameObject.name}, lastInstrumentIdentified={lastInstrumentFound?.gameObject.name}");
+
             waitDialogUI.Hide();
+
+            instrumentMarker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.Infospots | PlaceableInstrumentElement.InstrumentRenderer);
+            MarkerController.InstrumentDetailsUI.Data = instrumentMarker.Instrument;
+            MarkerController.InstrumentDetailsUI.gameObject.SetActive(true);
 
             app.Session.Level1Learn.AddIdentifiedInstrument(instrumentMarker.Instrument);
         }
 
         private void OnInstrumentDropped(InstrumentMarker instrumentMarker)
         {
-            waitDialogUI.Show(ct).Forget();
+            if (markerManager.currentTrackedObjectsCount == 0)
+                waitDialogUI.Show(ct).Forget();
+
+            
+            if (instrumentMarker != lastInstrumentFound) return;
+
+            lastInstrumentFound = null;
+
+            Debug.Log($"Level1 OnInstrumentDropped: instrumentMarker={instrumentMarker.gameObject.name}, lastInstrumentFound={lastInstrumentFound?.gameObject.name}");
+
+            // instrumentMarker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.None);
+            foreach(InstrumentMarker marker in MarkerController.InstrumentMarkers)
+                marker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.None);
+
+            MarkerController.InstrumentDetailsUI.gameObject.SetActive(false);
 
             if (IsFirstTimeDroppingInstrument)
             {
                 IsFirstTimeDroppingInstrument = false;
                 HelperTasks.PlayOneShot(audioSource, pickupRepeatAudioClip);
             }
-        }
+        }      
 
     }
 }

@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions;
-using UnityEngine.Serialization;
 using UnityEngine.Rendering;
 
 namespace NMY.OTAToolpicker
@@ -103,23 +101,29 @@ namespace NMY.OTAToolpicker
 
         public void ShowMesh()
         {
+//            Debug.Log("ShowMesh "+this.gameObject.name);
             foreach (var renderer in instrumentRenderers)
             {
                 renderer.enabled = true;
-                Color c = renderer.material.color;
-                c.a = 1f;
-                renderer.material.color = c;
+                if(renderer.materials.Length>=2 && renderer.materials[1].HasProperty("_Color")){
+                    Color c = renderer.materials[1].color;
+                    c.a = 1f;
+                    renderer.materials[1].color = c;
+                }
             }
         }
 
         public void HideMesh()
         {
-            foreach (var renderer in instrumentRenderers)
-            {
-                renderer.enabled = true;
-                Color c = renderer.material.color;
-                c.a = 0f;
-                renderer.material.color = c;
+            
+//            Debug.Log("HideMeshh "+this.gameObject.name);
+            foreach (var renderer in instrumentRenderers){
+                renderer.enabled = false;
+                if(renderer.materials.Length>=2 && renderer.materials[1].HasProperty("_Color")){
+                    Color c = renderer.materials[1].color;
+                    c.a = 0f;
+                    renderer.materials[1].color = c;
+                }
             }
         }
 
@@ -203,9 +207,10 @@ namespace NMY.OTAToolpicker
         {
             if(elementsDisplayed.HasFlag(PlaceableInstrumentElement.InstrumentRenderer))
                 ShowMesh();
-            else
+            else{
+                // Debug.Log("Hide Mesh with flags "+ elementsDisplayed.ToString());
                 HideMesh();
-
+            }
             if(elementsDisplayed.HasFlag(PlaceableInstrumentElement.OutlineRenderer))
                 ShowOutline();
             else

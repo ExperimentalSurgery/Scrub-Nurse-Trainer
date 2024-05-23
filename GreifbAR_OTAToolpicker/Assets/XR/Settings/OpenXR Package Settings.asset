@@ -17,6 +17,7 @@ MonoBehaviour:
   version: 1.0.0
   featureIdInternal: com.ultraleap.tracking.openxr.feature.handtracking
   openxrExtensionStrings: XR_EXT_hand_tracking XR_ULTRALEAP_hand_tracking_forearm
+    XR_ULTRALEAP_hand_tracking_hints
   company: Ultraleap
   priority: 0
   required: 0
@@ -823,6 +824,7 @@ MonoBehaviour:
   version: 1.0.0
   featureIdInternal: com.ultraleap.tracking.openxr.feature.handtracking
   openxrExtensionStrings: XR_EXT_hand_tracking XR_ULTRALEAP_hand_tracking_forearm
+    XR_ULTRALEAP_hand_tracking_hints
   company: Ultraleap
   priority: 0
   required: 0
