@@ -57,6 +57,9 @@ namespace NMY.OTAToolpicker
 
         public float currentAngle = 0f;
 
+        [Header("TESTING GREIFBAR-436 fix")] 
+        public bool useLATCheck = false;
+
         void Awake()
         {
            renderers.AddRange(GetComponentsInChildren<Renderer>());
@@ -158,10 +161,37 @@ namespace NMY.OTAToolpicker
         {
             DoPhysicsOverlapCheck();
 
-            if (isDirectionCheckEnabled)
-            {
-                currentAngle = DoDirectionCheck2(placeableInstrument.ForwardDirection, transform.up);
+            if (isDirectionCheckEnabled) {
+                currentAngle = useLATCheck ? DoDirectionCheckLAT(placeableInstrument.ForwardDirection) : DoDirectionCheck2(placeableInstrument.ForwardDirection, transform.up);
             }
+        }
+
+
+        /// <summary>
+        /// TODO: @PE --> This is the version i use in LAT to check the direction of the userhand palmdirection
+        /// facing a certain direction. Maybe its working and we just need to switch the check method. :-)
+        /// </summary>
+        /// <param name="instrumentDirection"></param>
+        /// <returns></returns>
+        private float DoDirectionCheckLAT(Transform instrumentDirection)
+        {
+            Vector3 up = Vector3.up;
+            Vector3 sourceForward = instrumentDirection.forward;
+            Vector3.OrthoNormalize(ref up, ref sourceForward);
+            Vector3 targetForward = forwardDirection.forward;
+            Vector3.OrthoNormalize(ref up, ref targetForward);
+
+            // get the angle between both transforms around the Y axis
+            float dot = Vector3.Dot(sourceForward, targetForward);
+            float angleRad = Mathf.Acos(dot);
+            float angleDeg = angleRad * Mathf.Rad2Deg;
+
+            // see if the angle is clockwise or counter-clockwise
+            Vector3 up2 = Vector3.Cross(sourceForward, targetForward);
+            angleDeg = up2.y < 0 ? -angleDeg : +angleDeg;
+            float angleDegAbs = Mathf.Abs(angleDeg);
+            isInstrumentDirectionValid = angleDegAbs <= maxForwardDeltaDegree;
+            return angleDegAbs;
         }
 
         private float DoDirectionCheck(Transform instrumentDirection)

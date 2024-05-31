@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -128,23 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4688305171388632487, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
   m_PrefabInstance: {fileID: 1816095714}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1283378393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283378392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ce2d2ac584241e4f920d5dcc53648ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  markerId: 200
-  shouldTrack: 1
-  isDynamic: 1
-  isTracked: 0
-  timeout: -1
 --- !u!114 &1283378395 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7218572749850274289, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
@@ -156,7 +139,18 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1283378398
+--- !u!114 &1283378396 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+  m_PrefabInstance: {fileID: 1816095714}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283378392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce2d2ac584241e4f920d5dcc53648ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1283378400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -376,7 +370,7 @@ PrefabInstance:
       addedObject: {fileID: 1572844499}
     - targetCorrespondingSourceObject: {fileID: 7284560046971648784, guid: cc77616cff6e46d4da4cc2c7c16fa58e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1572844503}
+      addedObject: {fileID: 1572844504}
     - targetCorrespondingSourceObject: {fileID: 8752556519182554185, guid: cc77616cff6e46d4da4cc2c7c16fa58e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -409,12 +403,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce2d2ac584241e4f920d5dcc53648ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  markerId: 205
+  MarkerFound:
+    m_PersistentCalls:
+      m_Calls: []
+  MarkerLost:
+    m_PersistentCalls:
+      m_Calls: []
+  markerAnkerPosOffset: {x: 0, y: 0, z: 0}
+  markerAnkerRotOffset: {x: 0, y: 0, z: 0}
+  markers: []
   shouldTrack: 1
   isDynamic: 0
   isTracked: 0
   timeout: 5000
---- !u!114 &1572844503
+  primaryMode: 0
+  initialPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &1572844504
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -559,6 +563,98 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: primaryMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[0].id
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[1].id
+      value: 161
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[2].id
+      value: 162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[3].id
+      value: 163
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[4].id
+      value: 164
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[0].posOffset.y
+      value: -0.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[0].rotOffset.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[0].rotOffset.z
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[1].posOffset.y
+      value: -0.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[1].rotOffset.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[1].rotOffset.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[2].posOffset.y
+      value: -0.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[2].rotOffset.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[3].posOffset.y
+      value: -0.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[3].rotOffset.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[3].rotOffset.z
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[4].posOffset.y
+      value: -0.016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[4].rotOffset.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[4].rotOffset.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927859632032060769, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
+      propertyPath: markers.Array.data[4].rotOffset.z
+      value: 270
+      objectReference: {fileID: 0}
     - target: {fileID: 1933371190317714218, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -626,7 +722,7 @@ PrefabInstance:
     - target: {fileID: 2388825484791328076, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
       propertyPath: varjoMarker
       value: 
-      objectReference: {fileID: 1283378393}
+      objectReference: {fileID: 0}
     - target: {fileID: 2388825484791328076, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
       propertyPath: instrumentElementsDisplayed
       value: -1
@@ -729,10 +825,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4688305171388632487, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1283378393}
-    - targetCorrespondingSourceObject: {fileID: 4688305171388632487, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1283378398}
+      addedObject: {fileID: 1283378400}
     - targetCorrespondingSourceObject: {fileID: 4025140795752606487, guid: 0f1613e2022065a4a9e1390ebb27c13f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -869,9 +962,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 139967651075367250, guid: d26ddd63f0d40b142bf8f667cbe3a7eb, type: 3}
+      propertyPath: trackedObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 139967651075367250, guid: d26ddd63f0d40b142bf8f667cbe3a7eb, type: 3}
       propertyPath: trackedObjects.Array.data[0].visualizer
       value: 
-      objectReference: {fileID: 1283378393}
+      objectReference: {fileID: 1283378396}
     - target: {fileID: 139967651075367250, guid: d26ddd63f0d40b142bf8f667cbe3a7eb, type: 3}
       propertyPath: trackedObjects.Array.data[1].visualizer
       value: 
@@ -916,6 +1013,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3714299763281759366, guid: d26ddd63f0d40b142bf8f667cbe3a7eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4927755056112082225, guid: d26ddd63f0d40b142bf8f667cbe3a7eb, type: 3}
       propertyPath: m_Name
       value: VarjoSystemCheck
@@ -924,6 +1025,10 @@ PrefabInstance:
       propertyPath: xrCamera
       value: 
       objectReference: {fileID: 1848823495}
+    - target: {fileID: 8073961763013855089, guid: d26ddd63f0d40b142bf8f667cbe3a7eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -98,12 +98,10 @@ namespace NMY.OTAToolpicker
 
                             Transform currentTransform = trackedObjects[i].visualizer.gameObject.transform;
                             currentTransform.rotation = marker.pose.rotation;
-                            currentTransform.position = marker.pose.position + currentTransform.TransformDirection(trackedObjects[i].visualizer.GetPosOffset(marker.id));
+
                             currentTransform.transform.Rotate(trackedObjects[i].visualizer.GetRotOffset(marker.id).eulerAngles);
+                            currentTransform.position = marker.pose.position + currentTransform.TransformDirection(trackedObjects[i].visualizer.GetPosOffset(marker.id));
 
-                            currentTransform.position += trackedObjects[i].visualizer.markerAnkerPosOffset;
-
-                            //currentTransform.localRotation = marker.pose.rotation * trackedObjects[i].visualizer.GetRotOffset(marker.id); 
                             currentTrackedMarker = marker.id;
                         }
                     }
