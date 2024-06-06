@@ -135,8 +135,15 @@ namespace NMY.OTAToolpicker
             foreach(InstrumentMarker marker in instrumentMarkers)
             // foreach (InstrumentData trackedInstrument in currentlyTrackedInstruments)
             {
-                if (!marker.IsTrackingEnabled || !marker.VarjoMarker.HasMovedSinceBeginning() || !marker.VarjoMarker.IsTracked)
+                if (marker != null)
+                {
+                    if (!marker.IsTrackingEnabled || !marker.VarjoMarker.HasMovedSinceBeginning() || !marker.VarjoMarker.IsTracked)
+                        continue;
+                }
+
+                else
                     continue;
+
 
 
                 Vector3 pos = marker.transform.position;

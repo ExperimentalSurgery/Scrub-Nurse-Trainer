@@ -11,8 +11,6 @@ namespace NMY.OTAToolpicker
         public UnityEvent<InstrumentMarker> MarkerFound;
         public UnityEvent<InstrumentMarker> MarkerLost;
 
-        public Vector3 markerAnkerPosOffset;
-        public Vector3 markerAnkerRotOffset;
         // public Transform confidenceLabel;
         // public Transform idLabel;
         // private TextMeshProUGUI confidenceText;
@@ -128,14 +126,14 @@ namespace NMY.OTAToolpicker
 
         public Vector3 GetPosOffset(long markerID)
         {
-            return markers.Single(x => x.id == markerID).posOffset + markerAnkerPosOffset;
+            return markers.Single(x => x.id == markerID).posOffset;
         }
 
 
         public Quaternion GetRotOffset(long markerID)
         {
             Vector3 tmpVec = markers.Single(x => x.id == markerID).rotOffset;
-            return Quaternion.Euler(tmpVec.x, tmpVec.y, tmpVec.z) * Quaternion.Euler(markerAnkerRotOffset);                                                                                  
+            return Quaternion.Euler(tmpVec.x, tmpVec.y, tmpVec.z);                                                                                  
         }
 
         public bool HasMarker(long markerID){
