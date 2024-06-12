@@ -7,7 +7,7 @@ namespace NMY.OTAToolpicker
     {
         [SerializeField] private InstrumentTable instrumentTable;
 
-        [SerializeField] private LayerMask layersToCheck = 1 << 0;
+        [SerializeField] private LayerMask layersToCheck;
 
         private Bounds initialTableBoxBounds;
 
@@ -58,6 +58,8 @@ namespace NMY.OTAToolpicker
 
             xPlusBoxExtents = xPlusBoxTrans.localScale*0.5f;
             xPlusBoxExtents.Scale(tableMeshTransform.localScale);
+
+            layersToCheck = LayerMask.GetMask(new string[] { "InstrumentCollider", "Instrument" });
         }
 
         void FixedUpdate()
