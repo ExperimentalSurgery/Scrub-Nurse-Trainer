@@ -18,12 +18,12 @@ TagManager:
   - 
   - Table
   - Instrument
-  - 
+  - Hands
   - touchableObjects
   - controlObjects
   - front
-  - 
-  - 
+  - OperatingRoom
+  - InstrumentCollider
   - 
   - 
   - 

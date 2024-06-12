@@ -420,7 +420,7 @@ namespace NMY.OTAToolpicker
 
                 instrumentTable.CheckPlacement();
                 bool hasWrongPosition =  placeableInstrument.IsWithinTable && !placeableInstrument.IsWithinPlacementVolume;
-                bool isIntersectingTableBorder = placeableInstrument.IsIntersectingTableBorder && !placeableInstrument.IsWithinTable;
+                bool isIntersectingTableBorder = placeableInstrument.IsIntersectingTableBorder || !placeableInstrument.IsWithinTable;
                 hasCorrectDirection = placeableInstrument.IsDirectionValid;
                 hasCorrectPosition = placeableInstrument.IsWithinPlacementVolume;
 

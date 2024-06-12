@@ -25,7 +25,7 @@ namespace NMY.OTAToolpicker
         [SerializeField] private BoxCollider volumeCollider;
         public BoxCollider VolumeCollider => volumeCollider;
 
-        [SerializeField] private LayerMask layersToCheck = 1 << 0;
+        [SerializeField] private LayerMask layersToCheck;
 
         private List<Renderer> renderers = new List<Renderer>();
         [Header("Renderer")]
@@ -72,6 +72,8 @@ namespace NMY.OTAToolpicker
             Assert.IsTrue(transform.localScale == Vector3.one);
             Assert.IsTrue(volumeCollider.transform.localPosition.x==0f);
             Assert.IsTrue(volumeCollider.transform.localPosition.z==0f);
+
+            layersToCheck = LayerMask.GetMask(new string[] { "InstrumentCollider", "Instrument" });
         }
 
         public void Enable()
@@ -236,7 +238,6 @@ namespace NMY.OTAToolpicker
             placeableInstrument.SetOutlineColor(intersectingTableColor);
 
             Collider[] collidersHittingBox = Physics.OverlapBox(volumeCollider.transform.position, volumeCollider.transform.localScale*0.5f, transform.rotation, layersToCheck);
-
             Collider[] collidersHittingZMinus = Physics.OverlapBox(zMinusTrans.position, zMinusCollider.size*0.5f, zMinusTrans.rotation, layersToCheck);
             Collider[] collidersHittingZPlus = Physics.OverlapBox(zPlusTrans.position, zPlusCollider.size*0.5f, zPlusTrans.rotation, layersToCheck);
             Collider[] collidersHittingXMinus = Physics.OverlapBox(xMinusTrans.position, xMinusCollider.size*0.5f, xMinusTrans.rotation, layersToCheck);

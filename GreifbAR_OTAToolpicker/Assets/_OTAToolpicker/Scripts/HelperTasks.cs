@@ -309,7 +309,8 @@ namespace NMY.OTAToolpicker.UI
             // bool isAboveTable = lastInstrumentIdentified.transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
 
             CancellationTokenSource reminderCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
-            HelperTasks.PlayAudioClipIntervalUntil(() => markerController.GetNearestInstrumentMarker() != null && (markerController.GetNearestInstrumentMarker().transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable),
+            float tableHeight = markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
+            HelperTasks.PlayAudioClipIntervalUntil(() => markerController.GetNearestMarkerAboveHeight(tableHeight) != null,
                 initialDelayS: 0f,
                 audioSource: audioSource,
                 audioClip: reminderAudioClip,
@@ -324,8 +325,8 @@ namespace NMY.OTAToolpicker.UI
 
             try {
                 Debug.Log("Wait for instrument identification.");
-                await UniTask.WaitUntil(() => markerController.GetNearestInstrumentMarker() && (markerController.GetNearestInstrumentMarker().transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable), cancellationToken:ct);
-                lastInstrumentIdentified = markerController.GetNearestInstrumentMarker();
+                await UniTask.WaitUntil(() => markerController.GetNearestMarkerAboveHeight(tableHeight) != null, cancellationToken:ct);
+                lastInstrumentIdentified = markerController.GetNearestMarkerAboveHeight(tableHeight);
             }
             catch (OperationCanceledException) {
                 Debug.Log("WaitForInstrumentIdentification: Operation cancelled.");
@@ -545,9 +546,9 @@ namespace NMY.OTAToolpicker.UI
             // markerController.GetNearestInstrumentMarker() != null && (markerController.GetNearestInstrumentMarker().transform.position.y > markerController.tableRerefence.position.y + markerController.minHeightAboveTable)
 
             try {
-                await UniTask.WaitUntil(() => 
-                    (hasDroppedInstrument && droppedInstrument==instrumentMarker) ||
-                     markerController.GetNearestInstrumentMarker() != null && (markerController.GetNearestInstrumentMarker().transform.position.y < markerController.tableRerefence.position.y + markerController.minHeightAboveTable)
+                float tableHeight = markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
+                await UniTask.WaitUntil(() =>
+                    (hasDroppedInstrument && droppedInstrument == instrumentMarker) || markerController.IsMarkerBelowHeight(tableHeight, instrumentMarker)
                     , cancellationToken: ct
                 );
             }
