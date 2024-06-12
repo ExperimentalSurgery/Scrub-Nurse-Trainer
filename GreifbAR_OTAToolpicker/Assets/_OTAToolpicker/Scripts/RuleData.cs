@@ -19,5 +19,6 @@ namespace NMY.OTAToolpicker
         public bool isDirectionCheckEnabled;
         public AudioClip directionCheckAudioClip;
         public LocalizedString directionCheckText;
+        public Transform ruleDialogPosition;
     }
 }
