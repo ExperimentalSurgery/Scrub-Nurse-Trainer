@@ -131,8 +131,12 @@ namespace NMY.OTAToolpicker
                 CancellationTokenSource questionCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
                 questionDialogUI.Show(title: $"Frage {i+1}", message: question.Question.GetLocalizedString(), questionCts.Token).Forget();
 
-                // InstrumentMarker instrumentFound = await HelperTasks.WaitForAnyInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
-                InstrumentMarker instrumentFound = await HelperTasks.WaitForAnyCloseInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
+                InstrumentMarker instrumentFound = null;
+                if (app.TrackingHardware == TrackingHardware.Vuforia)
+                    instrumentFound = await HelperTasks.WaitForAnyInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
+                else if (app.TrackingHardware == TrackingHardware.Varjo)
+                    instrumentFound = await HelperTasks.WaitForAnyCloseInstrumentIdentification(MarkerController, audioSource, reminderAudioClip, reminderIntervalS, ct);
+
                 if (ct.IsCancellationRequested) return;
 
                 string resultString = "";
@@ -155,6 +159,11 @@ namespace NMY.OTAToolpicker
                 questionCts.Cancel();
 
                 UniTask droppedInstrumentTask = HelperTasks.WaitForInstrumentDroppedOrBelowTableThreshold(MarkerController, instrumentFound, readyDialogUI, ct);
+                if (app.TrackingHardware == TrackingHardware.Vuforia)
+                    droppedInstrumentTask = HelperTasks.WaitForInstrumentDropped(MarkerController, instrumentFound, readyDialogUI, ct);
+                else if (app.TrackingHardware == TrackingHardware.Varjo)
+                    droppedInstrumentTask = HelperTasks.WaitForInstrumentDroppedOrBelowTableThreshold(MarkerController, instrumentFound, readyDialogUI, ct);
+
                 string instrumentTitle = instrumentFound.Instrument.Title.GetLocalizedString();
                 UniTask showReadyDialogTask = readyDialogUI.Show(resultString, $"Lege <b>{instrumentTitle}</b> ab und klicke auf \"Weiter\"", ct);
                 await UniTask.WhenAll(droppedInstrumentTask, showReadyDialogTask);

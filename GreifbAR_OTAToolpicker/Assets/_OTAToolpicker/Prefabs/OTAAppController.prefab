@@ -49,7 +49,12 @@ MonoBehaviour:
   tableMarker: {fileID: 0}
   instrumentTable: {fileID: 0}
   shouldCalibrateTableAtStart: 1
+  markerDetectionSfx: 100
   recalibrateKey: 114
+  recenterTableKey: 116
+  occludeTable: 111
+  tableOcclusionBox: {fileID: 0}
+  isSurgeonVisible: 0
   toggleSurgeonKey: 115
   surgeonUpKey: 273
   surgeonDownKey: 274
@@ -74,6 +79,8 @@ MonoBehaviour:
   level2QuizModeController: {fileID: 0}
   level3LearnModeController: {fileID: 0}
   level3QuizModeController: {fileID: 0}
+  instrumentMarkerController: {fileID: 0}
+  lastSelectedLevelMode: 0
 --- !u!1 &7153507046131957403
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a684400b36c60d47b2af1b3692acb57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initTrackingOnStart: 0
+  startTrackingOnStart: 0
   varjoManager: {fileID: 4552164556675687685}
   instrumentMarkerController: {fileID: 0}
   markerManager: {fileID: 7699381546848303255}

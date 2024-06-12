@@ -42,6 +42,8 @@ namespace NMY.OTAToolpicker
         [SerializeField] private DialogUI ruleDialogUI;
         [SerializeField] private Button mainMenuButton;
 
+        [SerializeField] private Transform initialRuleDialogPosition;
+
         [Header("Audio")]
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private AudioClip welcomeAudioClip;
@@ -401,6 +403,9 @@ namespace NMY.OTAToolpicker
                 },
                 ct: ruleInstrumentMonitorCts.Token
             ).Forget();
+
+            // move the rule dialog to the position specified in the rule data
+            ruleDialogUI.transform.position = rule.ruleDialogPosition.position;
 
             bool hasCorrectPosition = false;
             bool hasCorrectDirection = false;

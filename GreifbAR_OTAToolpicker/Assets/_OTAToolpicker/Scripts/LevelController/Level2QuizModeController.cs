@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
-using UnityEngine.Serialization;
+using UnityEngine.Animations;
 
 namespace NMY.OTAToolpicker
 {
@@ -41,9 +40,16 @@ namespace NMY.OTAToolpicker
         [SerializeField] private DialogUI welcomeDialogUI;
         [SerializeField] private DialogUI warningDialogUI;
         [SerializeField] private DialogUI confirmationDialogUI;
+        [Tooltip("The position offset of the confirmation dialog from the instrument marker.")]
+        [SerializeField] private Vector3 confirmationDialogPositionOffset = new Vector3(1f, 0.1f, 0);
         [SerializeField] private DialogUI infoDialogUI;
         [SerializeField] private DialogUI errorDialogUI;
         [SerializeField] private Button backButton;
+
+        // [SerializeField] private bool isConfirmationDialogAttached = true;
+        // public bool IsConfirmationDialogAttached => isConfirmationDialogAttached;
+        // [SerializeField] private Vector3 confirmationDialogAttachDelta = new Vector3(1f, 0.1f, 0);
+        // public Vector3 ConfirmationDialogAttachDelta => confirmationDialogAttachDelta;
 
         [Header("Audio source")]
         [SerializeField] private AudioSource audioSource;
@@ -67,6 +73,8 @@ namespace NMY.OTAToolpicker
         public List<PlacementResult> placementResults = new();
 
         private InstrumentTable instrumentTable;
+
+        private PositionConstraint positionConstraint;
 
         void Awake()
         {
@@ -132,20 +140,35 @@ namespace NMY.OTAToolpicker
             MarkerController.SetInstrumentElementsDisplayed(elementsDisplayed);
             MarkerController.EnableAllInstrumentMarkers();
 
+            AddPositionConstraintToConfirmationDialog(MarkerController.transform);
+
             while (!AreAllRequiredInstrumentsIdentified() && !ct.IsCancellationRequested)
             {
                 MarkerController.IsPlayingAudioOnInstrumentLost = true;
 
-                // InstrumentMarker instrumentMarker = await HelperTasks.WaitForAnyInstrumentIdentification(
-                InstrumentMarker instrumentMarker = await HelperTasks.WaitForAnyCloseInstrumentIdentification(
-                    markerController: MarkerController,
-                    audioSource: audioSource,
-                    reminderAudioClip: reminderAudioClip,
-                    reminderIntervalS: reminderIntervalS,
-                    ct: ct
-                );
+                InstrumentMarker instrumentMarker = null;
+                if (app.TrackingHardware == TrackingHardware.Vuforia) {
+                    instrumentMarker = await HelperTasks.WaitForAnyInstrumentIdentification(
+                        markerController: MarkerController,
+                        audioSource: audioSource,
+                        reminderAudioClip: reminderAudioClip,
+                        reminderIntervalS: reminderIntervalS,
+                        ct: ct
+                    );
+                }
+                else if (app.TrackingHardware == TrackingHardware.Varjo) {
+                    instrumentMarker = await HelperTasks.WaitForAnyCloseInstrumentIdentification(
+                        markerController: MarkerController,
+                        audioSource: audioSource,
+                        reminderAudioClip: reminderAudioClip,
+                        reminderIntervalS: reminderIntervalS,
+                        ct: ct
+                    );
+                }
                 audioSource.Stop();
                 if (ct.IsCancellationRequested) return;
+
+                SetConfirmationDialogPositionConstraintSource(instrumentMarker.transform);
 
                 string instrumentTitle = instrumentMarker.Instrument.Title.GetLocalizedString();
 
@@ -271,6 +294,8 @@ namespace NMY.OTAToolpicker
             errorDialogUI.Hide();
             HideBackButton();
 
+            RemovePositionConstraintFromConfirmationDialog();
+
             placementResults.Clear();
 
             IsLevelStopRequested = true;
@@ -308,6 +333,40 @@ namespace NMY.OTAToolpicker
             // This checks whether there are any elements in b which aren't in a - and then inverts the result.
             // https://stackoverflow.com/questions/1520642/does-net-have-a-way-to-check-if-list-a-contains-all-items-in-list-b
             return !instrumentsRequired.Except(instrumentsIdentified).Any();
+        }
+
+        public void AddPositionConstraintToConfirmationDialog(Transform sourceTransform)
+        {
+            positionConstraint = confirmationDialogUI.gameObject.AddComponent<PositionConstraint>();
+            positionConstraint.locked = false;
+            positionConstraint.translationOffset = confirmationDialogPositionOffset;
+            positionConstraint.AddSource(new ConstraintSource { sourceTransform = sourceTransform, weight = 1 });
+            positionConstraint.constraintActive = true;
+        }
+
+        public void RemovePositionConstraintFromConfirmationDialog()
+        {
+            if (positionConstraint != null)
+            {
+                Destroy(positionConstraint);
+                positionConstraint = null;
+            }
+        }
+
+        public void SetConfirmationDialogPositionConstraintSource(Transform sourceTransform)
+        {
+            if (positionConstraint != null)
+            {
+                ConstraintSource constraintSource = positionConstraint.GetSource(0);
+                constraintSource.sourceTransform = sourceTransform;
+                positionConstraint.SetSource(0, constraintSource);
+
+                positionConstraint.translationOffset = confirmationDialogPositionOffset;
+            }
+            else
+            {
+                Debug.LogWarning("PositionConstraint is null. Cannot set source.");
+            }
         }
     }
 }

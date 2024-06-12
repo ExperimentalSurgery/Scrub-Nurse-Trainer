@@ -128,21 +128,15 @@ namespace NMY.OTAToolpicker
 
         public InstrumentMarker GetNearestInstrumentMarker()
         {
+            InstrumentData nearestInstrument = null;
             InstrumentMarker nearestMarker = null;
             float nearestDistance = float.MaxValue;
 
             foreach(InstrumentMarker marker in instrumentMarkers)
             // foreach (InstrumentData trackedInstrument in currentlyTrackedInstruments)
             {
-                if (marker != null)
-                {
-                    if (!marker.IsTrackingEnabled || !marker.VarjoMarker.HasMovedSinceBeginning() || !marker.VarjoMarker.IsTracked)
-                        continue;
-                }
-
-                else
+                if (!marker.IsTrackingEnabled || !marker.VarjoMarker.HasMovedSinceBeginning() || !marker.VarjoMarker.IsTracked)
                     continue;
-
 
 
                 Vector3 pos = marker.transform.position;
@@ -157,54 +151,6 @@ namespace NMY.OTAToolpicker
             }
 
             return nearestMarker;
-        }
-
-        public InstrumentMarker GetNearestMarkerAboveHeight(float height)
-        {
-            InstrumentMarker nearestMarker = null;
-            float nearestDistance = float.MaxValue;
-
-            foreach (InstrumentMarker marker in instrumentMarkers)
-            // foreach (InstrumentData trackedInstrument in currentlyTrackedInstruments)
-            {
-                if (marker != null)
-                {
-                    if (!marker.IsTrackingEnabled || !marker.VarjoMarker.HasMovedSinceBeginning() || !marker.VarjoMarker.IsTracked)
-                        continue;
-                }
-
-                else
-                    continue;
-
-
-
-                Vector3 pos = marker.transform.position;
-
-                if(pos.y > height)
-                {
-                    float distance = Vector3.Distance(Camera.main.transform.position, pos);
-                    if (distance < nearestDistance)
-                    {
-                        nearestDistance = distance;
-                        nearestMarker = marker;
-                    }
-                }
-
-                
-            }
-
-            return nearestMarker;
-        }
-
-        public bool IsMarkerBelowHeight(float height, InstrumentMarker marker)
-        {
-            if (marker == null)
-                return false;
-
-            if (marker.transform.position.y < height)
-                return true;
-            else
-                return false;
         }
 
         // public InstrumentMarker GetNearestInstrumentMarker()

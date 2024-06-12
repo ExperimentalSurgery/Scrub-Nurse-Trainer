@@ -349,11 +349,11 @@ namespace NMY.OTAToolpicker.UI
             while(ct.IsCancellationRequested == false)
             {                
                 float tableThresholdHeight = markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
-                await UniTask.WaitUntil(() =>
-                    lastInstrumentIdentified = markerController.GetNearestMarkerAboveHeight(tableThresholdHeight), 
+                await UniTask.WaitUntil(() => 
+                    markerController.GetNearestInstrumentMarker() && (markerController.GetNearestInstrumentMarker().transform.position.y > tableThresholdHeight), 
                     cancellationToken:ct
                 );
-                lastInstrumentIdentified = markerController.GetNearestMarkerAboveHeight(tableThresholdHeight);
+                lastInstrumentIdentified = markerController.GetNearestInstrumentMarker();
                 StaticlastInstrumentIdentified = lastInstrumentIdentified;   
                 // Debug.Log("Level1LearnWaitForMarkerAboveThreshold: " + lastInstrumentIdentified.gameObject.name);
                 onFound(lastInstrumentIdentified);
@@ -385,7 +385,7 @@ namespace NMY.OTAToolpicker.UI
                 if(StaticlastInstrumentIdentified) Debug.Log("static last instrumenIdentified="+StaticlastInstrumentIdentified.gameObject.name);
                 float tableThresholdHeight = markerController.tableRerefence.position.y + markerController.minHeightAboveTable;
                 await UniTask.WaitUntil(() => 
-                    (markerController.IsMarkerBelowHeight(tableThresholdHeight, StaticlastInstrumentIdentified)) ||
+                    (markerController.GetNearestInstrumentMarker() !=null && markerController.GetNearestInstrumentMarker()==StaticlastInstrumentIdentified && (markerController.GetNearestInstrumentMarker().transform.position.y < tableThresholdHeight)) ||
                     (StaticlastInstrumentIdentified!=null && !StaticlastInstrumentIdentified.VarjoMarker.IsTracked), cancellationToken:ct);
 
                 
