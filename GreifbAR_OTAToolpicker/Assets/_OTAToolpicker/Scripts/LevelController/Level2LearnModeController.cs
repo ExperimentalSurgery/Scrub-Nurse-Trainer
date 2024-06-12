@@ -406,6 +406,7 @@ namespace NMY.OTAToolpicker
 
             // move the rule dialog to the position specified in the rule data
             ruleDialogUI.transform.position = rule.ruleDialogPosition.position;
+            ruleDialogUI.transform.rotation = rule.ruleDialogPosition.rotation;
 
             bool hasCorrectPosition = false;
             bool hasCorrectDirection = false;
