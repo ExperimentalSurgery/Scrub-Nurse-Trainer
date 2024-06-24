@@ -30,6 +30,8 @@ namespace NMY.OTAToolpicker
             set => instrumentElementsDisplayed = value;
         }
 
+        public bool alwaysShowName = false;
+
         #region Vuforia components
         [SerializeField] private ImageTargetBehaviour imageTargetBehaviour;
         [SerializeField] private InstrumentObserverEventHandler observerEventHandler;
@@ -121,6 +123,9 @@ namespace NMY.OTAToolpicker
             if (placeableInstrument == null)
                 return;
 
+            if(alwaysShowName)
+                elementsDisplayed = elementsDisplayed | PlaceableInstrumentElement.Name;
+
             placeableInstrument.UpdateInstrumentElementVisibility(elementsDisplayed);
 
             // if(elementsDisplayed.HasFlag(PlaceableInstrumentElement.InstrumentRenderer))
@@ -192,6 +197,7 @@ namespace NMY.OTAToolpicker
                 Debug.LogError($"Varjo Marker on {name} is not assigned");
                 return;
             }
+
             varjoMarker.enabled = true;
             varjoMarker.MarkerFound.AddListener((instrumentMarker) => {
                 UpdateInstrumentElementVisibility(instrumentElementsDisplayed);

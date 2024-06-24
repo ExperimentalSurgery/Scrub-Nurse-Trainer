@@ -360,9 +360,7 @@ namespace NMY.OTAToolpicker.UI
                 onFound(lastInstrumentIdentified);
 
                 await UniTask.Delay(pauseMS, cancellationToken: ct);
-            }
-
-           
+            }           
 
             return lastInstrumentIdentified;
         }

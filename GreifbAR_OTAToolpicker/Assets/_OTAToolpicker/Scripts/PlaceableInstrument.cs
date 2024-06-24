@@ -26,6 +26,7 @@ namespace NMY.OTAToolpicker
         // [SerializeField] private Outlinable outlinable;
         [SerializeField] private List<InformationSpot> informationSpots = new();
         [SerializeField] private List<Renderer> instrumentRenderers = new();
+        [SerializeField] private InformationSpot instrumentName;
 
         [Header("Scene references")]
         [SerializeField] private InstrumentTable instrumentTable;
@@ -173,6 +174,26 @@ namespace NMY.OTAToolpicker
             }
         }
 
+        public void HideAllInformationSpots()
+        {
+            foreach (var spot in informationSpots)
+            {
+                spot.gameObject.SetActive(false);
+            }
+        }
+
+        public void ShowName()
+        {
+            if(instrumentName != null)
+                instrumentName.gameObject.SetActive(true);
+        }
+
+        public void HideName()
+        {
+            if (instrumentName != null)
+                instrumentName.gameObject.SetActive(false);
+        }
+
         public void EnableCollider()
         {
             if (instrumentCollider != null)
@@ -185,13 +206,7 @@ namespace NMY.OTAToolpicker
                 instrumentCollider.enabled = false;
         }
 
-        public void HideAllInformationSpots()
-        {
-            foreach (var spot in informationSpots)
-            {
-                spot.gameObject.SetActive(false);
-            }
-        }
+        
 
         private List<InformationSpot> FindInformationSpots()
         {
@@ -230,6 +245,11 @@ namespace NMY.OTAToolpicker
                 ResultView.Show();
             else
                 ResultView.Hide();
+
+            if (elementsDisplayed.HasFlag(PlaceableInstrumentElement.Name))
+                ShowName();
+            else
+                HideName();
         }
 
         private void CreateShaderOutlineKeywords()

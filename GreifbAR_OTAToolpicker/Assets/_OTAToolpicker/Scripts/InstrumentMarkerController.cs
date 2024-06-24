@@ -10,7 +10,7 @@ namespace NMY.OTAToolpicker
 {
     public class InstrumentMarkerController : MonoBehaviour, IInstrumentMarkerController
     {
-        [SerializeField] private bool isTrackingEnabledInitially = true;
+        [SerializeField] public bool isTrackingEnabledInitially = true;
 
         [SerializeField] public Transform tableRerefence;
         [SerializeField] public float minHeightAboveTable=0.1f;
@@ -27,6 +27,8 @@ namespace NMY.OTAToolpicker
             get => isShowingInstrumentDetails;
             set => isShowingInstrumentDetails = value;
         }
+
+        public bool alwaysShowInstrumentName = false;
 
         [Header("Audio")]
         [Tooltip("The audio SFX to play when an instrument was found.")]
@@ -88,6 +90,8 @@ namespace NMY.OTAToolpicker
                 instrumentDetailsUI.Data = null;
                 instrumentDetailsUI.gameObject.SetActive(false);
             }
+
+            alwaysShowInstrumentName = false;
         }
         private void Update()
         {
@@ -217,6 +221,7 @@ namespace NMY.OTAToolpicker
             hasFoundInstrumentOnce = false;
             foreach (var marker in instrumentMarkers)
             {
+                marker.alwaysShowName = alwaysShowInstrumentName;
                 marker.EnableTracking();
                 marker.OnInstrumentFound.AddListener(OnInstrumentFound);
                 marker.OnInstrumentLost.AddListener(OnInstrumentLost);
@@ -228,6 +233,7 @@ namespace NMY.OTAToolpicker
         {
             foreach (var marker in instrumentMarkers)
             {
+                marker.alwaysShowName = false;
                 marker.DisableTracking();
                 marker.OnInstrumentFound.RemoveListener(OnInstrumentFound);
                 marker.OnInstrumentLost.RemoveListener(OnInstrumentLost);
@@ -311,6 +317,11 @@ namespace NMY.OTAToolpicker
             // Debug.Log($"Instrument lost: {instrumentData.name}");
 
             InstrumentLost?.Invoke(instrumentMarker);
+
+            if (alwaysShowInstrumentName)
+                instrumentMarker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.Name);
+            else
+                instrumentMarker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.None);
 
             if (currentlyTrackedInstruments.Contains(instrumentData))
                 currentlyTrackedInstruments.Remove(instrumentData);

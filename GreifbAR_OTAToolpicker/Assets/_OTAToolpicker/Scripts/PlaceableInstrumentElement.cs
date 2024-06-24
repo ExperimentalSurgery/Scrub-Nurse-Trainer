@@ -13,6 +13,8 @@ namespace NMY.OTAToolpicker
         Collider = 4,
         Infospots = 8,
         ResultView = 16,
-        All = InstrumentRenderer | OutlineRenderer | Collider | Infospots | ResultView
+        Name = 32,
+
+        All = InstrumentRenderer | OutlineRenderer | Collider | Infospots | ResultView | Name
     }
 }

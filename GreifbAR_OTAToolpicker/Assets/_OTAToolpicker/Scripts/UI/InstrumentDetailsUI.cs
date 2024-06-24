@@ -11,6 +11,7 @@ public class InstrumentDetailsUI : MonoBehaviour
     [SerializeField] private InstrumentData data;
 
     [SerializeField] private InstrumentTypeIcons instrumentTypeIcons;
+    [SerializeField] private AttachFloating attachFloating;
 
     [Header("Risk icons")]
     [SerializeField] private Sprite traumaticIcon;
@@ -58,6 +59,11 @@ public class InstrumentDetailsUI : MonoBehaviour
         functionsText.text = GetEnumFlagsAsBulletString(() => data.Functions);
         scopeText.text = GetEnumFlagsAsBulletString(() => data.Scopes);
     }
+
+    public void AttachFloatingUI(Transform attachTo)
+        {
+            attachFloating.AttachToTransform(attachTo);
+        }
 
     static IEnumerable<Enum> GetFlags(Enum input)
     {

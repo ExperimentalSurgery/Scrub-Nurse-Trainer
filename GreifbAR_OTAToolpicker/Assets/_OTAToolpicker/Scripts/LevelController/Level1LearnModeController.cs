@@ -82,6 +82,7 @@ namespace NMY.OTAToolpicker
             mainMenuButton.onClick.AddListener(StopLevel);
             mainMenuButton.gameObject.SetActive(true);
 
+            MarkerController.alwaysShowInstrumentName = true;
             MarkerController.EnableAllInstrumentMarkers();
 
             waitDialogUI.Show(ct).Forget();
@@ -124,6 +125,7 @@ namespace NMY.OTAToolpicker
             mainMenuButton.onClick.RemoveListener(StopLevel);
             mainMenuButton.gameObject.SetActive(false);
 
+            MarkerController.alwaysShowInstrumentName = false;
             MarkerController.DisableAllInstrumentMarkers();
 
             if (app.Session.Level1Learn.NrOfIdentifiedInstruments>0)
@@ -150,9 +152,7 @@ namespace NMY.OTAToolpicker
             {
                 HasFoundInstrumentOnce = true;
                 HelperTasks.PlayOneShot(audioSource, pickupSuccessAudioClip);
-            }
-
-            
+            }            
 
             if (lastInstrumentFound!=null) return;
 
@@ -163,7 +163,8 @@ namespace NMY.OTAToolpicker
 
             waitDialogUI.Hide();
 
-            instrumentMarker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.Infospots | PlaceableInstrumentElement.InstrumentRenderer);
+            instrumentMarker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.Infospots | PlaceableInstrumentElement.InstrumentRenderer | PlaceableInstrumentElement.Name);
+            MarkerController.InstrumentDetailsUI.AttachFloatingUI(instrumentMarker.transform);
             MarkerController.InstrumentDetailsUI.Data = instrumentMarker.Instrument;
             MarkerController.InstrumentDetailsUI.gameObject.SetActive(true);
 
@@ -184,7 +185,7 @@ namespace NMY.OTAToolpicker
 
             // instrumentMarker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.None);
             foreach(InstrumentMarker marker in MarkerController.InstrumentMarkers)
-                marker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.None);
+                marker.UpdateInstrumentElementVisibility(PlaceableInstrumentElement.Name);
 
             MarkerController.InstrumentDetailsUI.gameObject.SetActive(false);
 
