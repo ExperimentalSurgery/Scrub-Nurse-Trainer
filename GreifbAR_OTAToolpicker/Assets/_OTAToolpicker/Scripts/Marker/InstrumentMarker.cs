@@ -127,31 +127,6 @@ namespace NMY.OTAToolpicker
                 elementsDisplayed = elementsDisplayed | PlaceableInstrumentElement.Name;
 
             placeableInstrument.UpdateInstrumentElementVisibility(elementsDisplayed);
-
-            // if(elementsDisplayed.HasFlag(PlaceableInstrumentElement.InstrumentRenderer))
-            //     placeableInstrument.ShowMesh();
-            // else
-            //     placeableInstrument.HideMesh();
-
-            // if(elementsDisplayed.HasFlag(PlaceableInstrumentElement.OutlineRenderer))
-            //     placeableInstrument.ShowOutline();
-            // else
-            //     placeableInstrument.HideOutline();
-
-            // if(elementsDisplayed.HasFlag(PlaceableInstrumentElement.Infospots))
-            //     placeableInstrument.ShowAllInformationSpots();
-            // else
-            //     placeableInstrument.HideAllInformationSpots();
-
-            // if(elementsDisplayed.HasFlag(PlaceableInstrumentElement.Collider))
-            //     placeableInstrument.EnableCollider();
-            // else
-            //     placeableInstrument.DisableCollider();
-
-            // if(elementsDisplayed.HasFlag(PlaceableInstrumentElement.ResultView))
-            //     placeableInstrument.ResultView.Show();
-            // else
-            //     placeableInstrument.ResultView.Hide();
         }
 
         public void HideAllInstrumentElements()

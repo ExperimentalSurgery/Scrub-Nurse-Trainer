@@ -117,6 +117,8 @@ namespace NMY.OTAToolpicker
         public void SetTrackingEnabled(bool enable)
         {
             shouldTrack = enable;
+            isTracked = false;
+            lastIsTracked = false;
             if (shouldTrack)
                 MarkerFound.Invoke(instrumentMarker);
             else

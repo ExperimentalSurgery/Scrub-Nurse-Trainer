@@ -49,7 +49,6 @@ namespace NMY.OTAToolpicker
 
         private void Start()
         {
-            markerManager = FindObjectOfType<OTAMarkerManager>();
         }
 
         public async UniTask StartLevelAsync()
@@ -173,9 +172,11 @@ namespace NMY.OTAToolpicker
 
         private void OnInstrumentDropped(InstrumentMarker instrumentMarker)
         {
+            if(markerManager == null)
+                markerManager = FindFirstObjectByType<OTAMarkerManager>();
+
             if (markerManager.currentTrackedObjectsCount == 0)
                 waitDialogUI.Show(ct).Forget();
-
             
             if (instrumentMarker != lastInstrumentFound) return;
 
