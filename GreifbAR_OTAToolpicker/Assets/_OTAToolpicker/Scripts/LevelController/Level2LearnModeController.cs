@@ -302,17 +302,6 @@ namespace NMY.OTAToolpicker
                 alwaysShowPlacementVolume: true,
                 ct: ct
             );
-
-            // Wait for third instrument.
-            // This will play the success audio clip and show the success dialog
-            // when the instrument is placed correctly.
-            await WaitForInstrumentPlacement(
-                instrument: rule.instruments[2],
-                rule: rule,
-                shouldPlaySuccessMsg: true,
-                alwaysShowPlacementVolume: true,
-                ct: ct
-            );
         }
 
         async private UniTask PlayRule8(RuleData rule, CancellationToken ct)
