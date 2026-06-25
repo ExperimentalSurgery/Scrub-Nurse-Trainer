@@ -1,4 +1,4 @@
-# Scrub Nurse Trainer - Prototype
+# Surgical Instrument Trainer Trainer - Prototype
 
 ![Header](https://github.com/user-attachments/assets/66aa0f57-b936-47fa-a3a7-1b56a5000a3f)
 
